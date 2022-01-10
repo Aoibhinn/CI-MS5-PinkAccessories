@@ -17,10 +17,10 @@
                 Jewellery
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="jewellery-link">
-                <a href="" class="dropdown-item">Necklace</a>
-                <a href="" class="dropdown-item">Earrings</a>
-                <a href="" class="dropdown-item">Bracelets</a>
-                <a href="" class="dropdown-item">All Jewellery</a>
+                <a href="{% url 'products' %}?category=necklaces" class="dropdown-item">Necklace</a>
+                <a href="{% url 'products' %}?category=earrings" class="dropdown-item">Earrings</a>
+                <a href="{% url 'products' %}?category=bracelets" class="dropdown-item">Bracelets</a>
+                <a href="{% url 'products' %}?category=nacklaces,earrings,bracelets" class="dropdown-item">All Jewellery</a>
             </div>
         </li>
 
@@ -29,9 +29,9 @@
                 Bags
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="bags-link">
-                <a href="" class="dropdown-item">Clutch</a>
-                <a href="" class="dropdown-item">Tote</a>
-                <a href="" class="dropdown-item">All Bags</a>
+                <a href="{% url 'products' %}?category=clutchs" class="dropdown-item">Clutch</a>
+                <a href="{% url 'products' %}?category=totes" class="dropdown-item">Tote</a>
+                <a href="{% url 'products' %}?category=clutchs,totes" class="dropdown-item">All Bags</a>
             </div>
         </li>
 
@@ -40,10 +40,10 @@
                 Scarves & Hats
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="scarves-hats-link">
-                <a href="" class="dropdown-item">Scarves</a>
-                <a href="" class="dropdown-item">Hats</a>
-                <a href="" class="dropdown-item">Facinators</a>
-                <a href="" class="dropdown-item">All Scarves & Hats</a>
+                <a href="{% url 'products' %}?category=scarves" class="dropdown-item">Scarves</a>
+                <a href="{% url 'products' %}?category=hats" class="dropdown-item">Hats</a>
+                <a href="{% url 'products' %}?category=fascinators" class="dropdown-item">Fascinators</a>
+                <a href="{% url 'products' %}?category=scarves,hats,fascinators" class="dropdown-item">All Scarves & Hats</a>
             </div>
         </li>
     </ul>
