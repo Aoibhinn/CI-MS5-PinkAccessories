@@ -7,7 +7,7 @@
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'products' %}?sort=rating&direction-desc" class="dropdown-item ">By Rating</a>
-                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}?" class="dropdown-item ">By Category</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
@@ -20,7 +20,7 @@
                 <a href="{% url 'products' %}?category=necklaces" class="dropdown-item">Necklace</a>
                 <a href="{% url 'products' %}?category=earrings" class="dropdown-item">Earrings</a>
                 <a href="{% url 'products' %}?category=bracelets" class="dropdown-item">Bracelets</a>
-                <a href="{% url 'products' %}?category=nacklaces,earrings,bracelets" class="dropdown-item">All Jewellery</a>
+                <a href="{% url 'products' %}?category=necklaces,earrings,bracelets" class="dropdown-item">All Jewellery</a>
             </div>
         </li>
 
