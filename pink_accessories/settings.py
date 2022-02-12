@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-0o)yr2^vcmd$u&r4x&&%_0e*_&nz4v10ya7kf98*!m+dnyx7f8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ci-ms5-pinkaccessories.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -122,8 +122,13 @@ WSGI_APPLICATION = 'pink_accessories.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
+    DATABASES = {
+        'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
