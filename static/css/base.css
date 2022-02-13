@@ -73,6 +73,10 @@ body {
     background: #000 !important;
 }
 
+.bg-pink {
+    background: #f0b2af;
+}
+
 .overlay {
 	height: 100%;
 	width: 100%;
