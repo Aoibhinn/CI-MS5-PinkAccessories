@@ -1,3 +1,10 @@
+/* ----- Google Fonts import ----- */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Roboto+Slab&display=swap');
+/* ----- Font ----- */
+* {
+    font-family: 'Nunito Sans', sans-serif;
+}
+/* --- Global styling --- */
 html {
     height: 100%;
 }
