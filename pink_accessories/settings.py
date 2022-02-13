@@ -12,8 +12,9 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 
 import os
-import dj_database_url
 from pathlib import Path
+import dj_database_url
+
 
 if os.path.exists("env.py"):
     import env
@@ -29,9 +30,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '!z6-swf5)g5iw960^25ffdjj(ja*8sm44hi*j7n=5w2a-3_^4o')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['ci-ms5-pinkaccessories.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['ci-ms5-pinkaccessories.herokuapp.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -212,7 +213,7 @@ if 'USE_AWS' in os.environ:
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-#stripe 
+# stripe 
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'usd'
