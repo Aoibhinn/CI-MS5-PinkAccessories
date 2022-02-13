@@ -1,2 +1,1 @@
-web: gunicorn ci-ms5-pinkaccessories.wsgi:application
-
+web: gunicorn pink_accessories.wsgi:application
