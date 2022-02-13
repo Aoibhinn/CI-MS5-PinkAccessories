@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
+    background: url('media/background.png') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -40,8 +40,8 @@ body {
     min-width: 260px;
 }
 
-.btn-black {
-    background: black;
+.btn-pink {
+    background: #cd8689;
     color: white;
 }
 
@@ -72,8 +72,8 @@ body {
     color: #000 !important;
 }
 
-.border-black {
-    border: 1px solid black !important;
+.border-pink {
+    border: 1px solid #cd8689 !important;
 }
 
 .bg-black {
@@ -83,6 +83,12 @@ body {
 .bg-pink {
     background: #f0b2af;
 }
+
+.bg-pink-dark {
+    background: #cd8689;
+}
+
+
 
 .overlay {
 	height: 100%;
