@@ -14,6 +14,7 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
+    background-color: #fff; 
 }
 
 a {
@@ -196,13 +197,6 @@ input[name='q']::placeholder {
 }
 
 /* -------------------------------- Media Queries */
-
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
-}
 
 /* Allauth form formatting */
 
