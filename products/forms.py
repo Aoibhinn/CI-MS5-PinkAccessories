@@ -9,19 +9,16 @@ from .models import Product, Category
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-
-
 class ProductForm(forms.ModelForm):
     """
     A class for product forms
     """
-
     class Meta:
         model = Product
         fields = '__all__'
 
     image = forms.ImageField(label='Image', required=False,
-                            widget=CustomClearableFileInput)
+                             widget=CustomClearableFileInput)
 
     def __init__(self, *args, **kwargs):
         """
