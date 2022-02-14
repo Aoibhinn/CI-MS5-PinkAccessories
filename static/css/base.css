@@ -128,6 +128,10 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+.border-info {
+    border-color: #cd8689!important;
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
