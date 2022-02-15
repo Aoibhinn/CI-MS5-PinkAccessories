@@ -60,7 +60,7 @@ Checkout | A user can enter their delivery details and credit card information t
 Checkout success | Once an order is successful, the user can view the checkout success
 
 
-### Code Structure
+## Code Structure
 The project is divided into a number of apps, as is built using the Django Framework.
 The project was built on the Boutique Ado project, that was part of the project content.
 The apps are described as follows:
@@ -82,6 +82,6 @@ To complement the apps there are:
 - Procfile: To run the application
 - Requirements.txt: Containing the python libraries installed
 Note: Environment variable values are not exposed in the source code, they are stored locally in env.py that is not checked in(and listed in .gitignore, and on Heroku in app settings)
-
+ 
 
 
