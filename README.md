@@ -41,3 +41,22 @@ The primary goal of the website from a site users perspective is as follows:
 * Below are the main page's/features functionality wise, there are some others for password reset/verification etc. that are described in the user story section.
 * All pages have a common look and feel and a common header/footer. On a tablet/mobile the look and feel is slightly different with a burger menu.
 * These pages are described in more detail in the user stories section.
+
+Page            |Description
+:-------------         |:------------- 
+Home     | 
+Products           |     
+Product Detail           | The product detail page displays the product image, description, price, add to bag buttons    
+Product Management(Add Product)     | A product can be added to the website    
+Product Management(Edit Product)     | A product can be edited to the website     
+Product Management(Delete Product)     | A product can be deleted from the website. This is a modal triggered by a delete button
+My Profile             |The users profile(delivery information) and previous orders is displayed       
+Order History         | A order history page per order details the order information and price
+Log out               | A logout button is provided under the My Account link to logout
+Register               | A user can register an account on the site with a valid email address
+Log in               | A user can login with a valid username and password         
+Bag | A user can add products to a shopping bag which contains each item in the order and an overall price/delivery if applicable   
+Checkout | A user can enter their delivery details and credit card information to checkout an order   
+Checkout success | Once an order is successful, the user can view the checkout success
+
+
