@@ -60,3 +60,28 @@ Checkout | A user can enter their delivery details and credit card information t
 Checkout success | Once an order is successful, the user can view the checkout success
 
 
+### Code Structure
+The project is divided into a number of apps, as is built using the Django Framework.
+The project was built on the Boutique Ado project, that was part of the project content.
+The apps are described as follows:
+
+* Bag (part of the original Boutique Ado project): This app contains functionality regarding a users shopping bag
+* Checkout (part of the original Boutique Ado project): This app contains functionality regarding a users checking out and payment of an order
+* Home (part of the original Boutique Ado project): This app contains functionality regarding the users home page
+* Products (part of the original Boutique Ado project): This app contains functionality regarding a product. I added functionality for adding/removing a rating/comment to a product
+* Profiles (part of the original Boutique Ado project): This app contains functionality regarding a users profile and order history 
+
+To complement the apps there are:
+
+- pink_accessories : Containing settings.py(Settings) and urls.py(Website urls) for example
+- templates: Containing the base.html, allauth(django authentication) and includes html files
+- static: Base css and Javascript files(toast and send_email) There is some javascript in some html files, but I have tried to minimise that
+- manage.py: Main python file for starting the website
+- README.md: Readme documentation
+- custom_storage.py: AWS Boto3 configuration
+- Procfile: To run the application
+- Requirements.txt: Containing the python libraries installed
+Note: Environment variable values are not exposed in the source code, they are stored locally in env.py that is not checked in(and listed in .gitignore, and on Heroku in app settings)
+
+
+
