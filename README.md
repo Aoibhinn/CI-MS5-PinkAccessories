@@ -1,13 +1,12 @@
 'Pink Accessories' is a fabulous ecommerce website allowing users purchase jewellery, bags hats and scarves developed for developed for Milestone 5 project 5 as part of the Code Institute - Diploma in Software Development (Full stack) course.
 
 There are two types of users, and I have set up accounts for both
-An admin(administrator) user account has been set up with username/password of admin/Password1@
-A regular(shopper) user account has been set up with username/password of 
+* An admin(administrator) user account has been set up with username/password of admin/Password1@
+* A regular(shopper) user account has been set up with username/password of (Add login for shopper)
+* When making a payment as a regular user, a test credit card of 4242424242424242 has been set up for the card number.
+* For the expiry date, cvc and postal code any series number(s) can be used(once they meet the mimimum values).
 
-When making a payment as a regular user, a test credit card of 4242424242424242 has been set up for the card number
-For the expiry date, cvc and postal code any series number(s) can be used(once they meet the mimimum values)
-
-View the live site here
+View the live site (Link to Live Site)
 
 # Project Overview
 * This project is a website is for submission as milestone project 5 as part of the Code Institute - Diploma in Software * Development (Full stack) course.
