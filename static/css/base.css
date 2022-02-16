@@ -18,7 +18,7 @@ body {
 }
 
 a {
-    color: #555;
+    color: #cd8689;
     text-decoration: none;
     background-color: transparent;
 }
@@ -41,12 +41,12 @@ a {
 }
 
 .shop-now-button {
-    background: #cd8689;
+    background: black;
     color: white;
     min-width: 260px;
 }
 
-.btn-pink {
+.btn-black {
     background: #cd8689;
     color: white;
 }
@@ -60,7 +60,7 @@ a {
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: black;
+    background: #cd8689;
     color: white !important;
 }
 
@@ -70,7 +70,7 @@ a {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
+    background: #cd8689;
     color: white;
 }
 
@@ -248,8 +248,8 @@ input[name='q']::placeholder {
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
 	color: #fff;
-    background-color: #222;
-    border-color: #222;
+    background-color: #cd8689;
+    border-color: #cd8689
 }
 
 .allauth-form-inner-content a {
@@ -284,6 +284,10 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
+#signup-form{
+    padding-bottom: 2rem;
+}
+
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
@@ -316,6 +320,7 @@ input[name='q']::placeholder {
        background-color: white;
    }
 }
+
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
