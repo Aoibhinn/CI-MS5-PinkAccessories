@@ -23,6 +23,14 @@ a {
     background-color: transparent;
 }
 
+.pink-btn {
+    background-color: #cd8689;
+    color: white;
+ }
+.pink-btn:hover {
+    background-color: #cd8689;
+    color: white;
+}
 
 /* from Bulma */
 .icon {
