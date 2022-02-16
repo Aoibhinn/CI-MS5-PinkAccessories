@@ -23,6 +23,7 @@ a {
     background-color: transparent;
 }
 
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -41,7 +42,7 @@ a {
 }
 
 .shop-now-button {
-    background: black;
+    background: #cd8689;
     color: white;
     min-width: 260px;
 }
@@ -77,6 +78,22 @@ a {
 .text-black {
     color: #000 !important;
 }
+
+/* --- Home styling --- */
+
+.text-home {
+    color: white;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -4px;
+}
+
 
 .border-pink {
     border: 1px solid #cd8689 !important;
