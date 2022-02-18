@@ -86,6 +86,6 @@ Step 6 | A message is displayed to the user | [Desktop](readme/testing/fiedsrequ
 Step| Result | Desktop | Tablet | Mobile | Status
 ------------ | ------------ | ------------- | ------------- | ------------- | -------------
 Step 1 | A message is displayed to the user | [Desktop](readme/testing/loginfails_desktop.png)  | [Tablet](readme/testing/loginfails_ipad.png)  | [Mobile](readme/testing/loginfails_iphone.png)  | Passed |
-Step 2 | The user receives an email where they can reset their password | [Desktop](readme/testing/password_reset_email.PNG)  | [Tablet](readme/testing/password_reset_email.PNG)  | [Mobile](readme/testing/password_reset_email.PNG)  | Passed |
-Step 3 | The user can successfully log in | [Desktop](readme/testing/password_updated_desktop.PNG)  | [Tablet](readme/testing/password_updated_tablet.PNG)  | [Mobile](readme/testing/password_updated_mobile.PNG)  | Passed |
+Step 2 | The user receives an email where they can reset their password | [Desktop](readme/testing/password_reset_email.png)  | [Tablet] | [Mobile]  | Passed |
+Step 3 | The user can successfully log in | [Desktop](readme/testing/password_updated_desktop.png)  | [Tablet](readme/testing/password_updated_ipad.png)  | [Mobile](readme/testing/password_updated_iphone.png)  | Passed |
 
