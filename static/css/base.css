@@ -43,7 +43,12 @@ a {
 .pink-btn {
     background-color: #cd8689;
     color: white;
- }
+}
+
+ .grey-btn {
+    background-color: #555;
+    color: white;
+}
 .pink-btn:hover {
     background-color: #cd8689;
     color: white;
