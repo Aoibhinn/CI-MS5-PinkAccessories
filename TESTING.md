@@ -23,18 +23,18 @@ Step| Result | Desktop | Tablet | Mobile | Status
 ------------ | ------------ | ------------- | ------------- | ------------- | -------------
 Step 1 | The homepage is displayed, Login and Register links are displayed under My Account and the footer items are displayed with website links(Register/Login) | [Desktop](readme/testing/homepage_notloggedin_desktop.png)  | [Tablet](readme/testing/homepage_notloggedin_ipad.png)  | [Mobile](readme/testing/homepage_notloggedin_iphone.png)  | Passed |
 Step 2 | The homepage is displayed with a header logo(desktop), search box(expands on tablet/mobile), My account, Favourites and shopping bag icons. My Profile/Logout is visible under My Account and the footer contains links for My Profile, News and Sale   | [Desktop](readme/testing/homepage_loggedin_desktop.png) | [Tablet](readme/testing/homepage_notloggedin_ipad.png)  | [Mobile](readme/testing/homepage_loggedin_iphone.png) | Passed |
-Step 3 | Products on the page are filtered by Price (Low-High) | [Desktop] | [Tablet]  | [Mobile]  |  |
-Step 4 | Products on the page are filtered by Rating (High-Low) | [Desktop]  | [Tablet] | [Mobile] |  |
-Step 5 | Products on the page are filtered by Category (A-Z) | [Desktop]  | [Tablet]  | [Mobile] |  |
-Step 6 | Products on the page are filtered by Necklaces | [Desktop] | [Tablet]  | [Mobile] |  |
-Step 7 | Products on the page are filtered by Earrings | [Desktop]  | [Tablet]  | [Mobile]  |  |
-Step 8 | Products on the page are filtered by Bracelets | [Desktop]| [Tablet]  | [Mobile]  | |
+Step 3 | Products on the page are filtered by Price (Low-High) | [Desktop](readme/testing/products_filterpricelow_desktop.png) | [Tablet](readme/testing/products_filterpricelow_ipad.png)  | [Mobile](readme/testing/products_filterpricelow_iphone.png)  | Passed |
+Step 4 | Products on the page are filtered by Rating (High-Low) | [Desktop](readme/testing/products_filterpricehigh_desktop.png)  | [Tablet](readme/testing/products_filterpricehigh_ipad.png) | [Mobile] |(readme/testing/products_filterpricehigh_iphone.png)  | Passed |
+Step 5 | Products on the page are filtered by Category (A-Z) | [Desktop](readme/testing/products_filterA_Z_desktop.png)  | [Tablet](readme/testing/products_filterA_Z_ipad.png)  | [Mobile](readme/testing/products_filterA_Z_iphone.png) | Passed  |
+Step 6 | Products on the page are filtered by Necklaces | [Desktop](readme/testing/category_necklace_desktop.png) | [Tablet](readme/testing/category_necklace_ipad.png)  | [Mobile](readme/testing/category_necklace_iphone.png) | Passed  |
+Step 7 | Products on the page are filtered by Earrings | [Desktop](readme/testing/category_earrings_desktop.png)  | [Tablet](readme/testing/category_earrings_ipad.png)  | [Mobile](readme/testing/category_earrings_iphone.png)  | Passed |
+Step 8 | Products on the page are filtered by Bracelets | [Desktop](readme/testing/category_bracelets_desktop.png)| [Tablet](readme/testing/category_bracelets_ipad.png)  | [Mobile](readme/testing/category_bracelets_iphone.png)  | Passed |
 Step 9 | Products on the page are filtered by Scarves | [Desktop]| [Tablet]  | [Mobile]  | |
-Step 10 | Products on the page are filtered by Hats | [Desktop]| [Tablet]  | [Mobile]  | |
-Step 11 | Products on the page are filtered by Facinators | [Desktop]| [Tablet]  | [Mobile]  | |
-Step 12 | Products on the page are filtered by Totes | [Desktop]| [Tablet]  | [Mobile]  | |
-Step 13 | Products on the page are filtered by Clutchs | [Desktop]| [Tablet]  | [Mobile]  | |
-Step 14 | The user is logged out | [Desktop]  | [Tablet]  | [Mobile] | |
+Step 10 | Products on the page are filtered by Hats | [Desktop](readme/testing/category_scarves_desktop.png) | [Tablet](readme/testing/category_scarves_ipad.png)  | [Mobile](readme/testing/category_scarves_iphone.png)  | Passed |
+Step 11 | Products on the page are filtered by Facinators | [Desktop](readme/testing/category_fascinator_desktop.png) | [Tablet](readme/testing/category_fascinator_ipad.png)  | [Mobile](readme/testing/category_fascinator_iphone.png) | Passed |
+Step 12 | Products on the page are filtered by Totes | [Desktop](readme/testing/category_tote_desktop.png) | [Tablet](readme/testing/category_tote_ipad.png)  | [Mobile](readme/testing/category_tote_iphone.png) | Passed |
+Step 13 | Products on the page are filtered by Clutchs | [Desktop](readme/testing/category_clutch_desktop.png) | [Tablet](readme/testing/category_clutch_ipad.png) | [Mobile](readme/testing/category_clutch_iphone.png)  | Passed |
+Step 14 | The user is logged out | [Desktop](readme/testing/loggingout_desktop.png)  | [Tablet](readme/testing/loggingout_ipad.png)  | [Mobile](/workspace/CI-MS5-PinkAccessories/readme/testing/loggingout_iphone.png) | Passed |
 Step 15 | The homepage is displayed with a header logo(desktop), search box(expands on tablet/mobile), My Account and shopping bag icons. Product Management/News Item Management/My Profile/Logout is visible under My Account and the footer contains links for Product Management  | [Desktop]  | [Tablet]  | [Mobile]  |  |
 
 
