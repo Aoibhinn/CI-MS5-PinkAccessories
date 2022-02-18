@@ -21,7 +21,7 @@
 #### User Story Testing Results 1
 Step| Result | Desktop | Tablet | Mobile | Status
 ------------ | ------------ | ------------- | ------------- | ------------- | -------------
-Step 1 | The homepage is displayed, Login and Register links are displayed under My Account and the footer items are displayed with website links(Register/Login) | [Desktop]  | [Tablet] |  |  |
+Step 1 | The homepage is displayed, Login and Register links are displayed under My Account and the footer items are displayed with website links(Register/Login) | [Desktop] (/readme/testing/homepage_not loggedin_desktop.png)  | [Tablet] | /readme/testing/homepage_notloggedin_ipad.png | [Mobile] (/readme/testing/homepage_notloggedin_iphone.png) |
 Step 2 | The homepage is displayed with a header logo(desktop), search box(expands on tablet/mobile), My account, Favourites and shopping bag icons. My Profile/Logout is visible under My Account and the footer contains links for My Profile, News and Sale   | [Desktop] | [Tablet]  | [Mobile] |  |
 Step 3 | Products on the page are filtered by Price (Low-High) | [Desktop] | [Tablet]  | [Mobile]  |  |
 Step 4 | Products on the page are filtered by Rating (High-Low) | [Desktop]  | [Tablet] | [Mobile] |  |
