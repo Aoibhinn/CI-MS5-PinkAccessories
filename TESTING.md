@@ -122,5 +122,24 @@ Step 5 | The add product page is displayed | [Desktop](readme/testing/add_produc
 Step 6 | The edit product page is displayed | [Desktop](readme/testing/10_2_1_desktop.PNG)  | [Tablet](readme/testing/delete_product_ipad.png)  | [Mobile](readme/testing/10_2_1_mobile.PNG)  | Passed |
 Step 7 | Delete a product notification displayed | [Desktop](readme/testing/delete_product_desktop.png)  | [Tablet](readme/testing/delete_product_ipad.png)  | [Mobile](readme/testing/delete_product_iphone.png)  | Passed |
 
+### Feature 6 Profile Page
+#### User Stories feature 6
+- User Story 9.1: As a regular user I can view my Default delivery information: Phone Number, Street Address 1, Street Address 2, Town or City, County, State or Locality, Postal Code and Country
+- User Story 9.2: As a regular user I can update my Default delivery information: Phone Number, Street Address 1, Street Address 2, Town or City, County, State or Locality, Postal Code and Country
+- User Story 9.3: As a regular user I can view my order history(Order Number, Date, Items and Order Total)
+- User Story 9.4: As a regular user I can click on an order number to view the order information (Order number, Order date/time, Full Name, Street Address 1, Street Address 2, Town or City, County, State or Locality, Postal Code and Country, Phone Number, Order Total, Deliver, Grand Total)
+
+#### User Stories Steps 6
+1. Click on the My Profile link under My Account
+2. Update one field in the default delivery information (Street Address 2)
+3. Click on an order number
+
+#### User Story Testing Results 6
+Step | Result | Desktop | Tablet | Mobile | Status
+------------ | ------------ | ------------- | ------------- | ------------- | -------------
+Step 1 | The users default delivery information and order history is displayed  | [Desktop](readme/testing/shopper_profile_desktop.png)  | [Tablet](readme/testing/shopper_profile_ipad.png)  | [Mobile](readme/testing/shopper_profile_iphone.png)  | Passed |
+Step 2 | The users default delivery information is updated and displayed (Street Address 1)  | [Desktop](readme/testing/profile_update_desktop.png)  | [Tablet](readme/testing/profile_update_ipad.png)  | [Mobile](readme/testing/profile_update_iphone.png)  | Passed |
+Step 3 | The users order details is displayed | [Desktop](readme/testing/order_history_desktop.PNG)  | [Tablet](readme/testing/order_history_tablet.PNG)  | [Mobile](readme/testing/order_history_mobile.PNG)  | Passed |
+
 
 
