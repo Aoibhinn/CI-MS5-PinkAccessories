@@ -22,7 +22,7 @@
 Step| Result | Desktop | Tablet | Mobile | Status
 ------------ | ------------ | ------------- | ------------- | ------------- | -------------
 Step 1 | The homepage is displayed, Login and Register links are displayed under My Account and the footer items are displayed with website links(Register/Login) | [Desktop](readme/testing/homepage_notloggedin_desktop.png)  | [Tablet](readme/testing/homepage_notloggedin_ipad.png)  | [Mobile](readme/testing/homepage_notloggedin_iphone.png)  | Passed |
-Step 2 | The homepage is displayed with a header logo(desktop), search box(expands on tablet/mobile), My account, Favourites and shopping bag icons. My Profile/Logout is visible under My Account and the footer contains links for My Profile, News and Sale   | [Desktop] | [Tablet]  | [Mobile] |  |
+Step 2 | The homepage is displayed with a header logo(desktop), search box(expands on tablet/mobile), My account, Favourites and shopping bag icons. My Profile/Logout is visible under My Account and the footer contains links for My Profile, News and Sale   | [Desktop](readme/testing/homepage_loggedin_desktop.png) | [Tablet](readme/testing/homepage_notloggedin_ipad.png)  | [Mobile](readme/testing/homepage_loggedin_iphone.png) | Passed |
 Step 3 | Products on the page are filtered by Price (Low-High) | [Desktop] | [Tablet]  | [Mobile]  |  |
 Step 4 | Products on the page are filtered by Rating (High-Low) | [Desktop]  | [Tablet] | [Mobile] |  |
 Step 5 | Products on the page are filtered by Category (A-Z) | [Desktop]  | [Tablet]  | [Mobile] |  |
