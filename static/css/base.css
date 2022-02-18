@@ -23,6 +23,10 @@ a {
     background-color: transparent;
 }
 
+.footer-text {
+    font-size: 1rem;
+}
+
 .pink-btn {
     background-color: #cd8689;
     color: white;
