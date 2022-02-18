@@ -68,9 +68,9 @@ Step 3 | The user receives an email | [Desktop] | [Tablet]  | [Mobile]  |  |
 Step| Result | Desktop | Tablet | Mobile | Status
 ------------ | ------------ | ------------- | ------------- | ------------- | -------------
 Step 1 | The user registers for an account | [Desktop](readme/testing/register_desktop.png)  | [Tablet](readme/testing/register_ipad.png)  | [Mobile](readme/testing/register_iphone.png)  | Passed  |
-Step 2 | The user receives the email | [Desktop]  | [Tablet]  | [Mobile]  |  |
-Step 3 | The user clicks on the verification link | [Desktop] | [Tablet] | [Mobile]  |  |
-Step 4 | The user confirms the email address | [Desktop]  | [Tablet]  | [Mobile] |  |
-Step 5 | The user logs in to the site | [Desktop]  | [Tablet]  | [Mobile] |  |
-Step 6 | A message is displayed to the user | [Desktop]  | [Tablet] | [Mobile]  |  | 
+Step 2 | The user receives the email | [Desktop](readme/testing/verifyemail_desktop.png)  | [Tablet](readme/testing/verifyemail_ipad.png)  | [Mobile](readme/testing/verifyemail_iphone.png)  | Passed  |
+Step 3 | The user clicks on the verification link | [Desktop](readme/testing/confirmemail_desktop.png) | [Tablet](readme/testing/confirmemail_ipad.png) | [Mobile](readme/testing/confirmemail_iphone.png)  | Passed  |
+Step 4 | The user confirms the email address | [Desktop](readme/testing/emailedconfirmed_desktop.png)  | [Tablet](readme/testing/emailedconfirmed_ipad.png)  | [Mobile](readme/testing/emailedconfirmed_iphone.png) | Passed  |
+Step 5 | The user logs in to the site | [Desktop](readme/testing/successfullysignedin_desktop.png)  | [Tablet](readme/testing/successfullysignedin_ipad.png)  | [Mobile](readme/testing/successfullysignedin_iphone.png) | Passed  |
+Step 6 | A message is displayed to the user | [Desktop](readme/testing/fiedsrequired_desktop.png) | [Tablet](readme/testing/fieldsrequired_ipad.png) | [Mobile](readme/testing/fieldsrequired_iphone.png)  | Passed  | 
 
