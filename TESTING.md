@@ -67,7 +67,7 @@ Step 3 | The user receives an email | [Desktop] | [Tablet]  | [Mobile]  |  |
 #### User Story Testing Results 3
 Step| Result | Desktop | Tablet | Mobile | Status
 ------------ | ------------ | ------------- | ------------- | ------------- | -------------
-Step 1 | The user registers for an account | [Desktop]  | [Tablet]  | [Mobile]  |  |
+Step 1 | The user registers for an account | [Desktop](readme/testing/register_desktop.png)  | [Tablet](readme/testing/register_ipad.png)  | [Mobile](readme/testing/register_iphone.png)  | Passed  |
 Step 2 | The user receives the email | [Desktop]  | [Tablet]  | [Mobile]  |  |
 Step 3 | The user clicks on the verification link | [Desktop] | [Tablet] | [Mobile]  |  |
 Step 4 | The user confirms the email address | [Desktop]  | [Tablet]  | [Mobile] |  |
