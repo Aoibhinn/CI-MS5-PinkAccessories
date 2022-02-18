@@ -117,10 +117,10 @@ Step| Result | Desktop | Tablet | Mobile | Status
 Step 1 | The products page is displayed | [Desktop](readme/testing/products_desktop.png)  | [Tablet](readme/testing/products_ipad.png)  | [Mobile](readme/testing/products_iphone.png)  | Passed |
 Step 2 | The products are sorted High to Low | [Desktop](readme/testing/product_price_desktop.png)  | [Tablet](readme/testing/product_price_ipad.png)  | [Mobile](readme/testing/product_price_iphone.png)  | Passed |
 Step 3 | The product detail is displayed | [Desktop](readme/testing/product_detail_desktop.png)  | [Tablet](readme/testing/product_detail_ipad.png)  | [Mobile](readme/testing/product_detail_iphone.png)  | Passed |
-Step 6 | The 2 products are added | [Desktop](readme/testing/add_bad_to_cart_desktop.png)  | [Tablet](readme/testing/add_bad_to_cart_ipad.png)  | [Mobile](readme/testing/add_bad_to_cart_iphone.png)  | Passed |
-Step 7 | The add product page is displayed | [Desktop](readme/testing/add_product_desktop.png)  | [Tablet](readme/testing/add_product_ipad.png)  | [Mobile](readme/testing/add_product_iphone.png)  | Passed |
-Step 8 | The edit product page is displayed | [Desktop](readme/testing/10_2_1_desktop.PNG)  | [Tablet](readme/testing/delete_product_ipad.png)  | [Mobile](readme/testing/10_2_1_mobile.PNG)  | Passed |
-Step 9 | Delete a product notification displayed | [Desktop](readme/testing/delete_product_desktop.png)  | [Tablet](readme/testing/delete_product_ipad.png)  | [Mobile](readme/testing/delete_product_iphone.png)  | Passed |
+Step 4 | The 2 products are added | [Desktop](readme/testing/add_bad_to_cart_desktop.png)  | [Tablet](readme/testing/add_bad_to_cart_ipad.png)  | [Mobile](readme/testing/add_bad_to_cart_iphone.png)  | Passed |
+Step 5 | The add product page is displayed | [Desktop](readme/testing/add_product_desktop.png)  | [Tablet](readme/testing/add_product_ipad.png)  | [Mobile](readme/testing/add_product_iphone.png)  | Passed |
+Step 6 | The edit product page is displayed | [Desktop](readme/testing/10_2_1_desktop.PNG)  | [Tablet](readme/testing/delete_product_ipad.png)  | [Mobile](readme/testing/10_2_1_mobile.PNG)  | Passed |
+Step 7 | Delete a product notification displayed | [Desktop](readme/testing/delete_product_desktop.png)  | [Tablet](readme/testing/delete_product_ipad.png)  | [Mobile](readme/testing/delete_product_iphone.png)  | Passed |
 
 
 
