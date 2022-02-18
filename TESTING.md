@@ -119,7 +119,7 @@ Step 2 | The products are sorted High to Low | [Desktop](readme/testing/product_
 Step 3 | The product detail is displayed | [Desktop](readme/testing/product_detail_desktop.png)  | [Tablet](readme/testing/product_detail_ipad.png)  | [Mobile](readme/testing/product_detail_iphone.png)  | Passed |
 Step 4 | The 2 products are added | [Desktop](readme/testing/add_bad_to_cart_desktop.png)  | [Tablet](readme/testing/add_bad_to_cart_ipad.png)  | [Mobile](readme/testing/add_bad_to_cart_iphone.png)  | Passed |
 Step 5 | The add product page is displayed | [Desktop](readme/testing/add_product_desktop.png)  | [Tablet](readme/testing/add_product_ipad.png)  | [Mobile](readme/testing/add_product_iphone.png)  | Passed |
-Step 6 | The edit product page is displayed | [Desktop](readme/testing/10_2_1_desktop.PNG)  | [Tablet](readme/testing/delete_product_ipad.png)  | [Mobile](readme/testing/10_2_1_mobile.PNG)  | Passed |
+Step 6 | The edit product page is displayed | [Desktop]  | [Tablet]  | [Mobile]  |  |
 Step 7 | Delete a product notification displayed | [Desktop](readme/testing/delete_product_desktop.png)  | [Tablet](readme/testing/delete_product_ipad.png)  | [Mobile](readme/testing/delete_product_iphone.png)  | Passed |
 
 ### Feature 6 Profile Page
@@ -139,7 +139,7 @@ Step | Result | Desktop | Tablet | Mobile | Status
 ------------ | ------------ | ------------- | ------------- | ------------- | -------------
 Step 1 | The users default delivery information and order history is displayed  | [Desktop](readme/testing/shopper_profile_desktop.png)  | [Tablet](readme/testing/shopper_profile_ipad.png)  | [Mobile](readme/testing/shopper_profile_iphone.png)  | Passed |
 Step 2 | The users default delivery information is updated and displayed (Street Address 1)  | [Desktop](readme/testing/profile_update_desktop.png)  | [Tablet](readme/testing/profile_update_ipad.png)  | [Mobile](readme/testing/profile_update_iphone.png)  | Passed |
-Step 3 | The users order details is displayed | [Desktop](readme/testing/order_history_desktop.PNG)  | [Tablet](readme/testing/order_history_tablet.PNG)  | [Mobile](readme/testing/order_history_mobile.PNG)  | Passed |
+Step 3 | The users order details is displayed | [Desktop]  | [Tablet]  | [Mobile]  | |
 
 
 
