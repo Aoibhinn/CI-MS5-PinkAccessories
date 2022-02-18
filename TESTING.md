@@ -86,6 +86,41 @@ Step 6 | A message is displayed to the user | [Desktop](readme/testing/fiedsrequ
 Step| Result | Desktop | Tablet | Mobile | Status
 ------------ | ------------ | ------------- | ------------- | ------------- | -------------
 Step 1 | A message is displayed to the user | [Desktop](readme/testing/loginfails_desktop.png)  | [Tablet](readme/testing/loginfails_ipad.png)  | [Mobile](readme/testing/loginfails_iphone.png)  | Passed |
-Step 2 | The user receives an email where they can reset their password | [Desktop](readme/testing/password_reset_email.png)  | [Tablet] | [Mobile]  | Passed |
+Step 2 | The user receives an email where they can reset their password | [Desktop](readme/testing/password_reset_email.png)  |  |  | Passed |
 Step 3 | The user can successfully log in | [Desktop](readme/testing/password_updated_desktop.png)  | [Tablet](readme/testing/password_updated_ipad.png)  | [Mobile](readme/testing/password_updated_iphone.png)  | Passed |
+
+### Feature 5 Products and Product Detail Pages
+#### User Stories feature 5
+- User Story 5.1: As a regular user I can view the products page with product count and with each product image, title, category, price and presale price(if applicable)
+- User Story 5.2: As a regular user I can sort the products by Price(high to low, low to high), Rating(high to low, low to high), Name(A-Z, Z-A), Category(A-Z, Z-A)
+- User Story 5.3: As a regular user if I click on a product I will be navigated to the product detail page
+- User Story 5.4: As a regular user I can view the product image, description, colour, code, rating, category, description
+- User Story 5.5: As a regular user I can click on the Keep Shopping button on the product detail page, and it will navigate the user to the products page
+- User Story 5.6: As a regular user I can set the product size(if applicable for the product) and quantity for a product (one plus)
+- User Story 5.7: As an admin user I can view the Add product page by clicking on the Product Management link.
+- User Story 5.8: As an admin user I can view the Edit product page by clicking on the Edit button on the product. 
+- User Story 5.9: As an admin user I can click on a product, and I am navigated to the product detail page. I can edit or delete the product by clicking on the Edit or Delete links on the page
+
+#### User Stories Steps 5
+1. As a regular user login to the website and navigate to the products page
+2. Sort the products from Price(High to Low)
+3. Click on a product
+4. Add a product(bags) to the bag, with a quantity of 2
+5. As an admin user login and click on the add product(Product Management)
+6. Click on the edit button on the products page or in the product detail page and edit the product
+7. As an admin user delete a product
+
+
+#### User Story Testing Results 5
+Step| Result | Desktop | Tablet | Mobile | Status
+------------ | ------------ | ------------- | ------------- | ------------- | -------------
+Step 1 | The products page is displayed | [Desktop](readme/testing/products_desktop.png)  | [Tablet](readme/testing/products_ipad.png)  | [Mobile](readme/testing/products_iphone.png)  | Passed |
+Step 2 | The products are sorted High to Low | [Desktop](readme/testing/product_price_desktop.png)  | [Tablet](readme/testing/product_price_ipad.png)  | [Mobile](readme/testing/product_price_iphone.png)  | Passed |
+Step 3 | The product detail is displayed | [Desktop](readme/testing/product_detail_desktop.png)  | [Tablet](readme/testing/product_detail_ipad.png)  | [Mobile](readme/testing/product_detail_iphone.png)  | Passed |
+Step 6 | The 2 products are added | [Desktop](readme/testing/add_bad_to_cart_desktop.png)  | [Tablet](readme/testing/add_bad_to_cart_ipad.png)  | [Mobile](readme/testing/add_bad_to_cart_iphone.png)  | Passed |
+Step 7 | The add product page is displayed | [Desktop](readme/testing/add_product_desktop.png)  | [Tablet](readme/testing/add_product_ipad.png)  | [Mobile](readme/testing/add_product_iphone.png)  | Passed |
+Step 8 | The edit product page is displayed | [Desktop](readme/testing/10_2_1_desktop.PNG)  | [Tablet](readme/testing/delete_product_ipad.png)  | [Mobile](readme/testing/10_2_1_mobile.PNG)  | Passed |
+Step 9 | Delete a product notification displayed | [Desktop](readme/testing/delete_product_desktop.png)  | [Tablet](readme/testing/delete_product_ipad.png)  | [Mobile](readme/testing/delete_product_iphone.png)  | Passed |
+
+
 
