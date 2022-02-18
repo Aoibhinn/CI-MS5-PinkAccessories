@@ -74,3 +74,18 @@ Step 4 | The user confirms the email address | [Desktop](readme/testing/emailedc
 Step 5 | The user logs in to the site | [Desktop](readme/testing/successfullysignedin_desktop.png)  | [Tablet](readme/testing/successfullysignedin_ipad.png)  | [Mobile](readme/testing/successfullysignedin_iphone.png) | Passed  |
 Step 6 | A message is displayed to the user | [Desktop](readme/testing/fiedsrequired_desktop.png) | [Tablet](readme/testing/fieldsrequired_ipad.png) | [Mobile](readme/testing/fieldsrequired_iphone.png)  | Passed  | 
 
+### Feature 4 Login
+#### User Stories feature 4
+- User Story 4.1: As an admin/regular user I can log in to the website using my username or email address and password. Both fields are mandatory. Once correct, I will be navigated to the homepage and a message displayed
+- User Story 4.2: As an admin/regular user I can request a new password if I forget my current password. I will receive an email to reset my password. Once I reset I can log in
+#### User Stories Steps 4
+1. Attempt to log in to the website with an account that does not exist or an incorrect password
+2. Request a new password
+3. Login to the site with the correct account details
+#### User Story Testing Results 4
+Step| Result | Desktop | Tablet | Mobile | Status
+------------ | ------------ | ------------- | ------------- | ------------- | -------------
+Step 1 | A message is displayed to the user | [Desktop](readme/testing/loginfails_desktop.png)  | [Tablet](readme/testing/loginfails_ipad.png)  | [Mobile](readme/testing/loginfails_iphone.png)  | Passed |
+Step 2 | The user receives an email where they can reset their password | [Desktop](readme/testing/password_reset_email.PNG)  | [Tablet](readme/testing/password_reset_email.PNG)  | [Mobile](readme/testing/password_reset_email.PNG)  | Passed |
+Step 3 | The user can successfully log in | [Desktop](readme/testing/password_updated_desktop.PNG)  | [Tablet](readme/testing/password_updated_tablet.PNG)  | [Mobile](readme/testing/password_updated_mobile.PNG)  | Passed |
+
