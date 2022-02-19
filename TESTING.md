@@ -220,4 +220,21 @@ Step 7 | The order is displayed on the "my profile" page | [Desktop](readme/test
 Step 8 | The purchase is successful and the checkout success page is displayed | [Desktop](readme/testing/thank_you_desktop.png)  | [Tablet](readme/testing/thank_you_ipad.png)  | [Mobile](readme/testing/thank_you_iphone.png)  | Passed |
 
 
+### Feature 13 Admin
+#### User Story 13-1
+- User Story 13.1: As an admin user I can view users orders in the django admin page and can view order number, date, full name, order total, delivery cost, grand total
+#### User Story Steps 13-1
+- Step 1: As an admin user login navigate to https://8000-lime-jackal-9mgfiw2b.ws-eu33.gitpod.io/admin/checkout/order/
+#### User Story Testing Results 13-1
+Step| Result | Result  | Status
+------------ | ------------ | ------------- | ------------- 
+Step 1 | The orders are displayed | [Result](/workspace/CI-MS5-PinkAccessories/readme/testing/admin_order_desktop.png)  | Passed |
 
+#### User Story Expected Result 13-7
+- User Story 13.7: As an admin user I can view products in the django admin page and can view a products code, name, category, has sizes, price, presale price, rating, image, image url
+#### User Story Steps 13-7
+- Step 1: As an admin user navigate to https://8000-lime-jackal-9mgfiw2b.ws-eu33.gitpod.io/admin/products/product/
+#### User Story Testing Results 13-7
+Step| Result | Result  | Status
+------------ | ------------ | ------------- | ------------- 
+Step 1 | The products are displayed | [Result](readme/testing/admin_products.png)   | Passed |
