@@ -141,42 +141,83 @@ Step 1 | The users default delivery information and order history is displayed  
 Step 2 | The users default delivery information is updated and displayed (Street Address 1)  | [Desktop](readme/testing/profile_update_desktop.png)  | [Tablet](readme/testing/profile_update_ipad.png)  | [Mobile](readme/testing/profile_update_iphone.png)  | Passed |
 Step 3 | The users order details is displayed | [Desktop]  | [Tablet]  | [Mobile]  | |
 
-### Feature 10 Product Management
-#### User Story 10-1
+### Feature 07 Product Management
+#### User Story 07-1
 - User Story 10.1: As an admin user I can add a product by clicking on the Product Management link in My Account. I must enter a name, category, price, colour, code, description and can optionally add a feature (1-4), has Sizes(Unknown, Yes, No), Rating, Pre-sale price, Image url, upload an image and click the 
 Add Product button. Clicking cancel navigates the user to the product page.
 
-#### User Story Steps 10-1
+#### User Story Steps 07-1
 - Step 1: As an admin user login navigate to Product Management under MyAccount, and add details to a product and click the Add Product button
 - Step 2: Click on the product detail for the product
 
-#### User Story Testing Results 10-1
+#### User Story Testing Results 07-1
 Step| Result | Desktop | Tablet | Mobile | Status
 ------------ | ------------ | ------------- | ------------- | ------------- | -------------
 Step 1 | The add product page is displayed | [Desktop](readme/testing/addproduct_desktop.png)  | [Tablet](readme/testing/addproduct_ipad.png)  | [Mobile](readme/testing/addproduct_iphone.png)  | Passed |
 Step 2 | The product detail is displayed | [Desktop](readme/testing/addedproduct_desktop.png)  | [Tablet](readme/testing/addedproduct_ipad.png)  | [Mobile](readme/testing/addedproduct_iphone.png)  | Passed |
 
-#### User Story 10-2
+#### User Story 07-2
 - User Story 10.2: As an admin user I can edit a product by clicking on the Edit button on the Products page for the product. I can update thea name, category, price, colour, code, description, has Sizes(Unknown, Yes, No), Rating, Pre-sale price, Image url, update an image and click the 
 Edit Product button. Clicking cancel navigates the user to the product page
-#### User Story Steps 10-2
+#### User Story Steps 07-2
 - Step 1: As an admin user login navigate to a product in the products page and click on a product, and click the Edit button
 - Step 2: Update the product, for example the price
-#### User Story Testing Results 10-2
+#### User Story Testing Results 07-2
 Step| Result | Desktop | Tablet | Mobile | Status
 ------------ | ------------ | ------------- | ------------- | ------------- | -------------
 Step 1 | The edit product page is displayed | [Desktop](readme/testing/edit_product_desktop.png)  | [Tablet](readme/testing/edit_product_ipad.png)  | [Mobile](readme/testing/edit_product_iphone.png)  | Passed |
 Step 2 | The product detail is updated with the news price| [Desktop](readme/testing/edited_product_desktop.png)  | [Tablet](readme/testing/edited_product_ipad.png)  | [Mobile](readme/testing/edited_product_iphone.png)  | Passed |
 
-#### User Story 10-3
+#### User Story 07-3
 - User Story 10.3: As an admin user I can delete a product by clicking on the Delete button on the product. A modal will appearing asking to confirm, and a message displayed once I confirm.
-#### User Story Steps 10-3
+#### User Story Steps 07-3
 - Step 1: As an admin user login navigate to a product in the products page and click the Delete button
 - Step 2: Delete the product
-#### User Story Testing Results 10-3
+#### User Story Testing Results 07-3
 Step| Result | Desktop | Tablet | Mobile | Status
 ------------ | ------------ | ------------- | ------------- | ------------- | -------------
 Step 2 | The product is deleted and the count is reduced| [Desktop](readme/testing/delete_product_desktop.png)  | [Tablet](readme/testing/delete_product_ipad.png)  | [Mobile](readme/testing/delete_product_iphone.png)  | Passed |
+
+
+#### User Stories feature 08
+- User Story 08.1: As a regular user I can click on a product, set the size(if applicable) and quantity, click Add to Bag and the product will be added to my bag, a message displayed, and a toast will be displayed with the bag contents
+- User Story 08.2: As a regular user I can click on the bag icon, I will be brought to my bag. If there are no items in the bag, a message will be displayed
+- User Story 08.3: As a regular user I can click on the bag icon, I will be brought to my bag. If there are items, the product image, detail, price, quantity, subtotal will be displayed for the item. The bag total, delivery(if applicable), grand total would be displayed
+- User Story 08.4: As a regular user I can update the quantity or remove an item from my shopping bag
+- User Story 08.5: As a regular user I can click on the Secure Checkout button on the bag page or toast message, and I will be brought to the Checkout page
+- User Story 08.6: As a regular user on the checkout page I can set my details(Full Name, email address, both mandatory) and Delivery Information(Phone Number(mandatory), Street Address 1(mandatory), Street Address 2, Town or City(mandatory, County, State or Locality, Postal Code and Country(mandatory), which is populated from my profile if filled in
+- User Story 08.7: As a regular user on the checkout page I can view the order summary(item image, title, size, quantity, subtotal, order total, delivery, grand total)
+- User Story 08.8: As a regular user on the checkout page if I click "Save this delivery information to my profile", the details entered will be saved on the users profile
+- User Story 08.9: As a regular user on the checkout page I can enter a credit card number(16 digits), expiry date(2 digits/2digits), cvc(3 digits) and a postal code(up to 5 digits), these fields are mandatory
+- User Story 08.10: As a regular user on the checkout page if I click the Keep Shopping button I will be navigated to the products page
+- User Story 08.11: As a regular user on the checkout page if I click the Complete Order button, and the transaction is not successful, a message will be displayed
+- User Story 08.12: As a regular user on the checkout page if I click the Complete Order button, and the transaction is successful, the user will be navigated to a checkout success page, and an email is sent to the user
+- User Story 08.13: As a regular user on the checkout page if I click the Complete Order button, and the transaction is successful, the order is saved to my order history in My profile page
+- User Story 08.14: As a regular user on the checkout success page, the Order details will be displayed (Order number, Order date/time, Full NameStreet Address 1, Street Address 2, Town or City, County, State or Locality, Postal Code and Country, Phone Number, Order Total, Deliver, Grand Total) and a link to the sales item page is displayed
+- User Story 08.15: As a regular user not logged in, I can add items to my bag and make a purchase
+
+#### User Stories Steps 08
+Note: Some screenshots show dollars, I have since changed all instances to euros
+1. As a regular user add some items to your bag, so the order is less than 99 euros
+2. Empty the bag
+3. Add the items back into the bag
+4. Add the items back into the bag, and Update the quantity on one item by one, so the order goes above 99 euros
+5. Checkout the order
+6. Complete the order form
+7. Go to the order details on the users my profile page
+8. Logout, and as a user not logged in add items to a bag 
+8. Checkout and complete the purchase
+#### User Story Testing Results 08
+Step| Result | Desktop | Tablet | Mobile | Status
+------------ | ------------ | ------------- | ------------- | ------------- | -------------
+Step 1 | The items are added to the bag, and there is a delivery charge(10%) and message displayed | [Desktop](readme/testing/add_product_to_bag_desktop.png)  | [Tablet](readme/testing/add_product_to_bag_ipad.png)  | [Mobile](readme/testing/add_product_to_bag_iphone.png)  | Passed |
+Step 2 | A message "Your bag is empty" is displayed with a button to go shopping | [Desktop](readme/testing/empty_bag_desktop.png)  | [Tablet](readme/testing/empty_bag_ipad.png)  | [Mobile](readme/testing/empty_bag_iphone.pngG)  | Passed |
+Step 3 | The items are added to the bag, and there is a delivery charge(10%) and message displayed | [Desktop](readme/testing/shopping_bag_desktop.png)  | [Tablet](readme/testing/shopping_bag_ipad.png)  | [Mobile](readme/testing/shopping_bag_iphone.png)  | Passed |
+Step 4 | The items are added to the bag, and there is no delivery charge | [Desktop](readme/testing/no_delivery_charge_desktop.png)  | [Tablet](readme/testing/no_delivery_charge_ipad.png)  | [Mobile](readme/testing/no_delivery_charge_iphone.png)  | Passed |
+Step 5 | The user receives an email(confirmation) | [Desktop]()  | [Tablet]()  | [Mobile]()  | |
+Step 6 | The order is complete | [Desktop](readme/testing/complete_order_form_desktop.png)  | [Tablet](readme/testing/complete_order_form_ipad.png)  | [Mobile](readme/testing/complete_order_form_iphone.png)  | Passed |
+Step 7 | The order is displayed on the "my profile" page | [Desktop](readme/testing/order_history_desktop.png)  | [Tablet](readme/testing/order_history_ipad.png)  | [Mobile](readme/testing/order_history_iphone.png)  | Passed |
+Step 8 | The purchase is successful and the checkout success page is displayed | [Desktop](readme/testing/thank_you_desktop.png)  | [Tablet](readme/testing/thank_you_ipad.png)  | [Mobile](readme/testing/thank_you_iphone.png)  | Passed |
 
 
 
