@@ -141,5 +141,20 @@ Step 1 | The users default delivery information and order history is displayed  
 Step 2 | The users default delivery information is updated and displayed (Street Address 1)  | [Desktop](readme/testing/profile_update_desktop.png)  | [Tablet](readme/testing/profile_update_ipad.png)  | [Mobile](readme/testing/profile_update_iphone.png)  | Passed |
 Step 3 | The users order details is displayed | [Desktop]  | [Tablet]  | [Mobile]  | |
 
+### Feature 10 Product Management
+#### User Story 10-1
+- User Story 10.1: As an admin user I can add a product by clicking on the Product Management link in My Account. I must enter a name, category, price, colour, code, description and can optionally add a feature (1-4), has Sizes(Unknown, Yes, No), Rating, Pre-sale price, Image url, upload an image and click the 
+Add Product button. Clicking cancel navigates the user to the product page.
+
+#### User Story Steps 10-1
+- Step 1: As an admin user login navigate to Product Management under MyAccount, and add details to a product and click the Add Product button
+- Step 2: Click on the product detail for the product
+
+#### User Story Testing Results 10-1
+Step| Result | Desktop | Tablet | Mobile | Status
+------------ | ------------ | ------------- | ------------- | ------------- | -------------
+Step 1 | The add product page is displayed | [Desktop](readme/testing/addproduct_desktop.png)  | [Tablet](readme/testing/addproduct_ipad.png)  | [Mobile](readme/testing/addproduct_iphone.png)  | Passed |
+Step 2 | The product detail is displayed | [Desktop](readme/testing/addedproduct_desktop.png)  | [Tablet](readme/testing/addedproduct_ipad.png)  | [Mobile](readme/testing/addedproduct_iphone.png)  | Passed |
+
 
 
