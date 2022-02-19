@@ -247,3 +247,13 @@ Step 1 | The products are displayed | [Result](readme/testing/admin_products.png
 Step| Result | Result  | Status
 ------------ | ------------ | ------------- | ------------- 
 Step 1 | The non superuser users are displayed | [Result](readme/testing/admin_users.png)   | Passed |
+
+
+#### User Story 13.15
+- User Story 13.15: As an admin user I can view categories in the django admin page and can view a category name and friendly name
+#### User Story Steps 13.15
+- Step 1: As an admin user navigate to https://8000-lime-jackal-9mgfiw2b.ws-eu33.gitpod.io/admin/products/category/
+#### User Story Testing Results 13.15
+Step| Result | Result  | Status
+------------ | ------------ | ------------- | ------------- 
+Step 1 | The categories are displayed | [Result](readme/testing/admin_categories.png)   | Passed |
