@@ -238,3 +238,12 @@ Step 1 | The orders are displayed | [Result](/workspace/CI-MS5-PinkAccessories/r
 Step| Result | Result  | Status
 ------------ | ------------ | ------------- | ------------- 
 Step 1 | The products are displayed | [Result](readme/testing/admin_products.png)   | Passed |
+
+#### User Story 13-10
+- User Story 13.10: As an admin user I can view users in the django admin page and can search by username and email address and  filter by staff status, superuser status and active status
+#### User Story Steps 13-10
+- Step 1: As an admin user navigate to  and filter on non superuser status
+#### User Story Testing Results 13-10
+Step| Result | Result  | Status
+------------ | ------------ | ------------- | ------------- 
+Step 1 | The non superuser users are displayed | [Result](readme/testing/admin_users.png)   | Passed |
