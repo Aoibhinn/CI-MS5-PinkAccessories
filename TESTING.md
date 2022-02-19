@@ -168,5 +168,15 @@ Step| Result | Desktop | Tablet | Mobile | Status
 Step 1 | The edit product page is displayed | [Desktop](readme/testing/edit_product_desktop.png)  | [Tablet](readme/testing/edit_product_ipad.png)  | [Mobile](readme/testing/edit_product_iphone.png)  | Passed |
 Step 2 | The product detail is updated with the news price| [Desktop](readme/testing/edited_product_desktop.png)  | [Tablet](readme/testing/edited_product_ipad.png)  | [Mobile](readme/testing/edited_product_iphone.png)  | Passed |
 
+#### User Story 10-3
+- User Story 10.3: As an admin user I can delete a product by clicking on the Delete button on the product. A modal will appearing asking to confirm, and a message displayed once I confirm.
+#### User Story Steps 10-3
+- Step 1: As an admin user login navigate to a product in the products page and click the Delete button
+- Step 2: Delete the product
+#### User Story Testing Results 10-3
+Step| Result | Desktop | Tablet | Mobile | Status
+------------ | ------------ | ------------- | ------------- | ------------- | -------------
+Step 2 | The product is deleted and the count is reduced| [Desktop](readme/testing/delete_product_desktop.png)  | [Tablet](readme/testing/delete_product_ipad.png)  | [Mobile](readme/testing/delete_product_iphone.png)  | Passed |
+
 
 
