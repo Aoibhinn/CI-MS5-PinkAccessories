@@ -236,6 +236,10 @@ There are five colours in the color palette
 
 I feel the colours complement each other very well, and I choose those colours after testing a number of palettes while making sure the colour palette met accessibility standards.
 
+### Typography
+The Nunito Sans font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the Poppins font cannot be imported into the website correctly. This font is from the Google fonts library.
+
+
  
 
 
