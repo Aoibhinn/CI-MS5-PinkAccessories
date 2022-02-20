@@ -291,6 +291,17 @@ The navigation bar is displayed on all pages with a search box, My account, and 
 - They enter their email address, and they are emailed reset their password. Once they do this they can log in
 <br>![Password updated](readme/testing/password_updated_desktop.png)
 
+### Feature 5 Products and Product Detail Pages
+#### Description feature 5
+- A user view the products page with product count and with each product image, title, category, price and presale price
+<br>![Products Desktop](readme/testing/products_desktop.png)
+<br>![Products Tablet](readme/testing/products_ipad.png)
+- The user can sort the products by Price(high to low, low to high), Rating(high to low, low to high), Name(A-Z, Z-A), Category(A-Z, Z-A)
+<br>![Products filtered high to low](readme/testing/products_filterpricehigh_desktop.png)
+<br>![Products filtered low to high](readme/testing/products_filterpricelow_desktop.png)
+<br>![Products filtered A_Z](readme/testing/products_filterA_Z_desktop.png)
+- A product detail page displays all the product information (image, description, colour, code, rating, category, description, features and reviews(the latest first))
+<br>![Products Detail 1](readme/testing/product_detail_desktop.png)
 
 
 
