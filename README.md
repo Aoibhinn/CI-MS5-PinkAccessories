@@ -359,6 +359,39 @@ The navigation bar is displayed on all pages with a search box, My account, and 
 - Categories
 <br>![Categories](readme/testing/admin_categories.png)
 
+# Technologies Used
+## Languages 
+- HTML (https://en.wikipedia.org/wiki/HTML)
+    - The project uses html to build the relevant pages
+- CSS (https://en.wikipedia.org/wiki/CSS)
+    - The project uses CSS to style the relevant pages
+- Javascript (https://www.javascript.com/)
+    - Javascript was used for all scripting on the site 
+- Django (https://www.djangoproject.com/)
+    - Django is the framework used in this project
+    - The Django templating language was used to render pages
+- Python v3.9 (https://www.python.org/)
+    - Python was used for server side coding on the project, a number of libraries were also used(The requirements.txt file contains this list):
+    asgiref==3.4.1
+    - boto3==1.20.54
+    - botocore==1.23.54
+    - dj-database-url==0.5.0
+    - Django==3.2
+    - django-allauth==0.41.0
+    - django-countries==7.2.1
+    - django-crispy-forms==1.14.0
+    - django-storages==1.12.3
+    - gunicorn==20.1.0
+    - jmespath==0.10.0
+    - oauthlib==3.1.1
+    - Pillow==9.0.0
+    - psycopg2-binary==2.9.3
+    - python3-openid==3.2.0
+    - pytz==2021.3
+    - requests-oauthlib==1.3.0
+    - s3transfer==0.5.1
+    - sqlparse==0.4.2
+    - stripe==2.65.0
 
 
 
