@@ -1,22 +1,33 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+# Imports
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# 3rd party:
+from django.shortcuts import render, redirect, reverse, get_object_or_404, \
+    HttpResponse
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
+import stripe
+import json
 
+# Internal:
 from .forms import OrderForm
 from .models import Order, OrderLineItem
-
 from products.models import Product
 from profiles.models import UserProfile
 from profiles.forms import UserProfileForm
 from bag.contexts import bag_contents
-
-import stripe
-import json
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 @require_POST
 def cache_checkout_data(request):
+    """
+    Cache checkout data for the user
+    Args:
+        request (object): Request object
+    Returns:
+        HttpResponse
+    """
     try:
         pid = request.POST.get('client_secret').split('_secret')[0]
         stripe.api_key = settings.STRIPE_SECRET_KEY
@@ -33,6 +44,13 @@ def cache_checkout_data(request):
 
 
 def checkout(request):
+    """
+    Checkout for the user
+    Args:
+        request (object): Request object
+    Returns:
+        Render of checkout
+    """
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
@@ -68,7 +86,8 @@ def checkout(request):
                         )
                         order_line_item.save()
                     else:
-                        for size, quantity in item_data['items_by_size'].items():
+                        for size, quantity in \
+                                item_data['items_by_size'].items():
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
@@ -78,7 +97,8 @@ def checkout(request):
                             order_line_item.save()
                 except Product.DoesNotExist:
                     messages.error(request, (
-                        "One of the products in your bag wasn't found in our database. "
+                        "One of the products in your bag wasn't"
+                        "found in our database. "
                         "Please call us for assistance!")
                     )
                     order.delete()
@@ -142,6 +162,11 @@ def checkout(request):
 def checkout_success(request, order_number):
     """
     Handle successful checkouts
+    Args:
+        request (object): Request object
+        order_number: Order number
+    Returns:
+        Render of checkout success
     """
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
