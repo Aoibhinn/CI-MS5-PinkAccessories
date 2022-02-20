@@ -18,7 +18,7 @@ View the live site (Link to Live Site)
 ## Strategy
 The primary goal of the website from the site owners perspective is as follows:
 
-* To add, edit and delete products with the relevant information (price, description, rating, comments, image, sizes and category) on the website.
+* To add, edit and delete products with the relevant information (price, description, image, sizes and category) on the website.
 * To allow a user make a purchase of the products on the website.
 * To categorise sale items on the website.
 
@@ -29,7 +29,7 @@ The primary goal of the website from a site users perspective is as follows:
 * To easily recover my password in case I forget it.
 * Have a personalised user profile with my delivery, payment information and order history.
 * View a list of products on the website.
-* View an individual product detail(price, description, rating, comments, image, sizes and category)
+* View an individual product detail(price, description, rating,image, sizes and category)
 * To add an item to a shopping bag, and select the quantity and size if applicable
 * Complete a purchase of items in a shopping bag.
 * To sort the list of available products by rating, price and category.
@@ -68,7 +68,7 @@ The apps are described as follows:
 * Bag (part of the original Boutique Ado project): This app contains functionality regarding a users shopping bag
 * Checkout (part of the original Boutique Ado project): This app contains functionality regarding a users checking out and payment of an order
 * Home (part of the original Boutique Ado project): This app contains functionality regarding the users home page
-* Products (part of the original Boutique Ado project): This app contains functionality regarding a product. I added functionality for adding/removing a rating/comment to a product
+* Products (part of the original Boutique Ado project): This app contains functionality regarding a product. 
 * Profiles (part of the original Boutique Ado project): This app contains functionality regarding a users profile and order history 
 
 To complement the apps there are:
@@ -89,7 +89,7 @@ Note: Environment variable values are not exposed in the source code, they are s
 - The User model contains information about the user. It is part of the Django allauth library
 - The model contains the following fields: username, password, first_name, last_name, email, is_staff, is_active, is_superuser, last_login, date_joined
 
-##### UserP Model
+##### User Model
 - The User model has a one-to-one relationship with User
 - The model contains the following fields: default_phone_number, default_street_address1, default_street_address2
 default_town_or_city, default_county, default_postcode and default_country
@@ -114,6 +114,60 @@ default_town_or_city, default_county, default_postcode and default_country
 ##### Category Model
 - The Category model contains a product category
 - The model contains the following fields: name, friendly_name
+
+## Scope
+### User Stories Potential or Existing Customer
+
+The user stories for the regular user eg: "shopper user" (a potential or existing customer) are described as follows: 
+
+- User Story 1.1: As an admin/regular user the navigation bar is displayed with a logo on all pages with a search box, My account, and shopping bag icons on a desktop device
+- User Story 1.2: As an admin/regular user the navigation bar is displayed on all pages with a search box, My account, and shopping bag icons on a mobile/tablet device
+- User Story 1.3: As a regular user not logged in, I see a Register/Login link under the My Account dropdown
+- User Story 1.6: As a regular user logged in/not logged in, I am brought to my shopping bag if I click on the Bag icon
+- User Story 1.7: As a regular/admin user logged in, I see a "My Profile"/Logout under the My Account dropdown
+- User Story 1.9: As a regular/admin user logged in, if I click on the My Profile under My Account I am brought to the My Profile page
+- User Story 1.10: As a regular/admin user logged in, if I click on the My Profile under My Account I am brought to the Logout page. If I click Logout I am Logged out. If I click cancel I am brought back to the homepage
+- User Story 1.13: As a regular/admin user I can view the Home link in the header, and clicking it will bring the user to the homepage
+- User Story 1.15: As a regular/admin user I can click on the "All Products" filter, click By Price, and will be brought to the Products page, with products price low to high displayed
+- User Story 1.16: As a regular/admin user I can click on the "All Products" filter, click By Rating, and will be brought to the Products page, with products rating high to low displayed
+- User Story 1.17: As a regular/admin user I can click on the "All Products" filter, click By Category, and will be brought to the Products page, with products category a-z displayed
+- User Story 1.18: As a regular/admin user I can click on the "Jewellery" filter, and filter by Necklaces, Bracelets, Earrings or All Jewellery
+- User Story 1.19: As a regular/admin user I can click on the "Bags" filter, and filter by Clutchs, Totes, or All Bags
+- User Story 1.20: As a regular/admin user I can click on the "Hats & Scarves" filter, and filter by Scarves, Hats, Fascinators All Hats & Scarves
+- User Story 2.2: As a regular user the footer is displayed with a logo, product links(Jewellery, Bags, Scarves & Hats), website link(Profile)
+- User Story 2.4: As a regular user I can sign up for a newsletter by entering my email address and clicking Signup. I will receive an email after signing up
+- User Story 3.1: As a regular user I can register on the website by providing an email address, email address(confirmation), username, password, password confirmation
+- User Story 3.1: As a regular user I will receive an email to verify my account after registering
+- User Story 3.1: As a regular user I can log in to my account once I click on the verification link in the email I receive regarding my registration
+- User Story 4.1: As an admin/regular user I can log in to the website using my username or email address and password. Both fields are mandatory. Once correct, I will be navigated to the homepage and a message displayed
+- User Story 4.2: As an admin/regular user I can request a new password if I forget my current password. I will receive an email to reset my password. Once I reset I can log in
+- User Story 5.1: As a regular user I can view the products page with product count and with each product image, title, category, price and presale price(if applicable)
+- User Story 5.2: As a regular user I can sort the products by Price(high to low, low to high), Rating(high to low, low to high), Name(A-Z, Z-A), Category(A-Z, Z-A)
+- User Story 5.4: As a regular user if I click on a product I will be navigated to the product detail page
+- User Story 5.5: As a regular user I can view the product image, description, colour, code, rating, category and description
+- User Story 5.11: As a regular user I can set the product size(if applicable for the product) and quantity for a product (one plus)
+- User Story 6.1: As a regular user I can view the products with product image, category, and price is displayed
+- User Story 9.1: As a regular user I can view my Default delivery information: Phone Number, Street Address 1, Street Address 2, Town or City, County, State or Locality, Postal Code and Country
+- User Story 9.2: As a regular user I can update my Default delivery information: Phone Number, Street Address 1, Street Address 2, Town or City, County, State or Locality, Postal Code and Country
+- User Story 9.3: As a regular user I can view my order history(Order Number, Date, Items and Order Total)
+- User Story 9.4: As a regular user I can click on an order number to view the order information (Order number, Order date/time, Full Name, Street Address 1, Street Address 2, Town or City, County, State or Locality, Postal Code and Country, Phone Number, Order Total, Deliver, Grand Total)
+- User Story 12.1: As a regular user I can click on a product, set the size(if applicable) and quantity, click Add to Bag and the product will be added to my bag, a message displayed, and a toast will be displayed with the bag contents
+- User Story 12.2: As a regular user I can click on the bag icon, I will be brought to my bag. If there are no items in the bag, a message will be displayed
+- User Story 12.3: As a regular user I can click on the bag icon, I will be brought to my bag. If there are items, the product image, detail, price, quantity, subtotal will be displayed for the item. The bag total, delivery(if applicable), grand total would be displayed
+- User Story 12.4: As a regular user I can update the quantity or remove an item from my shopping bag
+- User Story 12.5: As a regular user I can click on the Secure Checkout button on the bag page or toast message, and I will be brought to the Checkout page
+- User Story 12.6: As a regular user on the checkout page I can set my details(Full Name, email address, both mandatory) and Delivery Information(Phone Number(mandatory), Street Address 1(mandatory), Street Address 2, Town or City(mandatory, County, State or Locality, Postal Code and Country(mandatory), which is populated from my profile if filled in
+- User Story 12.7: As a regular user on the checkout page I can view the order summary(item image, title, size, quantity, subtotal, order total, delivery, grand total)
+- User Story 12.8: As a regular user on the checkout page if the order total is greater than 99 euros, there is no delivery charge
+- User Story 12.9: As a regular user on the checkout page if the order total is less than 99 euros, there is delivery charge(10% of the order total) A message is displayed to the user on the toast message of what they need to add to the bag to avail of no delivery charge
+- User Story 12.10: As a regular user on the checkout page if I click "Save this delivery information to my profile", the details entered will be saved on the users profile
+- User Story 12.11: As a regular user on the checkout page I can enter a credit card number(16 digits), expiry date(2 digits/2digits) and a postal code(up to 5 digits), these fields are mandatory
+- User Story 12.12: As a regular user on the checkout page if I click the Keep Shopping button I will be navigated to the products page
+- User Story 12.13: As a regular user on the checkout page if I click the Complete Order button, and the transaction is not successful, a message will be displayed
+- User Story 12.14: As a regular user on the checkout page if I click the Complete Order button, and the transaction is successful, the user will be navigated to a checkout success page, and an email is sent to the user
+- User Story 12.15: As a regular user on the checkout page if I click the Complete Order button, and the transaction is successful, the order is saved to my order history in My profile page
+- User Story 12.16: As a regular user on the checkout success page, the Order details will be displayed (Order number, Order date/time, Full NameStreet Address 1, Street Address 2, Town or City, County, State or Locality, Postal Code and Country, Phone Number, Order Total, Deliver, Grand Total) and a link to the sales item page is displayed
+- User Story 12.17: As a regular user not logged in, I can add items to my bag and make a purchase
 
  
 
