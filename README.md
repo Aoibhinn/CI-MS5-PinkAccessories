@@ -279,6 +279,17 @@ The navigation bar is displayed on all pages with a search box, My account, and 
 <br>![Email confirmed](readme/testing/emailedconfirmed_desktop.png)
 - Once that is done they can sign in to the website with their username/email address and password
 
+### Feature 4 Login
+#### Description feature 4
+- An admin/regular user can log in to the website using their username or email address and password
+- Both fields are mandatory
+- Once logged in the user will be navigated to the homepage
+- The user must have an account in the system, and they must enter the correct  username or email address and password
+<br>![Email confirmed](readme/testing/loginfails_desktop.png)
+- If the user needs to request a password, they can click on the Forgot Password link
+<br>![Forgot Password](readme/testing/password_reset_email.png)
+- They enter their email address, and they are emailed reset their password. Once they do this they can log in
+<br>![Password updated](readme/testing/password_updated_desktop.png)
 
 
 
