@@ -64,7 +64,7 @@
                 </form>
             </div>
             <!-- My account -->
-            <div class="col-12 col-lg-5 my-auto py-1 py-lg-0">
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item dropdown">
                         <a class="text-black nav-link" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -86,7 +86,7 @@
                             {% endif %}
                         </div>
                     </li>
-                     <li class="list-inline-item">
+                    <li class="list-inline-item">
                         <a class="{% if grand_total %} font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
@@ -158,24 +158,13 @@
             <div class="row">
                 <!-- Logo and social media links -->
                 <div class="col-lg-4 col-md-12 mb-4 mb-lg-0"><h2 class="logo-font text-grey my-0"><strong>Pink</strong> Accessories</h2>
-                    <p class="">'Pink Accessories' is a fabulous accessories shop, that stocks accessories for women of
-                        any age, who want to look wow!!</p>
+                    <p class="">'Pink Accessories' is a fabulous accessories shop, that stocks accessories for women of any age, who want to look wow!!</p>
                     <ul class="list-inline mt-4">
-                        <li class="list-inline-item"><a href="https://www.twitter.com" target="_blank" rel="noreferrer"
-                                aria-label="Go to our twitter page (opens in new tab)" title="twitter"><i
-                                    class="dark-green fa fa-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="https://www.facebook.com" target="_blank" rel="noreferrer"
-                                aria-label="Go to our facebook page (opens in new tab)" title="facebook"><i
-                                    class="dark-green fa fa-facebook"></i></a></li>
-                        <li class="list-inline-item"><a href="https://www.instagram.com" target="_blank"
-                                rel="noreferrer" aria-label="Go to our instagram page (opens in new tab)"
-                                title="instagram"><i class="dark-green fa fa-instagram"></i></a></li>
-                        <li class="list-inline-item"><a href="https://www.pinterest.com" target="_blank"
-                                rel="noreferrer" aria-label="Go to our pinterest page (opens in new tab)"
-                                title="pinterest"><i class="dark-green fa fa-pinterest"></i></a></li>
-                        <li class="list-inline-item"><a href="https://www.snapchat.com" target="_blank" rel="noreferrer"
-                                aria-label="Go to our snapchat page (opens in new tab)" title="snapchat"><i
-                                    class="dark-green fa fa-snapchat"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.twitter.com" target="_blank" rel="noreferrer" aria-label="Go to our twitter page (opens in new tab)" title="twitter"><i class="dark-green fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.facebook.com" target="_blank" rel="noreferrer" aria-label="Go to our facebook page (opens in new tab)" title="facebook"><i class="dark-green fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com" target="_blank" rel="noreferrer" aria-label="Go to our instagram page (opens in new tab)" title="instagram"><i class="dark-green fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.pinterest.com" target="_blank" rel="noreferrer" aria-label="Go to our pinterest page (opens in new tab)" title="pinterest"><i class="dark-green fa fa-pinterest"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.snapchat.com" target="_blank" rel="noreferrer" aria-label="Go to our snapchat page (opens in new tab)" title="snapchat"><i class="dark-green fa fa-snapchat"></i></a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
@@ -209,12 +198,9 @@
                         <form id="mailinglistform" onsubmit="return sendMail(this);">
                             <div class="input-group">
                                 <label for="email_address" hidden>Email Address:</label>
-                                <input type="email" placeholder="Enter your email address" id="email_address"
-                                    name="email_address" aria-describedby="newsletter"
-                                    class="form-control border-0 shadow-0">
+                                <input type="email" placeholder="Enter your email address" id="email_address" name="email_address" aria-describedby="newsletter" class="form-control border-0 shadow-0">
                                 <div class="input-group-append">
-                                    <button id="newsletter" type="submit" value="newsletter"
-                                        class="btn btn-link grey-btn">Signup</button>
+                                    <button id="newsletter" type="submit" value="newsletter" class="btn btn-link grey-btn">Signup</button>
                                 </div>
                             </div>
                         </form>
