@@ -239,6 +239,26 @@ I feel the colours complement each other very well, and I choose those colours a
 ### Typography
 The Nunito Sans font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the Poppins font cannot be imported into the website correctly. This font is from the Google fonts library.
 
+## Existing Features
+The screenshots below show mainly desktop images, the tablet and mobile images are displayed in the TESTING.MD file for each feature/user story
+
+### Feature 1 Navigation Bar and Homepage
+#### Description feature 1
+
+- The homepage consists of an image, a header/nav bar and footer
+- The header and footer is consistent across all pages
+- The navigation bar is displayed with a logo on all pages with a search box, My account, and shopping bag icons on a desktop device
+<br>![Homepage desktop](readme/testing/homepage_loggedin_desktop.png)
+The website links in the footer and account differ between a regular user and an admin user
+<br>![Homepage footer admin](readme/testing/homepage_admin_desktop.png)
+<br>![Homepage footer regular](readme/testing/homepage_loggedin_desktop.png)
+The navigation bar is displayed on all pages with a search box, My account, and shopping bag icons on a mobile/tablet device
+<br>![Homepage tablet](readme/testing/homepage_notloggedin_ipad.png)
+<br>![Homepage mobile](readme/testing/homepage_notloggedin_iphone.png)
+- On a desktop device there is a number of filters described below: All Products, Jewellery, Bags and Hats & Scarves
+<br>![Homepage desktop filter price](readme/testing/products_desktop.png)
+
+
 
  
 
