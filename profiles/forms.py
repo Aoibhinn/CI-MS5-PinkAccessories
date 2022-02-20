@@ -1,9 +1,21 @@
+# Imports
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# 3rd party:
 from django import forms
+
+# Internal:
 from .models import UserProfile
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 class UserProfileForm(forms.ModelForm):
+    """
+    A class for the user profile form
+    """
     class Meta:
+        """
+        A class for the Meta information
+        """
         model = UserProfile
         exclude = ('user',)
 
@@ -11,6 +23,12 @@ class UserProfileForm(forms.ModelForm):
         """
         Add placeholders and classes, remove auto-generated
         labels and set autofocus on first field
+        Args:
+            self (object): Self object
+            *args: *args
+            **kwargs: **kwargs
+        Returns:
+            N/A
         """
         super().__init__(*args, **kwargs)
         placeholders = {
@@ -30,5 +48,6 @@ class UserProfileForm(forms.ModelForm):
                 else:
                     placeholder = placeholders[field]
                 self.fields[field].widget.attrs['placeholder'] = placeholder
-            self.fields[field].widget.attrs['class'] = 'border-black rounded-0 profile-form-input'
+            self.fields[field].widget.attrs['class'] = 'border-black rounded-0 \
+                                                         profile-form-input'
             self.fields[field].label = False
