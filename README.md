@@ -82,6 +82,39 @@ To complement the apps there are:
 - Procfile: To run the application
 - Requirements.txt: Containing the python libraries installed
 Note: Environment variable values are not exposed in the source code, they are stored locally in env.py that is not checked in(and listed in .gitignore, and on Heroku in app settings)
+
+#### Models
+- The following models were created to represent the database model structure for the website
+##### User Model
+- The User model contains information about the user. It is part of the Django allauth library
+- The model contains the following fields: username, password, first_name, last_name, email, is_staff, is_active, is_superuser, last_login, date_joined
+
+##### UserP Model
+- The User model has a one-to-one relationship with User
+- The model contains the following fields: default_phone_number, default_street_address1, default_street_address2
+default_town_or_city, default_county, default_postcode and default_country
+
+##### Order Model
+- The Order model contains information about orders made on the website.
+- It contains UserProfile as a foreign-key.
+- The model contains the following fields: order_number, user_profile, full_name, email, phone_number, country, postcode, town_or_city, street_address1, street_address2, county, date, delivery_cost, order_total, grand_total, original_bag, stripe_pid
+
+##### OrderLineItem Model
+- The OrderLineItem model contains information about an entry in an order, for orders made on the website.
+- It contains Order and Product as foreign-keys.
+- The model contains the following fields: order, product, product_size, quantity, lineitem_total
+
+##### Product Model
+- The Product Model represents a product and its details
+- It contains Category as a foreign-key
+- The model contains the following fields: name, category, price, colour, code, description, has_sizes, rating, pre_sale_price, image_url, image
+- The image field contains the product image
+- The image_url field contains the url to where the image file is physically stored, for example AWS S3 bucket
+
+##### Category Model
+- The Category model contains a product category
+- The model contains the following fields: name, friendly_name
+
  
 
 
