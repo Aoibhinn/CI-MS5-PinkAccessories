@@ -393,6 +393,12 @@ The navigation bar is displayed on all pages with a search box, My account, and 
     - sqlparse==0.4.2
     - stripe==2.65.0
 
+# Testing
+The testing information and results for this project are documented in [TESTING.md](TESTING.md)
+
+
+
+
 
 
 
