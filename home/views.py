@@ -1,6 +1,13 @@
+# Imports
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# 3rd party:
 from django.shortcuts import render
 
-def index (request):
+# Internal:
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+def index(request):
 
     """A view to return the index page"""
-    return render (request, 'home/index.html')
+    return render(request, 'home/index.html')
