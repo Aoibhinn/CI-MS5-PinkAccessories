@@ -223,6 +223,19 @@ profile/templates/profile/profile.html | [Desktop/Tablet/Mobile](readme/wirefram
 templates/allauth/account/login.html | [Desktop/Tablet/Mobile](rreadme/wireframes/login.png)
 templates/allauth/account/register.html| [Desktop/Tablet/Mobile](readme/wireframes/register.png)
 
+
+## Surface
+### Color Palette
+I have gone for a simple and minimal design for the website, with predominately pink, grey and white font colours
+There are five colours in the color palette
+- #cd8689 - Dark pink for call out buttons and banners
+- #f0b2af - Light pink for footer
+- #DB4437 - Warning and sale item buttons and text
+- #555 - Text against pink background
+- #ffff - White for background colours
+
+I feel the colours complement each other very well, and I choose those colours after testing a number of palettes while making sure the colour palette met accessibility standards.
+
  
 
 
