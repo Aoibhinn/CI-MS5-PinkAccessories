@@ -303,6 +303,17 @@ The navigation bar is displayed on all pages with a search box, My account, and 
 - A product detail page displays all the product information (image, description, colour, code, rating, category, description, features and reviews(the latest first))
 <br>![Products Detail 1](readme/testing/product_detail_desktop.png)
 
+### Feature 6 Profile Page
+#### Description feature 6
+- A regular user can update their default delivery information as per the user stories below
+- A use must be logged in to see their profile page
+- This is the information that is displayed when the user is checking out an order
+- A user can view and update their Default delivery information
+<br>![Default delivery information](readme/testing/profile_update_desktop.png)
+- The user can also view their past orders and click on an order to view the order details
+<br>![Order History]()
+- This data is consistent with the information they supplied when they made the order
+
 
 
 
