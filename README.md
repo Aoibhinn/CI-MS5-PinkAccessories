@@ -206,6 +206,23 @@ Edit Product button. Clicking cancel navigates the user to the product page
 - User Story 13.10: As an admin user I can view users in the django admin page and can search by username and email address and  filter by staff status, superuser status and active status
 - User Story 13.15: As an admin user I can view categories in the django admin page and can view a category name and friendly name
 
+## Skeleton
+### Wireframes
+Each wireframe image below contains three sub images, one for desktop, tablet and mobile
+Balsamiq was used to create the wireframes
+
+Page | Wireframe | 
+------------ | ------------- 
+bag/templates/bag/bag.html | [Desktop/Tablet/Mobile](readme/wireframes/cart.png)
+checkout/templates/checkout/checkout.html | [Desktop/Tablet/Mobile](readme/wireframes/checkout.png)
+checkout/templates/checkout/checkout_success.html | [Desktop/Tablet/Mobile](readme/wireframes/checkout_success.png)
+home/templates/home/index.html | [Desktop/Tablet/Mobile](readme/wireframes/index.png)
+products/templates/products/product_detail.html | [Desktop/Tablet/Mobile](readme/wireframes/product_detail.png)
+products/templates/products/products.html  | [Desktop/Tablet/Mobile](readme/wireframes/products.png)
+profile/templates/profile/profile.html | [Desktop/Tablet/Mobile](readme/wireframes/my_account.png)
+templates/allauth/account/login.html | [Desktop/Tablet/Mobile](rreadme/wireframes/login.png)
+templates/allauth/account/register.html| [Desktop/Tablet/Mobile](readme/wireframes/register.png)
+
  
 
 
