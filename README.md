@@ -169,6 +169,43 @@ The user stories for the regular user eg: "shopper user" (a potential or existin
 - User Story 12.16: As a regular user on the checkout success page, the Order details will be displayed (Order number, Order date/time, Full NameStreet Address 1, Street Address 2, Town or City, County, State or Locality, Postal Code and Country, Phone Number, Order Total, Deliver, Grand Total) and a link to the sales item page is displayed
 - User Story 12.17: As a regular user not logged in, I can add items to my bag and make a purchase
 
+### User Stories Website Owner
+The user stories for the website owner(admin/administrator user) are described as follows: 
+
+There is a lot of overlap between the two user types, the admin user however has more administrative rights throughout but their roles and responsibilities are defined
+
+- User Story 1.1: As an admin/regular user the navigation bar is displayed with a logo on all pages with a search box, My account, and shopping bag icons on a desktop device
+- User Story 1.2: As an admin/regular user the navigation bar is displayed on all pages with a search box, My account, shopping bag icons on a mobile/tablet device
+- User Story 1.8: As an admin user logged in, I see a Product Management/My Profile/Logout under the My Account dropdown
+- User Story 1.9: As a regular/admin user logged in, if I click on the My Profile under My Account I am brought to the My Profile page
+- User Story 1.10: As a regular/admin user logged in, if I click on the My Profile under My Account I am brought to the Logout page. If I click Logout I am Logged out. If I click cancel I am brought back to the homepage
+- User Story 1.11: As an admin user logged in, if I click on Product Management under My Account I am brought to the Product Management(Add Product) page
+- User Story 1.13: As a regular/admin user I can view the Home link in the header, and clicking it will bring the user to the homepage
+- User Story 1.15: As a regular/admin user I can click on the "All Products" filter, click By Price, and will be brought to the Products page, with products price low to high displayed
+- User Story 1.16: As a regular/admin user I can click on the "All Products" filter, click By Rating, and will be brought to the Products page, with products rating high to low displayed
+- User Story 1.17: As a regular/admin user I can click on the "All Products" filter, click By Category, and will be brought to the Products page, with products category a-z displayed
+- User Story 1.18: As a regular/admin user I can click on the "Jewellery" filter, and filter by Neclaces, Bracelets, Earrings or All Jewellery
+- User Story 1.19: As a regular/admin user I can click on the "Bags" filter, and filter by Totes, Clucths or All Bags
+- User Story 1.20: As a regular/admin user I can click on the "Hats & Scarves" filter, and filter by Hats, Scarves, Fascinators All Hats & Scarves
+- User Story 2.1: As an admin/regular user four text messages are displayed with icons regarding delivery, packaging, dispatch and knowledge
+- User Story 2.3: As an admin user logged in the footer is displayed with a logo, product links(Jewellery, Hats&Scarves, Bags), website link(Product Management)
+- User Story 4.1: As an admin/regular user I can log in to the website using my username or email address and password. Both fields are mandatory. Once correct, I will be navigated to the homepage and a message displayed
+- User Story 4.2: As an admin/regular user I can request a new password if I forget my current password. I will receive an email to reset my password. Once I reset I can log in
+- User Story 5.10: As an admin user I can view the Add product page by clicking on the Product Management link.
+- User Story 5.11: As an admin user I can view the Edit product page by clicking on the Edit button on the product. 
+- User Story 5.12: As an admin user I can click on a product, and I am navigated to the product detail page. I can edit or delete the product by clicking on the Edit or Delete links on the page
+- User Story 10.1: As an admin user I can add a product by clicking on the Product Management link in My Account. I must enter a name, category, price, colour, code, description, has Sizes(Unknown, Yes, No), Rating, Pre-sale price, Image url, upload an image and click the 
+- User Story 10.2: As an admin user I can edit a product by clicking on the Edit button on the Products page for the product. I can update thea name, category, price, colour, code, description, feature (1-4), has Sizes(Unknown, Yes, No), Rating, Pre-sale price, Image url, update an image and click the 
+Edit Product button. Clicking cancel navigates the user to the product page
+- User Story 10.3: As an admin user I can delete a product by clicking on the Delete button on the product. A modal will appearing asking to confirm, and a message displayed once I confirm.
+- User Story 13.1: As an admin user I can view users orders in the django admin page and can view order number, date, full name, order total, delivery cost, grand total
+- User Story 13.2: As an admin user I can view users orders in the django admin page and can search by order number, full name and filter by order number, full name and order date
+- User Story 13.7: As an admin user I can view products in the django admin page and can view a products code, name, category, has sizes, price, presale price, rating, image, image url
+- User Story 13.8: As an admin user I can view products in the django admin page and can view search and filter by code, category, name and price
+- User Story 13.9: As an admin user I can view users in the django admin page and can view their username, email address, first name, last name, staff status
+- User Story 13.10: As an admin user I can view users in the django admin page and can search by username and email address and  filter by staff status, superuser status and active status
+- User Story 13.15: As an admin user I can view categories in the django admin page and can view a category name and friendly name
+
  
 
 
