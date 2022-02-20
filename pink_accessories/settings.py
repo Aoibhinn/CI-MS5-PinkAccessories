@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', '!z6-swf5)g5iw960^25ffdjj(ja*8sm44hi*j7n=5w2a-3_^4o')
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
@@ -84,7 +84,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', # required by allauth
+                'django.template.context_processors.request',  # required by allauth
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
@@ -109,8 +109,6 @@ AUTHENTICATION_BACKENDS = (
 )
 
 SITE_ID = 1
-
-
 
 
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
@@ -213,7 +211,7 @@ if 'USE_AWS' in os.environ:
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-# stripe 
+# stripe
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'usd'
