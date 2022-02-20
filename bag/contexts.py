@@ -1,9 +1,23 @@
+# Imports
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# 3rd party:
 from decimal import Decimal
 from django.conf import settings
 from django.shortcuts import get_object_or_404
+
+# Internal:
 from products.models import Product
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 def bag_contents(request):
+    """
+    A context that contains the bag contents
+    Args:
+        request (object): HTTP request object.
+    Returns:
+        The bag contents context
+    """
 
     bag_items = []
     total = 0
@@ -38,9 +52,9 @@ def bag_contents(request):
     else:
         delivery = 0
         free_delivery_delta = 0
-    
+
     grand_total = delivery + total
-    
+
     context = {
         'bag_items': bag_items,
         'total': total,
