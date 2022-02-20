@@ -346,6 +346,19 @@ The navigation bar is displayed on all pages with a search box, My account, and 
 - The order is available on the user profile page,a nd they can click on the order itself
 <br>![User profile](readme/testing/order_history_desktop.png)
 
+### Feature 9 Admin
+#### Description feature 9
+- As per the user stories below there are a number of admin views that have been configured at https://ci-ms5-pinkaccessories.herokuapp.com/admin/
+- They are as follows:
+- Order
+<br>![Order](readme/testing/admin_order_desktop.png)
+- Products
+<br>![Products](readme/testing/admin_products.png)
+- Users
+<br>![Users](readme/testing/admin_users.png)
+- Categories
+<br>![Categories](readme/testing/admin_categories.png)
+
 
 
 
