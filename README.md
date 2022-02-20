@@ -330,6 +330,21 @@ The navigation bar is displayed on all pages with a search box, My account, and 
 - All reviews on the product are subsequently deleted
 <br>![Delete Product](readme/testing/delete_product_desktop.png)
 
+### Feature 8 Bag and Checkout
+#### Description feature 8
+- A user can add items to a bag, if the bag is empty a message is displayed
+- A user can update the quantity or remove an item from their shopping bag
+<br>![Bag Empty](readme/testing/empty_bag_desktop.png)
+- An order over 99 euros means free delivery. An order less than 99 incurs a 10% delivery charge
+<br>![Bag 1](readme/testing/add_product_to_bag_desktop.png)
+<br>![Bag 1](readme/testing/no_delivery_charge_desktop.png)
+<br>![Bag 2](readme/testing/empty_bag_desktop.png)
+- The user can "checkout" and their details will be displayed.
+- The fields are: (Full Name, email address, both mandatory) and Delivery Information: Phone Number(mandatory), Street Address 1(mandatory), Street Address 2, Town or City(mandatory, County, State or Locality, Postal Code and Country(mandatory)), which is populated from my profile if filled in
+<br>![Order](readme/testing/complete_order_form_desktop.png)
+<br>![Order mobile](readme/testing/complete_order_form_iphone.png)
+- The order is available on the user profile page,a nd they can click on the order itself
+<br>![User profile](readme/testing/order_history_desktop.png)
 
 
 
