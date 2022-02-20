@@ -314,6 +314,22 @@ The navigation bar is displayed on all pages with a search box, My account, and 
 <br>![Order History]()
 - This data is consistent with the information they supplied when they made the order
 
+### Feature 7 Product Management
+#### Description feature 7
+- An admin user can add, edit and delete products
+- To add a product the user can click on the Product Management link in My Account
+- They must enter a name, category, price, colour, code, description and can optionally choose has Sizes(Unknown, Yes, No), Rating, Pre-sale price, Image url, upload an image
+<br>![Add Product](readme/testing/addproduct_desktop.png)
+- The product is then added and visible on the products page, and by clicking on the product itself
+- The image is stored in the AWS S3 bucket
+<br>![Product Detail](readme/testing/addedproduct_desktop.png)
+- An admin user can edit a product, by updating the relevant field(s)
+<br>![Edit Product](readme/testing/edited_product_desktop.png)
+- An admin user can delete a product, by clicking on the delete link on the product detail page or the delete button on the products page
+- A confirmation modal is displayed asking the user to confirm the deletion
+- All reviews on the product are subsequently deleted
+<br>![Delete Product](readme/testing/delete_product_desktop.png)
+
 
 
 
