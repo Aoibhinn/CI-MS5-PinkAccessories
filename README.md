@@ -258,6 +258,33 @@ The navigation bar is displayed on all pages with a search box, My account, and 
 - On a desktop device there is a number of filters described below: All Products, Jewellery, Bags and Hats & Scarves
 <br>![Homepage desktop filter price](readme/testing/products_desktop.png)
 
+### Feature 2 Footer
+#### Description feature 2
+- A footer is displayed at the bottom of the page
+- The product links change dependent on whether the user is logged in/regular user/admin user as per mentioned above
+- The footer also contains a logo, some text, social media icons(that open in a new tab) and product links for Jewellery, Scarves and Bags
+- A user can sign up for the mailing list by entering their email and clicking the "Signup" button
+<br>![Homepage footer](readme/testing/homepage_loggedin_desktop.png)
+
+### Feature 3 Register
+- A regular user can register for an account.
+- The user must provide a valid email address, email address(confirmation), username, password, password confirmation
+<br>![Register](readme/testing/register_desktop.png)
+- These 5 fields are  mandatory and a user cannot register the same details twice for an account
+<br>![Register error](readme/testing/fiedsrequired_desktop.png)
+- A confirmation link is sent to the users email address, they must click on the verification link to verify the account.
+<br>![Verify Email ](readme/testing/verifyemail_desktop.png)
+- The user must confirm their email address
+<br>![Confirm email](readme/testing/confirmemail_desktop.png)
+<br>![Email confirmed](readme/testing/emailedconfirmed_desktop.png)
+- Once that is done they can sign in to the website with their username/email address and password
+
+
+
+
+
+
+
 
 
  
