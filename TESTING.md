@@ -266,10 +266,10 @@ I used https://validator.w3.org/ to validate the html files
 
 Page | Result | Test Detail/Screenshot
 ------------ | ------------- | -------------
-bag/templates/bag/bag.html  | 0 errors and 0 contrast errors| [Results]() 
+bag/templates/bag/bag.html  | 0 errors and 0 contrast errors| [Results](readme/testing/bag_w3validation.png) 
 checkout/templates/checkout/checkout.html | 0 errors and 0 contrast errors| [Results]()  
-checkout/templates/checkout/checkout_success.html | 0 errors and 0 contrast errors| [Results]()  
-home/templates/home/index.html | 0 errors and 0 contrast errors| [Results]()
+checkout/templates/checkout/checkout_success.html | 0 errors and 0 contrast errors| [Results](readme/testing/checkout_success_w3validation.png)  
+home/templates/home/index.html | 0 errors and 0 contrast errors| [Results](readme/testing/index_w3validation.png)
 products/templates/products/add_product.html | 0 errors and 0 contrast errors| [Results](readme/testing/add_product_w3validation.png)
 products/templates/products/edit_product.html | 0 errors and 0 contrast errors| [Results](readme/testing/add_product_w3validation.png)  
 products/templates/products/product_detail.html | 0 errors and 0 contrast errors| [Results]() 
