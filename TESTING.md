@@ -45,8 +45,14 @@
       - [User Story Steps 9-2](#user-story-steps-9-2)
       - [User Story Testing Results 9-2](#user-story-testing-results-9-2)
       - [User Story 9-3](#user-story-9-3)
-      - [User Story Steps 13-3](#user-story-steps-9-3)
-      - [User Story Testing Results 9-10](#user-story-testing-results-9-10)
+      - [User Story Steps 9-3](#user-story-steps-9-3)
+      - [User Story Testing Results 9-3](#user-story-testing-results-9-3)
+      - [User Story 9-4](#user-story-9-4)
+      - [User Story Steps 9-4](#user-story-steps-9-4)
+      - [User Story Testing Results 9-4](#user-story-testing-results-9-4)
+- [Code Validators and Website Analysis](#code-validators-and-website-analysis)
+  * [HTML Markup Validation Service](#html-markup-validation-service)
+  * [CSS Validation Service](#css-validation-service)
 
 ## Manual testing information
 Testing was completed on the following browsers and device types
@@ -302,19 +308,19 @@ Step 1 | The products are displayed | [Result](readme/testing/admin_products.png
 
 #### User Story 9-3
 - User Story 13.10: As an admin user I can view users in the django admin page and can search by username and email address and  filter by staff status, superuser status and active status
-#### User Story Steps 9-10
+#### User Story Steps 9-3
 - Step 1: As an admin user navigate to  and filter on non superuser status
-#### User Story Testing Results 9-10
+#### User Story Testing Results 9-3
 Step| Result | Result  | Status
 ------------ | ------------ | ------------- | ------------- 
 Step 1 | The non superuser users are displayed | [Result](readme/testing/admin_users.png)   | Passed |
 
 
-#### User Story 9.11
+#### User Story 9.4
 - User Story 13.15: As an admin user I can view categories in the django admin page and can view a category name and friendly name
-#### User Story Steps 9.11
+#### User Story Steps 9.4
 - Step 1: As an admin user navigate to https://8000-lime-jackal-9mgfiw2b.ws-eu33.gitpod.io/admin/products/category/
-#### User Story Testing Results 9.11
+#### User Story Testing Results 9.4
 Step| Result | Result  | Status
 ------------ | ------------ | ------------- | ------------- 
 Step 1 | The categories are displayed | [Result](readme/testing/admin_categories.png)   | Passed |
