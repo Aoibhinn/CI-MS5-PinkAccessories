@@ -654,7 +654,7 @@ To deploy this application to Heroku, run the following steps.
     - The icons used on the site from font awesome
 - Fonts (https://fonts.google.com/)    
     - The text font(Poppins) is from Google fonts
-- Product information, news (text) was taken from 
+- Product information was taken from  https://www.pinkaccessories.ie/
 
 <br>
 
