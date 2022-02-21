@@ -53,6 +53,7 @@
 - [Code Validators and Website Analysis](#code-validators-and-website-analysis)
   * [HTML Markup Validation Service](#html-markup-validation-service)
   * [CSS Validation Service](#css-validation-service)
+  * [PEP8online](#pep8online)
 
 ## Manual testing information
 Testing was completed on the following browsers and device types
@@ -364,4 +365,46 @@ I used https://jigsaw.w3.org/css-validator/ to validate the css(style.css)
 Page | Result | Test Detail/Screenshot
 ------------ | ------------- | -------------
 static/css/base.css | Passed, No errors found | [Results](readme/testing/base_css_validation.png) 
-checkout/static/checkout/css/checkout.css | Passed, No errors found | [Results](readme/testing/checkout_css_validation.png)  
+checkout/static/checkout/css/checkout.css | Passed, No errors found | [Results](readme/testing/checkout_css_validation.png)
+
+## PEP8online
+- PEP8online was used to analyse the Python files (https://pep8online.com/)
+- One of the main errors on several files was to ensure the character count was less than 80 characters
+
+Page | Result 
+------------ | ------------- 
+bag/admin.py | No errors/warnings 
+bag/apps.py | No errors/warnings 
+bag/contexts.py | No errors/warnings 
+bag/models.py | No errors/warnings 
+bag/urls.py | No errors/warnings 
+bag/views.py | No errors/warnings 
+checkout/admin.py | No errors/warnings 
+checkout/apps.py | No errors/warnings 
+checkout/forms.py | No errors/warnings 
+checkout/models.py | No errors/warnings 
+checkout/signals.py | No errors/warnings 
+checkout/urls.py | No errors/warnings 
+checkout/views.py | No errors/warnings 
+checkout/webhook_handler.py | No errors/warnings 
+checkout/webhooks.py | No errors/warnings 
+home/admin.py | No errors/warnings 
+home/apps.py | No errors/warnings 
+home/models.py | No errors/warnings 
+home/urls.py | No errors/warnings 
+home/views.py | No errors/warnings 
+products/admin.py | No errors/warnings 
+products/apps.py | No errors/warnings 
+products/forms.py | No errors/warnings 
+products/models.py | No errors/warnings 
+products/urls.py | No errors/warnings 
+products/views.py | No errors/warnings 
+products/widgets.py | No errors/warnings 
+profiles/admin.py | No errors/warnings 
+profiles/apps.py | No errors/warnings 
+profiles/forms.py | No errors/warnings 
+profiles/models.py | No errors/warnings 
+profiles/urls.py | No errors/warnings 
+profiles/views.py | No errors/warnings 
+custom_storages.py | No errors/warnings
+manage.py | No errors/warnings
