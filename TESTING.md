@@ -257,3 +257,19 @@ Step 1 | The non superuser users are displayed | [Result](readme/testing/admin_u
 Step| Result | Result  | Status
 ------------ | ------------ | ------------- | ------------- 
 Step 1 | The categories are displayed | [Result](readme/testing/admin_categories.png)   | Passed |
+
+
+## CSS Validation Service
+I used https://jigsaw.w3.org/css-validator/ to validate the css(style.css)
+<p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+
+Page | Result | Test Detail/Screenshot
+------------ | ------------- | -------------
+static/css/base.css | Passed, No errors found | [Results](readme/testing/base_css_validation.png) 
+checkout/static/checkout/css/checkout.css | Passed, No errors found | [Results](readme/testing/checkout_css_validation.png)  
