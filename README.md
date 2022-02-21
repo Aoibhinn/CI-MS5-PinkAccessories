@@ -65,7 +65,6 @@ There are two types of users, and I have set up accounts for both
    * [Organic Social Media Marketing](#organic-social-media-marketing)
    * [Site Map](#site-map)
    * [Robots.txt](#robots.txt)
-
 - [APIs and configuration](#apis-and-configuration)
   * [Google emails](#google-emails)
   * [Stripe](#stripe)
@@ -496,7 +495,6 @@ The navigation bar is displayed on all pages with a search box, My account, and 
 
 # Testing
 The testing information and results for this project are documented in [TESTING.md](TESTING.md)
-
 
 # Pink Accessories Primary Marketing Strategy 
 
