@@ -2,11 +2,9 @@
 - [Testing](#testing)
   * [Manual testing information](#manual-testing-information)
     + [Feature 1 Navigation Bar and Homepage](#feature-1-navigation-bar-and-homepage)
-      - [User Stories feature 1](#user-stories-feature-1)
       - [User Stories Steps 1](#user-stories-steps-1)
       - [User Story Testing Results 1](#user-story-testing-results-1)
     + [Feature 2 Footer](#feature-2-footer)
-      - [User Stories feature 2](#user-stories-feature-2)
       - [User Stories Steps 2](#user-stories-steps-2)
       - [User Story Testing Results 2](#user-story-testing-results-2)
     + [Feature 3 Register](#feature-3-register)
@@ -146,7 +144,7 @@ Step 13 | Products on the page are filtered by Clutchs | [Desktop](readme/testin
 Step 14 | The user is logged out | [Desktop](readme/testing/loggingout_desktop.png)  | [Tablet](readme/testing/loggingout_ipad.png)  | [Mobile](/workspace/CI-MS5-PinkAccessories/readme/testing/loggingout_iphone.png) | Passed |
 Step 15 | The homepage is displayed with a header logo(desktop), search box(expands on tablet/mobile), My Account and shopping bag icons. Product Management/News Item Management/My Profile/Logout is visible under My Account and the footer contains links for Product Management  | [Desktop](readme/testing/homepage_admin_desktop.png)  | [Tablet](readme/testing/homepage_admin_ipad.png)  | [Mobile](readme/testing/homepage_admin_iphone.png)  | Passed |
 
-
+### Feature 2 Footer
 #### User Stories Steps 2
 1. As a regular user scroll down to the footer on the homepage 
 2. As an admin user scroll down to the footer on the homepage
