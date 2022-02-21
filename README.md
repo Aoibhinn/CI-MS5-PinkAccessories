@@ -514,13 +514,6 @@ To compliment Pink Accessories already Organic Social Media Marketing, I would i
 * Styling for every every occasion (Demonstrating different styles for weddings, mother of the bride, race day’s)
 * Customer Highlight (Interviewing previous loyal customers to get their feedback on the service provided by Pink Accessories) 
 
-## Email Marketing
-
-
-
-
-
-
 # APIs and configuration
 
 ## Google emails
