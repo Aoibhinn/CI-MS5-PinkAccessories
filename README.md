@@ -539,9 +539,6 @@ To deploy this application to Heroku, run the following steps.
 1. Create an account at heroku.com
 2. Create an app, give it a name for example ci-ms5-pinkaccessories, and select a region
 3. Under resources search for postgres, and add a Postgres database to the app
-
-![Heroku Postgres](readme/misc/heroku_postgres.png)
-
 4. Note the DATABASE_URL, this can be set as an environment variable in Heroku and your local deployment(env.py)
 5. Install the plugins dj-database-url and psycopg2-binary.
 6. Run pip3 freeze > requirements.txt so both are added to the requirements.txt file
