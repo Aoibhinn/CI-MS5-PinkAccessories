@@ -258,6 +258,8 @@ Step| Result | Result  | Status
 ------------ | ------------ | ------------- | ------------- 
 Step 1 | The categories are displayed | [Result](readme/testing/admin_categories.png)   | Passed |
 
+# Code Validators and Website Analysis
+The website's pages was tested against the following validators:
 
 ## CSS Validation Service
 I used https://jigsaw.w3.org/css-validator/ to validate the css(style.css)
