@@ -1,3 +1,4 @@
+# Pink Accessories
 'Pink Accessories' is a fabulous ecommerce website allowing users purchase jewellery, bags hats and scarves developed for developed for Milestone 5 project 5 as part of the Code Institute - Diploma in Software Development (Full stack) course.
 
 There are two types of users, and I have set up accounts for both
@@ -6,7 +7,71 @@ There are two types of users, and I have set up accounts for both
 * When making a payment as a regular user, a test credit card of 4242424242424242 has been set up for the card number.
 * For the expiry date, cvc and postal code any series number(s) can be used(once they meet the mimimum values).
 
-View the live site (Link to Live Site)
+**View the live site [here](https://ci-ms5-pinkaccessories.herokuapp.com/)**
+<br><br>
+<br>
+
+# Table of Contents
+- [Pink Accessories](#pink-accessories)
+- [Project Overview](#project-overview)
+- [UX](#ux)
+  * [Strategy](#strategy)
+  * [Structure](#structure)
+    + [Website pages](#website-pages)
+    + [Code Structure](#code-structure)
+    + [Database](#database)
+      - [Models](#models)
+        * [User Model](#user-model)
+        * [Order Model](#order-model)
+        * [OrderLineItem Model](#orderlineitem-model)
+        * [Product Model](#product-model)
+        * [Category Model](#category-model)
+  * [Scope](#scope)
+    + [User Stories Potential or Existing Customer](#user-stories-potential-or-existing-customer)
+    + [User Stories Website Owner](#user-stories-website-owner)
+  * [Skeleton](#skeleton)
+    + [Wireframes](#wireframes)
+  * [Surface](#surface)
+    + [Color Palette](#color-palette)
+    + [Typography](#typography)
+- [Features](#features)
+  * [Existing Features](#existing-features)
+    + [Feature 1 Navigation Bar and Homepage](#feature-1-navigation-bar-and-homepage)
+      - [Description feature 1](#description-feature-1)
+      - [User Stories feature 1](#user-stories-feature-1)
+    + [Feature 2 Footer](#feature-2-footer)
+      - [Description feature 2](#description-feature-2)
+      - [User Stories feature 2](#user-stories-feature-2)
+    + [Feature 3 Register](#feature-3-register)
+      - [Description feature 3](#description-feature-3)
+      - [User Stories feature 3](#user-stories-feature-3)
+    + [Feature 4 Login](#feature-4-login)
+      - [Description & User Stroies feature 4](#description-feature-4)
+    + [Feature 5 Products and Product Detail Pages](#feature-5-products-and-product-detail-pages)
+      - [Description & User Storesfeature 5](#description-feature-5)
+    + [Feature 6 Profile Page](#feature-6-profile-page)
+      - [Description & User Stories feature 6](#description-feature-6)
+    + [Feature 7 Product Management](#feature-7-product-management)
+      - [Description & User Stories feature 7](#description-feature-7)
+    + [Feature 8 Bag and Checkout](#feature-8-bag-and-checkout)
+      - [Description & User Stories feature 8](#description-feature-8)
+    + [Feature 9 Admin](#feature-9-admin)
+      - [Description & User Stories feature 13](#description-feature-9)
+- [Technologies Used](#technologies-used)
+  * [Languages](#languages)
+  * [Libraries and other resources](#libraries-and-other-resources)
+- [Testing](#testing)
+- [APIs and configuration](#apis-and-configuration)
+  * [Google emails](#google-emails)
+  * [Stripe](#stripe)
+- [Deployment](#deployment)
+  * [Amazon WebServices](#amazon-webservices)
+  * [Local Deployment](#local-deployment)
+  * [Heroku and Postgres Database](#heroku-and-postgres-database)
+- [Content](#content)
+- [Media](#media)
+- [Acknowledgements](#acknowledgements)
+
 
 # Project Overview
 * This project is a website is for submission as milestone project 5 as part of the Code Institute - Diploma in Software * Development (Full stack) course.
