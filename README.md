@@ -559,9 +559,7 @@ To deploy this application to Heroku, run the following steps.
 18. Disable collectstatic in Heroku before any code is pushed using the command heroku config:set DISABLE_COLLECTSTATIC=1 -a ci-ms5-pinkaccessories
 19. Push the code to Heroku using the command git push heroku master
 20. Ensure the following environment variables are set in Heroku
-<br>![Heroku Env variables](readme/misc/heroku_env_variables.png)
 21. Connect the app to GitHub, and enable automatic deploys from main
-<br>![Heroku Postgres](readme/misc/heroku_deployment.png)
     
 22. Click deploy to deploy your application to Heroku for the first time
 23. Click on the link provided to access the application
