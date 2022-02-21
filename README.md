@@ -492,6 +492,33 @@ The navigation bar is displayed on all pages with a search box, My account, and 
 # Testing
 The testing information and results for this project are documented in [TESTING.md](TESTING.md)
 
+
+# Pink Accessories Primary Marketing Strategy 
+
+## Organic Social Media Marketing
+
+Pink Accessories is already a well established business within Navan Co. Meath with over 1,900 links on Facebook and 700 followers on Instagram. This following has been driven primarily from Organic Social Media Marketing. Grainne Brady who founded Pink Accessories gained this following through interaction within the businesses community. 
+
+Regularly posts latest products relating to their key customers
+Engaging with customers through comments, links, and shares
+Posting relatable content, on occasion the business will post personable content sharing news and stories about the community such as fundraisers
+
+<br>![Facebook](readme/social_media/Pink_facebook.png)
+<br>![Instagram](readme/social_media/Pink_Instagram.png)
+
+To compliment Pink Accessories already Organic Social Media Marketing, I would introduce video content as an enhancement to their static posts. The video content would be under 2 minutes long, ensuring there are subtitles for accessibility. The topics I would produce for Pink Accessories video content would be:
+
+How to wear (Demonstrating how to wear certain colours, patterns, and fabrics)
+Styling for every every occasion (Demonstrating different styles for weddings, mother of the bride, race day’s)
+Customer Highlight (Interviewing previous loyal customers to get their feedback on the service provided by Pink Accessories) 
+
+## Email Marketing
+
+
+
+
+
+
 # APIs and configuration
 
 ## Google emails
