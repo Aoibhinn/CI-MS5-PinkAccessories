@@ -508,9 +508,9 @@ Posting relatable content, on occasion the business will post personable content
 
 To compliment Pink Accessories already Organic Social Media Marketing, I would introduce video content as an enhancement to their static posts. The video content would be under 2 minutes long, ensuring there are subtitles for accessibility. The topics I would produce for Pink Accessories video content would be:
 
-How to wear (Demonstrating how to wear certain colours, patterns, and fabrics)
-Styling for every every occasion (Demonstrating different styles for weddings, mother of the bride, race day’s)
-Customer Highlight (Interviewing previous loyal customers to get their feedback on the service provided by Pink Accessories) 
+* How to wear (Demonstrating how to wear certain colours, patterns, and fabrics)
+* Styling for every every occasion (Demonstrating different styles for weddings, mother of the bride, race day’s)
+* Customer Highlight (Interviewing previous loyal customers to get their feedback on the service provided by Pink Accessories) 
 
 ## Email Marketing
 
