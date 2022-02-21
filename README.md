@@ -135,7 +135,6 @@ The user stories for the regular user eg: "shopper user" (a potential or existin
 - User Story 1.19: As a regular/admin user I can click on the "Bags" filter, and filter by Clutchs, Totes, or All Bags
 - User Story 1.20: As a regular/admin user I can click on the "Hats & Scarves" filter, and filter by Scarves, Hats, Fascinators All Hats & Scarves
 - User Story 2.2: As a regular user the footer is displayed with a logo, product links(Jewellery, Bags, Scarves & Hats), website link(Profile)
-- User Story 2.4: As a regular user I can sign up for a newsletter by entering my email address and clicking Signup. I will receive an email after signing up
 - User Story 3.1: As a regular user I can register on the website by providing an email address, email address(confirmation), username, password, password confirmation
 - User Story 3.1: As a regular user I will receive an email to verify my account after registering
 - User Story 3.1: As a regular user I can log in to my account once I click on the verification link in the email I receive regarding my registration
