@@ -194,7 +194,7 @@ input[name='q']::placeholder {
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
-    position: inherit;
+    position: fixed;
     top: 72px;
     right: 15px;
     z-index: 99999999999;

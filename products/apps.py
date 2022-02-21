@@ -6,6 +6,7 @@ from django.apps import AppConfig
 # Internal:
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+
 class ProductsConfig(AppConfig):
     """
     A class for configuring the products app
