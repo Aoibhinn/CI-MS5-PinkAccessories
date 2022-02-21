@@ -19,80 +19,34 @@
       - [User Stories feature 5](#user-stories-feature-5)
       - [User Stories Steps 5](#user-stories-steps-5)
       - [User Story Testing Results 5](#user-story-testing-results-5)
-    + [Feature 9 Profile Page](#feature-9-profile-page)
-      - [User Stories feature 9](#user-stories-feature-9)
-      - [User Stories Steps 9](#user-stories-steps-9)
-      - [User Story Testing Results 9](#user-story-testing-results-9)
-    + [Feature 10 Product Management](#feature-10-product-management)
-      - [User Story 10-1](#user-story-10-1)
-      - [User Story Steps 10-1](#user-story-steps-10-1)
-      - [User Story Testing Results 10-1](#user-story-testing-results-10-1)
-      - [User Story 10-2](#user-story-10-2)
-      - [User Story Steps 10-2](#user-story-steps-10-2)
-      - [User Story Testing Results 10-2](#user-story-testing-results-10-2)
-      - [User Story 10-3](#user-story-10-3)
-      - [User Story Steps 10-3](#user-story-steps-10-3)
-      - [User Story Testing Results 10-3](#user-story-testing-results-10-3)
-    + [Feature 12 Bag and Checkout](#feature-12-bag-and-checkout)
-      - [User Stories feature 12](#user-stories-feature-12)
-      - [User Stories Steps 12](#user-stories-steps-12)
-      - [User Story Testing Results 12](#user-story-testing-results-12)
-    + [Feature 13 Admin](#feature-13-admin)
-      - [User Story 13-1](#user-story-13-1)
-      - [User Story Steps 13-1](#user-story-steps-13-1)
-      - [User Story Testing Results 13-1](#user-story-testing-results-13-1)
-      - [User Story 13-2](#user-story-13-2)
-      - [User Story Steps 13-2](#user-story-steps-13-2)
-      - [User Story Testing Results 13-2](#user-story-testing-results-13-2)
-      - [User Story 13-3](#user-story-13-3)
-      - [User Story Steps 13-3](#user-story-steps-13-3)
-      - [User Story Testing Results 13-3](#user-story-testing-results-13-3)
-      - [User Story 13-4](#user-story-13-4)
-      - [User Story Steps 13-4](#user-story-steps-13-4)
-      - [User Story Testing Results 13-4](#user-story-testing-results-13-4)
-      - [User Story 13-5](#user-story-13-5)
-      - [User Story Steps 13-5](#user-story-steps-13-5)
-      - [User Story Testing Results 13-5](#user-story-testing-results-13-5)
-      - [User Story 13-6](#user-story-13-6)
-      - [User Story Steps 13-6](#user-story-steps-13-6)
-      - [User Story Testing Results 13-6](#user-story-testing-results-13-6)
-      - [User Story Expected Result 13-7](#user-story-expected-result-13-7)
-      - [User Story Steps 13-7](#user-story-steps-13-7)
-      - [User Story Testing Results 13-7](#user-story-testing-results-13-7)
-      - [User Story 13-8](#user-story-13-8)
-      - [User Story Steps 13-8](#user-story-steps-13-8)
-      - [User Story Testing Results 13-8](#user-story-testing-results-13-8)
-      - [User Story 13-9](#user-story-13-9)
-      - [User Story Steps 13-9](#user-story-steps-13-9)
-      - [User Story Testing Results 13-9](#user-story-testing-results-13-9)
-      - [User Story 13-10](#user-story-13-10)
-      - [User Story Steps 13-10](#user-story-steps-13-10)
-      - [User Story Testing Results 13-10](#user-story-testing-results-13-10)
-      - [User Story 13-11](#user-story-13-11)
-      - [User Story Steps 13-11](#user-story-steps-13-11)
-      - [User Story Testing Results 13-11](#user-story-testing-results-13-11)
-      - [User Story 13.12](#user-story-1312)
-      - [User Story Steps 13.12](#user-story-steps-1312)
-      - [User Story Testing Results 13.12](#user-story-testing-results-1312)
-      - [User Story 13.13](#user-story-1313)
-      - [User Story Steps 13.13](#user-story-steps-1313)
-      - [User Story Testing Results 13.13](#user-story-testing-results-1313)
-      - [User Story 13.14](#user-story-1314)
-      - [User Story Steps 13.14](#user-story-steps-1314)
-      - [User Story Testing Results 13.14](#user-story-testing-results-1314)
-      - [User Story 13.15](#user-story-1315)
-      - [User Story Steps 13.15](#user-story-steps-1315)
-      - [User Story Testing Results 13.15](#user-story-testing-results-1315)
-- [Bugs found during the testing phase](#bugs-found-during-the-testing-phase)
-- [Code Validators and Website Analysis](#code-validators-and-website-analysis)
-  * [HTML Markup Validation Service](#html-markup-validation-service)
-  * [CSS Validation Service](#css-validation-service)
-  * [Chrome Dev tools Lighthouse](#chrome-dev-tools-lighthouse)
-    + [Desktop](#desktop)
-    + [Mobile](#mobile)
-  * [PEP8online](#pep8online)
-
-
+    + [Feature 6 Profile Page](#feature-6-profile-page)
+      - [User Stories feature 6](#user-stories-feature-6)
+      - [User Stories Steps 6](#user-stories-steps-6)
+      - [User Story Testing Results 6](#user-story-testing-results-6)
+    + [Feature 07 Product Management](#feature-07-product-management)
+      - [User Story 07-1](#user-story-07-1)
+      - [User Story Steps 07-1](#user-story-steps-07-1)
+      - [User Story Testing Results 07-1](#user-story-testing-results-07-1)
+      - [User Story 07-2](#user-story-07-2)
+      - [User Story Steps 07-2](#user-story-steps-07-2)
+      - [User Story Testing Results 07-2](#user-story-testing-results-07-2)
+      - [User Story 07-3](#user-story-07-3)
+      - [User Story Steps 07-3](#user-story-steps-07-3)
+      - [User Story Testing Results 07-3](#user-story-testing-results-07-3)
+    + [Feature 08 shopping bag](#feature-08-shopping-bag)
+      - [User Stories feature 08](#user-stories-feature-08)
+      - [User Stories Steps 08](#user-stories-steps-08)
+      - [User Story Testing Results 08](#user-story-testing-results-08)
+    + [Feature 9 Admin](#feature-9-admin)
+      - [User Story 9-1](#user-story-9-1)
+      - [User Story Steps 9-1](#user-story-steps-9-1)
+      - [User Story Testing Results 9-1](#user-story-testing-results-9-1)
+      - [User Story 9-2](#user-story-9-2)
+      - [User Story Steps 9-2](#user-story-steps-9-2)
+      - [User Story Testing Results 9-2](#user-story-testing-results-9-2)
+      - [User Story 9-3](#user-story-9-3)
+      - [User Story Steps 13-3](#user-story-steps-9-3)
+      - [User Story Testing Results 9-10](#user-story-testing-results-9-10)
 
 ## Manual testing information
 Testing was completed on the following browsers and device types
@@ -327,40 +281,40 @@ Step 7 | The order is displayed on the "my profile" page | [Desktop](readme/test
 Step 8 | The purchase is successful and the checkout success page is displayed | [Desktop](readme/testing/thank_you_desktop.png)  | [Tablet](readme/testing/thank_you_ipad.png)  | [Mobile](readme/testing/thank_you_iphone.png)  | Passed |
 
 
-### Feature 13 Admin
-#### User Story 13-1
+### Feature 9 Admin
+#### User Story 9-1
 - User Story 13.1: As an admin user I can view users orders in the django admin page and can view order number, date, full name, order total, delivery cost, grand total
-#### User Story Steps 13-1
+#### User Story Steps 9-1
 - Step 1: As an admin user login navigate to https://8000-lime-jackal-9mgfiw2b.ws-eu33.gitpod.io/admin/checkout/order/
-#### User Story Testing Results 13-1
+#### User Story Testing Results 9-1
 Step| Result | Result  | Status
 ------------ | ------------ | ------------- | ------------- 
 Step 1 | The orders are displayed | [Result](/workspace/CI-MS5-PinkAccessories/readme/testing/admin_order_desktop.png)  | Passed |
 
-#### User Story Expected Result 13-7
-- User Story 13.7: As an admin user I can view products in the django admin page and can view a products code, name, category, has sizes, price, presale price, rating, image, image url
-#### User Story Steps 13-7
+#### User Story Expected Result 9-2
+- User Story 9.2: As an admin user I can view products in the django admin page and can view a products code, name, category, has sizes, price, presale price, rating, image, image url
+#### User Story Steps 9-2
 - Step 1: As an admin user navigate to https://8000-lime-jackal-9mgfiw2b.ws-eu33.gitpod.io/admin/products/product/
-#### User Story Testing Results 13-7
+#### User Story Testing Results 9-2
 Step| Result | Result  | Status
 ------------ | ------------ | ------------- | ------------- 
 Step 1 | The products are displayed | [Result](readme/testing/admin_products.png)   | Passed |
 
-#### User Story 13-10
+#### User Story 9-3
 - User Story 13.10: As an admin user I can view users in the django admin page and can search by username and email address and  filter by staff status, superuser status and active status
-#### User Story Steps 13-10
+#### User Story Steps 9-10
 - Step 1: As an admin user navigate to  and filter on non superuser status
-#### User Story Testing Results 13-10
+#### User Story Testing Results 9-10
 Step| Result | Result  | Status
 ------------ | ------------ | ------------- | ------------- 
 Step 1 | The non superuser users are displayed | [Result](readme/testing/admin_users.png)   | Passed |
 
 
-#### User Story 13.15
+#### User Story 9.11
 - User Story 13.15: As an admin user I can view categories in the django admin page and can view a category name and friendly name
-#### User Story Steps 13.15
+#### User Story Steps 9.11
 - Step 1: As an admin user navigate to https://8000-lime-jackal-9mgfiw2b.ws-eu33.gitpod.io/admin/products/category/
-#### User Story Testing Results 13.15
+#### User Story Testing Results 9.11
 Step| Result | Result  | Status
 ------------ | ------------ | ------------- | ------------- 
 Step 1 | The categories are displayed | [Result](readme/testing/admin_categories.png)   | Passed |
