@@ -108,7 +108,7 @@ Device Number | Physical/Emulator | Device Name | Device Type | Browser | Versio
 
 
 ### Feature 1 Navigation Bar and Homepage
-#### User Stories feature 1
+#### User Stories Steps 1
 1. Navigate to https://ci-ms5-pinkaccessories.herokuapp.com, and click on the My Account link as a regular user
 2. Login to the website with a valid username and password, and click on the My Account link
 3. Navigate to the "All Products" filter, and then click By Price
