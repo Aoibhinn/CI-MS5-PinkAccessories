@@ -393,6 +393,38 @@ The navigation bar is displayed on all pages with a search box, My account, and 
     - sqlparse==0.4.2
     - stripe==2.65.0
 
+## Libraries and other resources
+- Bootstrap 5.0 (https://getbootstrap.com/docs/5.0)
+    - The project uses the bootstrap library for some UI components in the website (Buttons, Card, Carousel, Modal, Pagination, Navbar)
+- Postgres (https://www.postgresql.org/)
+  - The deployed project on Heroku uses a Postgres database
+- SQLLite (https://www.sqlite.org/index.html)
+  - The database uses in local development was a SQLLite database
+- Gitpod (https://gitpod.io/)
+    - Gitpod was used as an IDE for the project
+- Github (https://github.com/)
+    - GitHub was used to store the project code in a repository
+- Google Fonts (https://fonts.google.com/)
+    - Google font Poppins was used as the website font
+- Balsamiq (https://balsamiq.com/)
+    - Balsamiq was used to create the website wireframes
+- Font Awesome (https://fontawesome.com/)
+    - Font awesome was used to provide the relevant fonts/icons for the website
+- JQuery (https://jquery.com)
+    - JQuery was used in some javascript files for DOM manipulation
+- TinyPNG (https://tinypng.com/)
+    - TinyPNG was used to compress images to improve performance and reduce space
+- CSS Validation Service (https://jigsaw.w3.org/css-validator/)
+   - CSS validation service for validation the css in the project  
+- HTML Markup Validation Service (https://validator.w3.org/)   
+    - HTML validation service for validation the css in the project  
+- Chrome dev tools (https://developers.google.com/web/tools/chrome-devtools)
+    - For troubleshooting and debugging of the project code
+- PEP8 (https://www.python.org/dev/peps/pep-0008/)
+  - I used the pep8 code analysis plugin in Pycharm to check for pep8 errors
+- Stripe (https://www.stripe.com)
+  - For processing a test credit card to test a payment as part of an order
+
 # Testing
 The testing information and results for this project are documented in [TESTING.md](TESTING.md)
 
