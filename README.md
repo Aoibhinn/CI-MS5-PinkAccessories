@@ -3,7 +3,7 @@
 
 There are two types of users, and I have set up accounts for both
 * An admin(administrator) user account has been set up with username/password of admin/Password1@
-* A regular(shopper) user account has been set up with username/password of (Add login for shopper)
+* A regular(shopper) user account has been set up with username/password of Aoibhinn12/Password1@
 * When making a payment as a regular user, a test credit card of 4242424242424242 has been set up for the card number.
 * For the expiry date, cvc and postal code any series number(s) can be used(once they meet the mimimum values).
 
