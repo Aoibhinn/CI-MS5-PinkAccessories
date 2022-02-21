@@ -61,6 +61,7 @@ There are two types of users, and I have set up accounts for both
   * [Languages](#languages)
   * [Libraries and other resources](#libraries-and-other-resources)
 - [Testing](#testing)
+- [Pink Accessories Primary Marketing Strategy ](#pink-accessories-primary-marketing-strategy)
 - [APIs and configuration](#apis-and-configuration)
   * [Google emails](#google-emails)
   * [Stripe](#stripe)
