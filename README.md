@@ -514,6 +514,15 @@ To compliment Pink Accessories already Organic Social Media Marketing, I would i
 * Styling for every every occasion (Demonstrating different styles for weddings, mother of the bride, race day’s)
 * Customer Highlight (Interviewing previous loyal customers to get their feedback on the service provided by Pink Accessories) 
 
+### Site Map
+A site map for Pink Accessories was generated via XMLSitemaps.com and included in a sitemap.xml file
+
+### Robots.txt 
+A Robots.txt file has been created to disallow site crawlers on the following pages: 
+* /accounts/
+* /bag/
+* Disallow: https://ci-ms5-pinkaccessories.herokuapp.com/sitemap.xml
+
 # APIs and configuration
 
 ## Google emails
