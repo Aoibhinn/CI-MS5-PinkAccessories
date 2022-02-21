@@ -186,7 +186,7 @@ Step 2 | The products are sorted High to Low | [Desktop](readme/testing/product_
 Step 3 | The product detail is displayed | [Desktop](readme/testing/product_detail_desktop.png)  | [Tablet](readme/testing/product_detail_ipad.png)  | [Mobile](readme/testing/product_detail_iphone.png)  | Passed |
 Step 4 | The 2 products are added | [Desktop](readme/testing/add_bad_to_cart_desktop.png)  | [Tablet](readme/testing/add_bad_to_cart_ipad.png)  | [Mobile](readme/testing/add_bad_to_cart_iphone.png)  | Passed |
 Step 5 | The add product page is displayed | [Desktop](readme/testing/add_product_desktop.png)  | [Tablet](readme/testing/add_product_ipad.png)  | [Mobile](readme/testing/add_product_iphone.png)  | Passed |
-Step 6 | The edit product page is displayed | [Desktop]  | [Tablet]  | [Mobile]  |  |
+Step 6 | The edit product page is displayed | [Desktop](readme/testing/edit_product_desktop.png)  | [Tablet](readme/testing/edit_product_ipad.png)  | [Mobile](readme/testing/edit_product_iphone.png)  | Passed |
 Step 7 | Delete a product notification displayed | [Desktop](readme/testing/delete_product_desktop.png)  | [Tablet](readme/testing/delete_product_ipad.png)  | [Mobile](readme/testing/delete_product_iphone.png)  | Passed |
 
 ### Feature 6 Profile Page
@@ -206,7 +206,7 @@ Step | Result | Desktop | Tablet | Mobile | Status
 ------------ | ------------ | ------------- | ------------- | ------------- | -------------
 Step 1 | The users default delivery information and order history is displayed  | [Desktop](readme/testing/shopper_profile_desktop.png)  | [Tablet](readme/testing/shopper_profile_ipad.png)  | [Mobile](readme/testing/shopper_profile_iphone.png)  | Passed |
 Step 2 | The users default delivery information is updated and displayed (Street Address 1)  | [Desktop](readme/testing/profile_update_desktop.png)  | [Tablet](readme/testing/profile_update_ipad.png)  | [Mobile](readme/testing/profile_update_iphone.png)  | Passed |
-Step 3 | The users order details is displayed | [Desktop]  | [Tablet]  | [Mobile]  | |
+Step 3 | The users order details is displayed | [Desktop](readme/testing/order_history_desktop.png)  | [Tablet](readme/testing/order_history_ipad.png)  | [Mobile](readme/testing/order_history_iphone.png)  | Passed |
 
 ### Feature 07 Product Management
 #### User Story 07-1
@@ -281,10 +281,9 @@ Step 1 | The items are added to the bag, and there is a delivery charge(10%) and
 Step 2 | A message "Your bag is empty" is displayed with a button to go shopping | [Desktop](readme/testing/empty_bag_desktop.png)  | [Tablet](readme/testing/empty_bag_ipad.png)  | [Mobile](readme/testing/empty_bag_iphone.pngG)  | Passed |
 Step 3 | The items are added to the bag, and there is a delivery charge(10%) and message displayed | [Desktop](readme/testing/shopping_bag_desktop.png)  | [Tablet](readme/testing/shopping_bag_ipad.png)  | [Mobile](readme/testing/shopping_bag_iphone.png)  | Passed |
 Step 4 | The items are added to the bag, and there is no delivery charge | [Desktop](readme/testing/no_delivery_charge_desktop.png)  | [Tablet](readme/testing/no_delivery_charge_ipad.png)  | [Mobile](readme/testing/no_delivery_charge_iphone.png)  | Passed |
-Step 5 | The user receives an email(confirmation) | [Desktop]()  | [Tablet]()  | [Mobile]()  | |
-Step 6 | The order is complete | [Desktop](readme/testing/complete_order_form_desktop.png)  | [Tablet](readme/testing/complete_order_form_ipad.png)  | [Mobile](readme/testing/complete_order_form_iphone.png)  | Passed |
-Step 7 | The order is displayed on the "my profile" page | [Desktop](readme/testing/order_history_desktop.png)  | [Tablet](readme/testing/order_history_ipad.png)  | [Mobile](readme/testing/order_history_iphone.png)  | Passed |
-Step 8 | The purchase is successful and the checkout success page is displayed | [Desktop](readme/testing/thank_you_desktop.png)  | [Tablet](readme/testing/thank_you_ipad.png)  | [Mobile](readme/testing/thank_you_iphone.png)  | Passed |
+Step 5 | The order is complete | [Desktop](readme/testing/complete_order_form_desktop.png)  | [Tablet](readme/testing/complete_order_form_ipad.png)  | [Mobile](readme/testing/complete_order_form_iphone.png)  | Passed |
+Step 6 | The order is displayed on the "my profile" page | [Desktop](readme/testing/order_history_desktop.png)  | [Tablet](readme/testing/order_history_ipad.png)  | [Mobile](readme/testing/order_history_iphone.png)  | Passed |
+Step 7 | The purchase is successful and the checkout success page is displayed | [Desktop](readme/testing/thank_you_desktop.png)  | [Tablet](readme/testing/thank_you_ipad.png)  | [Mobile](readme/testing/thank_you_iphone.png)  | Passed |
 
 
 ### Feature 9 Admin
@@ -300,7 +299,7 @@ Step 1 | The orders are displayed | [Result](/workspace/CI-MS5-PinkAccessories/r
 #### User Story Expected Result 9-2
 - User Story 9.2: As an admin user I can view products in the django admin page and can view a products code, name, category, has sizes, price, presale price, rating, image, image url
 #### User Story Steps 9-2
-- Step 1: As an admin user navigate to https://8000-lime-jackal-9mgfiw2b.ws-eu33.gitpod.io/admin/products/product/
+- Step 1: As an admin user navigate to https://ci-ms5-pinkaccessories.herokuapp.com/admin/products/product/
 #### User Story Testing Results 9-2
 Step| Result | Result  | Status
 ------------ | ------------ | ------------- | ------------- 
