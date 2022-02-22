@@ -1,7 +1,7 @@
 <br>![Responsive Pink Accessories](readme/wireframes/responsive_image.png)
 
 # Pink Accessories
-'Pink Accessories' is a fabulous ecommerce website allowing users purchase jewellery, bags hats and scarves developed for developed for Milestone 5 project 5 as part of the Code Institute - Diploma in Software Development (Full stack) course.
+'Pink Accessories' is a fabulous ecommerce website allowing users purchase jewellery, bags hats and scarves developed for developed for Milestone 5 ecommerce application as part of the Code Institute/UCD - Diploma in Software Development (Full stack) course.
 
 There are two types of users, and I have set up accounts for both
 * An admin(administrator) user account has been set up with username/password of admin/Password1@
