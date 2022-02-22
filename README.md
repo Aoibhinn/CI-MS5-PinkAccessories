@@ -68,6 +68,7 @@ There are two types of users, and I have set up accounts for both
    * [Organic Social Media Marketing](#organic-social-media-marketing)
    * [Site Map](#site-map)
    * [Robots.txt](#robots.txt)
+   * [SEO](#seo)
 - [APIs and configuration](#apis-and-configuration)
   * [Google emails](#google-emails)
   * [Stripe](#stripe)
@@ -526,6 +527,16 @@ A Robots.txt file has been created to disallow site crawlers on the following pa
 * /accounts/
 * /bag/
 * Disallow: https://ci-ms5-pinkaccessories.herokuapp.com/sitemap.xml
+
+### SEO
+
+The key words used throughout the site were selected after doing keyword research. These keywords have been placed on the index.html, footer and product detail pages.
+
+* Special Occasion
+* Wedding
+* Mother of the Bride
+* Race Day
+* Women's
 
 # APIs and configuration
 
