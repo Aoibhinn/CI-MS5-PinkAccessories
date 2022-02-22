@@ -671,7 +671,10 @@ To deploy this application to Heroku, run the following steps.
 <br>
 
 # Media
-- Product information, news (images) was taken from
+- Product information, news (images) was taken from https://www.pinkaccessories.ie/ 
+
+# Acknowledgement
+Thank you to my mother who is the owner of Pink Accessories and worked with me to create a website for her business. 
 
 
 
