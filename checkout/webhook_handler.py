@@ -1,17 +1,17 @@
 # Imports
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # 3rd party:
+import json
+import time
 from django.http import HttpResponse
 from django.core.mail import send_mail
 from django.template.loader import render_to_string
 from django.conf import settings
-import json
-import time
 
 # Internal:
-from .models import Order, OrderLineItem
 from products.models import Product
 from profiles.models import UserProfile
+from .models import Order, OrderLineItem
 
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

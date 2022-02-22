@@ -201,7 +201,7 @@
                     <ul class="list-unstyled mb-0">
                         {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
-                                <li class="mb-2"><a href="#" class="font-black">Product Management</a></li>
+                                <li class="mb-2"><a href="{% url 'add_product' %}" class="font-black">Product Management</a></li>
                             {% else %}
                                 <li class="mb-2"><a href="{% url 'profile' %}" class="font-black">My Profile</a></li>
                             {% endif %}
