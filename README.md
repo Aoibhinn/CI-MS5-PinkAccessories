@@ -115,8 +115,8 @@ The primary goal of the website from a site users perspective is as follows:
 
 Page            |Description
 :-------------         |:------------- 
-Home     | 
-Products           |     
+Home     | The home includes a shop now button and image suiting the theme of the site
+Products           | The products page displays a list of products available (filter by catgegory, price, rating, alphabetical)
 Product Detail           | The product detail page displays the product image, description, price, add to bag buttons    
 Product Management(Add Product)     | A product can be added to the website    
 Product Management(Edit Product)     | A product can be edited to the website     
