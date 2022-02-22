@@ -24,6 +24,7 @@ There are two types of users, and I have set up accounts for both
     + [Database](#database)
       - [Models](#models)
         * [User Model](#user-model)
+        * [User Profile Model](#user-profile-model)
         * [Order Model](#order-model)
         * [OrderLineItem Model](#orderlineitem-model)
         * [Product Model](#product-model)
@@ -160,7 +161,7 @@ Note: Environment variable values are not exposed in the source code, they are s
 - The User model contains information about the user. It is part of the Django allauth library
 - The model contains the following fields: username, password, first_name, last_name, email, is_staff, is_active, is_superuser, last_login, date_joined
 
-##### User Model
+##### User Profile Model
 - The User model has a one-to-one relationship with User
 - The model contains the following fields: default_phone_number, default_street_address1, default_street_address2
 default_town_or_city, default_county, default_postcode and default_country
