@@ -1,3 +1,5 @@
+<br>![Responsive Pink Accessories](readme/wireframes/responsive_image.png)
+
 # Pink Accessories
 'Pink Accessories' is a fabulous ecommerce website allowing users purchase jewellery, bags hats and scarves developed for developed for Milestone 5 project 5 as part of the Code Institute - Diploma in Software Development (Full stack) course.
 
