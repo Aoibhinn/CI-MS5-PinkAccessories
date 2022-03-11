@@ -160,8 +160,6 @@ def checkout(request):
 
     return render(request, template, context)
 
-    return render(request, template, context)
-
 
 def checkout_success(request, order_number):
     """
