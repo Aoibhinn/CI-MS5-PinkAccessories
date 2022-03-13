@@ -1,5 +1,51 @@
 {% extends "base.html" %}
 {% load static %}
+{% block extra_title %}Add Blog Item{% endblock %}
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
 {% block content %}
-<h2 class="header-font mb-4 pt-4 text-center">Blog Item Management</h2>
+<div class="overlay"></div>
+    <div>
+        <div class="section-holder">
+            <div class="form-holder-lg form-holder-generic">
+                <div class="container">
+                    <div class="row">
+                            <div class="col-12">
+                                <h1 class="header-font mb-4 pt-2 text-center">Blog Item Management</h1>
+                                <h2 class="text-muted text-center">Add Blog Item</h2>
+                            </div>
+                    </div>
+                    <!-- Add New Item -->
+                    <div class="row justify-content-center container-pd">
+                        <div class="col-sm-12 col-lg-8">
+                            <form method="POST" action="{% url 'add_blog_item' %}" class="form mb-2" enctype="multipart/form-data">
+                                {% csrf_token %}
+                                {% for field in post_form %}
+                                {% if field.name != 'image' %}
+                                {{ field | as_crispy_field }}
+                                {% else %}
+                                {{ field }}
+                                {% endif %}
+                                {% endfor %}
+                                <div class="text-center mt-2">
+                                    <p class="mt-0">*Select 'Draft' to save the blog item for later or select 'Publish' to publish on the
+                                        site.</p>
+                                    <a class="btn black-btn" href="{#}">Cancel</a>
+                                    <button class="btn green-btn" type="submit">Add blog Item</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block postloadjs %}
+{{ block.super }}
 {% endblock %}
