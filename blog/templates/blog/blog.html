@@ -2,57 +2,10 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
 {% endblock %}
 
 {% block content %}
-<div class="overlay"></div>
-<div class="hero-image">
-    <div class="section-holder">
-        <div class="form-holder-xlg">
-            <main class="container">
-                <div class="bg-overlay"></div>
-                <div class="row">
-                    <div class="col mt-3">
-                        <h2 class="header-font mb-2 pt-1 text-center text-black">Blog Items <i class="fas fa-paw"></i></h2>
-                    </div>
-                </div>
-                <hr>
-                <div class="col-12">
-                    <p class="text-uppercase text-center mt-3 text-black">
-                        <strong>Total Blog items: </strong>({{ posts|length }})
-                    </p>
-                </div>
-                <!-- All Blog Items -->
-                <div class="row">
-                    {% for blog_item in blog_items_published %}
-                    <div class="col-sm-12 col-md-6">
-                        <div class="card p-1 mt-3">
-                            <div class="">
-                                {% if blog_item.image %}
-                                <img src="{{ blog_item.image.url }}" alt="{{ blog_item.title }}"/>
-                                {% else %}
-                                <img src="{{ blog_item.image_url }}" alt="{{ blog_item.title }}"/>
-                                {% endif %}
-                            </div>
-                            <p class="text-uppercase text-black mt-3">{{ blog_item.title }}</p>
-                            <p class="text-muted mb-0">Posted By: {{ blog_item.user }}</p>
-                            <p class="text-muted">Posted On: {{ blog_item.create_date }}</p>
-                            <p class="card-text">{{blog_item.blog_content|slice:":200" }}</p>
-                            <!--<a href=" url 'post_detail' post.id " class="btn btn-sm btn-blue rounded-1 text-uppercase">
-                                Read More
-                            </a> -->
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-                <hr>
-            </main>
-        </div>
-    </div>
+<div class="col mt-3">
+    <h2 class="header-font mb-2 pt-1 text-center text-black">Blog Items</h2>
 </div>
 {% endblock %} 

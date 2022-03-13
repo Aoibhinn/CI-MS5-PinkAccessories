@@ -56,7 +56,7 @@ def add_blog_item(request):
             form_data.user = request.user
             form_data.save()
             messages.success(request, 'Your blog item was posted successfully!')
-            return redirect('blog_items')
+            return redirect('manage_blog_items')
         else:
             messages.error(
                 request, 'Your blog item failed to add, Please try again')
