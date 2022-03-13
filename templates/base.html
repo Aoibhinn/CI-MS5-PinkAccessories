@@ -35,6 +35,8 @@
         </script>
         <!-- Stripe js -->
         <script src="https://js.stripe.com/v3/"></script>
+        <!-- EmailJS javascript library-->
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     {% endblock %}
     {% block extra_js %}
     {% endblock %}
@@ -211,7 +213,22 @@
                         {% endif %}
                     </ul>
                 </div>
-                
+                <div class="col-lg-4 col-md-12 mb-lg-0">
+                    <!-- Newsletter signup -->
+                    <h2 class="text-uppercase font-weight-bold mb-4 footer-text">Newsletter</h2>
+                    <p class="mb-4">Sign up for a weekly newsletter for exclusive discounts</p>
+                    <div class="p-1 rounded border" id="mailing-list">
+                      <form id="mailinglistform" onsubmit="return sendMail(this);">
+                        <div class="input-group">
+                          <label for="email_address" hidden>Email Address:</label>
+                          <input type="email" placeholder="Enter your email address" id="email_address" name="email_address" aria-describedby="newsletter" class="form-control border-0 shadow-0">
+                          <div class="input-group-append">
+                            <button id="newsletter" type="submit" value="newsletter" class="btn btn-link green-btn">Signup</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- Copyright information -->
@@ -225,6 +242,7 @@
     <script>
         $('.toast').toast('show');
     </script>
+    <script src="{% static 'js/send_email.js' %}"></script>
     {% endblock %}
   </body>
 </html>

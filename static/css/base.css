@@ -48,6 +48,15 @@ a {
     color: white;
 }
 
+.red-strikethrough{
+    text-decoration: line-through;
+    color: #DB4437;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
