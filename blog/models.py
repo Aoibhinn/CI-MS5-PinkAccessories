@@ -15,9 +15,9 @@ STATUS = (
 )
 
 
-class Blog(models.Model):
+class Post(models.Model):
     """
-    This model is for a blog item
+    This model is for a post item
     """
     class Meta:
         ordering = ['-create_date']
@@ -30,9 +30,9 @@ class Blog(models.Model):
     user = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
-        related_name='blog_items'
+        related_name='blog_posts'
     )
-    blog_item_text = models.TextField(
+    content = models.TextField(
         max_length=500,
     )
     image = models.ImageField(
@@ -63,7 +63,7 @@ class Blog(models.Model):
 
 class Comment(models.Model):
     """
-    This model is for a blog item comment
+    This model is for a post item comment
     """
     class Meta:
         ordering = ['create_date']
@@ -73,8 +73,8 @@ class Comment(models.Model):
         null=True,
         on_delete=models.CASCADE
     )
-    new_blog_post = models.ForeignKey(
-        Blog,
+    post = models.ForeignKey(
+        Post,
         on_delete=models.CASCADE,
         related_name="comments"
     )
