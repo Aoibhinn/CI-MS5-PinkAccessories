@@ -2,11 +2,11 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
@@ -18,64 +18,67 @@
                 <div class="bg-overlay"></div>
                 <div class="row">
                     <div class="col mt-3">
-                        <h1 class="header-font mb-2 pt-1 text-center text-black">Blog Items ({{ blog_items|length }}) <a class="btn pink-btn" href="{% url 'add_blog_item' %}">Add</a></h1>
+                        <h1 class="header-font mb-2 pt-1 text-center text-black">Blog Items ({{ blog_items|length }}) <a
+                                class="btn pink-btn" href="{% url 'add_blog_item' %}">Add</a></h1>
                     </div>
                 </div>
                 <hr>
                 <!-- All Blog Items -->
                 <div class="row">
                     <div class="col-12">
-                    <div class="table-responsive">
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th scope="col">Blog Item Title</th>
-                              <th scope="col">Create Date</th>
-                              <th scope="col">Status</th>
-                              <th scope="col">Action</th>
-                            </tr>
-                          </thead>
-                            <tbody>
-                                {% for blog_item in blog_items %}
-                                <tr>
-                                  <td>{{ blog_item.title }}</td>
-                                  <td>{{ blog_item.create_date }}</td>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Blog Item Title</th>
+                                        <th scope="col">Create Date</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for blog_item in blog_items %}
+                                    <tr>
+                                        <td>{{ blog_item.title }}</td>
+                                        <td>{{ blog_item.create_date }}</td>
                                         {% if blog_item.status == 1 %}
-                                            <td>Published</td>
+                                        <td>Published</td>
                                         {% else %}
-                                            <td>Draft</td>
+                                        <td>Draft</td>
                                         {% endif %}
-                                    <td>
-                                        <a class="btn black-btn" href="{#}">Edit</a>
-                                        <a class="btn btn-danger" data-bs-toggle="modal">Delete</a>
+                                        <td>
+                                            <a class="btn black-btn" href="{}">Edit</a>
+                                            <a class="btn btn-danger" data-bs-toggle="modal">Delete</a>
                                             <!-- Delete blog item modal -->
-                                            <div class="modal fade" tabindex="-1"  aria-hidden="true">
+                                            <div class="modal fade" tabindex="-1" aria-hidden="true">
                                                 <div class="modal-dialog">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
                                                             <h2 class="modal-title">Delete Blog Item</h2>
-                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            <button type="button" class="btn-close"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
                                                         </div>
                                                         <div class="modal-body">
                                                             Are you sure you want to delete this blog item?
                                                         </div>
                                                         <div class="modal-footer">
                                                             <!-- Close and delete new item buttons-->
-                                                            <button type="button" class="btn black-btn" data-bs-dismiss="modal">Close</button>
-                                                                <a href="{#}" class="btn red-btn">Delete</a>
+                                                            <button type="button" class="btn black-btn"
+                                                                data-bs-dismiss="modal">Close</button>
+                                                            <a href="{#}" class="btn red-btn">Delete</a>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                    </td>
-                                </tr>
+                                        </div>
+                                    </tr>
+                                </tbody>
                                 {% endfor %}
-                            </tbody>
-                        </table>
+                            </table>
+                        </div>
                     </div>
+                    <hr>
                 </div>
-                </div>
-                <hr>
             </main>
         </div>
     </div>
