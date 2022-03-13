@@ -15,9 +15,9 @@ STATUS = (
 )
 
 
-class Post(models.Model):
+class Blog(models.Model):
     """
-    This model is for a post item
+    This model is for a blog item
     """
     class Meta:
         ordering = ['-create_date']
@@ -30,7 +30,7 @@ class Post(models.Model):
     user = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
-        related_name='blog_posts'
+        related_name='blog_items'
     )
     content = models.TextField(
         max_length=500,
@@ -63,7 +63,7 @@ class Post(models.Model):
 
 class Comment(models.Model):
     """
-    This model is for a post item comment
+    This model is for a blog item comment
     """
     class Meta:
         ordering = ['create_date']
@@ -73,8 +73,8 @@ class Comment(models.Model):
         null=True,
         on_delete=models.CASCADE
     )
-    post = models.ForeignKey(
-        Post,
+    blog = models.ForeignKey(
+        Blog,
         on_delete=models.CASCADE,
         related_name="comments"
     )
@@ -97,3 +97,4 @@ class Comment(models.Model):
             comment text
         """
         return self.comment_text
+        
