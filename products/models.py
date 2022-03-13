@@ -66,11 +66,6 @@ class Product(models.Model):
     description = models.TextField(
 
     )
-    has_sizes = models.BooleanField(
-        default=False,
-        null=True,
-        blank=True
-    )
     colour = models.CharField(
         max_length=254
     )
