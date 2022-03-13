@@ -24,7 +24,7 @@ def blog_items(request):
         'blog_items_drafts': blog_items_drafts,
     }
 
-    return render(request, 'blog.html', context)
+    return render(request, 'blog/blog.html', context)
 
 
 def manage_blog_items(request):
@@ -80,28 +80,26 @@ def edit_blog_item(request, blog_item_id):
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
 
-    blog_item = get_object_or_404(Blog, pk=blog_item_id)
+    blog_item_to_edit = get_object_or_404(Blog, pk=blog_item_id)
     if request.method == 'POST':
-        blog_form = BlogForm(request.POST, request.FILES, instance=blog_item)
+        blog_form = BlogForm(request.POST, request.FILES, instance=blog_item_to_edit)
         if blog_form.is_valid():
             blog_form.save()
-            messages.success(request, f'{blog_item.title} '
+            messages.success(request, f'{blog_item_to_edit.title} '
                                       f'was successfully updated')
-            """return redirect(reverse('edit_blog item', 
-            args=[news_item.id]))-->"""
             return redirect('manage_blog_items')
         else:
             messages.error(
-                request, f'Error, {blog_item.title} \
+                request, f'Error, {blog_item_to_edit.title} \
                 was not successfully updated')
     else:
-        blog_form = BlogForm(instance=blog_item)
-        messages.info(request, f'You are currently editing {blog_item.title}')
+        blog_form = BlogForm(instance=blog_item_to_edit)
+        messages.info(request, f'You are currently editing {blog_item_to_edit.title}')
 
-    template = 'edit_blog_item.html'
+    template = 'blog/edit_blog_item.html'
     context = {
         'blog_form': blog_form,
-        'blog_item': blog_item,
+        'blog_item': blog_item_to_edit,
     }
 
     return render(request, template, context)

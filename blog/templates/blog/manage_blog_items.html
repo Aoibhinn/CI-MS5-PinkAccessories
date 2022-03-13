@@ -41,13 +41,13 @@
                                     <tr>
                                         <td>{{ blog_item.title }}</td>
                                         <td>{{ blog_item.create_date }}</td>
-                                        {% if blog_item.status == 1 %}
-                                        <td>Published</td>
-                                        {% else %}
-                                        <td>Draft</td>
-                                        {% endif %}
-                                        <td>
-                                            <a class="btn black-btn" href="{}">Edit</a>
+                                            {% if blog_item.status == 1 %}
+                                                <td>Published</td>
+                                            {% else %}
+                                                <td>Draft</td>
+                                            {% endif %}
+                                         <td>
+                                            <a class="btn black-btn" href="{% url 'edit_blog_item' blog_item.id %}">Edit</a>
                                             <a class="btn btn-danger" data-bs-toggle="modal">Delete</a>
                                             <!-- Delete blog item modal -->
                                             <div class="modal fade" tabindex="-1" aria-hidden="true">
@@ -63,9 +63,8 @@
                                                         </div>
                                                         <div class="modal-footer">
                                                             <!-- Close and delete new item buttons-->
-                                                            <button type="button" class="btn black-btn"
-                                                                data-bs-dismiss="modal">Close</button>
-                                                            <a href="{#}" class="btn red-btn">Delete</a>
+                                                            <button type="button" class="btn black-btn" data-bs-dismiss="modal">Close</button>
+                                                                <a href="{#}" class="btn red-btn">Delete</a>
                                                         </div>
                                                     </div>
                                                 </div>
