@@ -31,10 +31,10 @@ def manage_blog_items(request):
     """
     A view to manage all blog items
     """
-    all_news_items = Blog.objects.order_by('-create_date')
+    all_blog_items = Blog.objects.order_by('-create_date')
 
     context = {
-        'blog_items': all_news_items,
+        'blog_items': all_blog_items,
     }
 
     return render(request, 'blog/manage_blog_items.html', context)
@@ -85,13 +85,11 @@ def edit_blog_item(request, blog_item_id):
         blog_form = BlogForm(request.POST, request.FILES, instance=blog_item_to_edit)
         if blog_form.is_valid():
             blog_form.save()
-            messages.success(request, f'{blog_item_to_edit.title} '
-                                      f'was successfully updated')
+            messages.success(request, 'Successfully updated blog!')
             return redirect('manage_blog_items')
         else:
-            messages.error(
-                request, f'Error, {blog_item_to_edit.title} \
-                was not successfully updated')
+            messages.error(request, 'Failed to update blog. \
+                                     Please ensure the form is valid.')
     else:
         blog_form = BlogForm(instance=blog_item_to_edit)
         messages.info(request, f'You are currently editing {blog_item_to_edit.title}')

@@ -24,7 +24,7 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-sm-12 col-lg-8 pb-5">
-                        <form method="POST" action="{#}" class="form mb-2" enctype="multipart/form-data">
+                        <form method="POST" action="{% url 'edit_blog_item' blog_item.id %}" class="form mb-2" enctype="multipart/form-data">
                             {% csrf_token %}
                             {% for field in blog_form %}
                             {% if field.name != 'image' %}
@@ -34,8 +34,8 @@
                             {% endif %}
                             {% endfor %}
                             <div class="text-center pb-3">
-                                <a class="btn black-btn" href="{#}">Cancel</a>
-                                <button class="btn green-btn" type="submit">Save Changes</button>
+                                <a class="btn black-btn" href="{% url 'manage_blog_items' %}">Cancel</a>
+                                <button class="btn pink-btn" type="submit">Save Changes</button>
                             </div>
                         </form>
                     </div>
