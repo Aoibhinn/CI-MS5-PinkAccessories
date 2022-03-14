@@ -205,8 +205,11 @@
                         {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
                                 <li class="mb-2"><a href="{% url 'add_product' %}" class="font-black">Product Management</a></li>
+                                <li class="mb-2"><a href="{% url 'manage_blog_items' %}" class="font-black">Blog Item Management</a></li>
                             {% else %}
                                 <li class="mb-2"><a href="{% url 'profile' %}" class="font-black">My Profile</a></li>
+                                <li class="mb-2"><a href="{% url 'blog_items' %}" class="font-black">Blog</a></li>
+                                <li class="mb-2"><a href="{% url 'sale_items' %}" class="font-black">Sale</a></li>
                             {% endif %}
                         {% else %}
                             <li class="mb-2"><a href="{% url 'account_signup' %}" class="font-black">Register</a></li>

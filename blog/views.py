@@ -33,8 +33,8 @@ def blog_items(request):
     blog_items_count = Blog.objects.filter(status=1).count()
 
     context = {
-        'blog_items_published': blog_items_published,
-        'blog_items_drafts': blog_items_drafts,
+        # 'blog_items_published': blog_items_published,
+        # 'blog_items_drafts': blog_items_drafts,
         'blog_items_count': blog_items_count
     }
 

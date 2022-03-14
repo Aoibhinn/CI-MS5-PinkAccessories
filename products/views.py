@@ -154,7 +154,7 @@ def edit_product(request, product_id):
 
     return render(request, template, context)
 
-
+@login_required
 def delete_product(request, product_id):
     """
     A view to delete a product
@@ -172,3 +172,22 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+def sale_items(request):
+    """
+    A view to display all sale items
+    Args:
+        request (object): HTTP request object.
+    Returns:
+        Render of sale items page with context
+    """
+    sale_items = None
+    sale_items = Product.objects.exclude(pre_sale_price__isnull=True)
+    sale_items_count = sale_items.count()
+    sale_items = setup_pagination(sale_items, request, 4)
+
+    context = {
+        'sale_items': sale_items,
+        'sale_items_count': sale_items_count
+    }
+    return render(request, 'products/sale_items.html', context)
