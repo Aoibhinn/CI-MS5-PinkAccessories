@@ -1,11 +1,74 @@
 {% extends "base.html" %}
 {% load static %}
-
+{% block extra_title %}Blow{% endblock %}
 {% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
 {% endblock %}
-
 {% block content %}
-<div class="col mt-3">
-    <h2 class="header-font mb-2 pt-1 text-center text-black">Blog Items</h2>
-</div>
-{% endblock %} 
+    <div class="overlay"></div>
+        <div class="container px-3 products-page">
+            <div class="row blog-items">
+                <div class="col mt-3">
+                    <h1 class="header-font mb-2 pt-1 text-center text-black"> Blog Items ({{ blog_items_count }})</h1>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        {% for blog_item in blog_items_published %}
+                            <div class="col-sm-12 col-md-12 col-lg-6">
+                                <div class="card blog-card p-1 mt-3">
+                                    <div class="">
+                                        {% if blog_item.image %}
+                                            <a href="{% url 'blog_item' blog_item.id %}">
+                                                <img class="blog-card-img-top" src="{{ blog_item.image.url }}" alt="{{ blog_item.title }}"/>
+                                            </a>
+                                        {% else %}
+                                            <a href="{% url 'blog_item' blog_item.id %}">
+                                                <img class="blog-card-img-top" src="{{ blog_item.image_url }}" alt="{{ blog_item.title }}"/>
+                                            </a>
+                                        {% endif %}
+                                    </div>
+                                    <p class="text-muted mb-0">Posted By: {{ blog_item.user }}</p>
+                                    <p class="text-muted">Posted On: {{ blog_item.create_date }}</p>
+                                    <p class="text-muted">{{blog_item.blog_item_text|slice:":150" }} ..........</p>
+                                    <a href="{% url 'blog_item' blog_item.id %}" class="btn pink-btn">Read More</a>
+                                </div>
+                            </div>
+                        {% endfor %}
+                        {% if blog_items_published.has_other_pages %}
+                            <!-- Pagination -->
+                            <div class="pagination-holder p-4">
+                                <nav aria-label="Products sorted">
+                                  <ul class="pagination">
+                                    {% if blog_items_published.has_previous %}
+                                      <li class="page-item"><a class="page-link" href="?page={{ blog_items_published.previous_page_number }}">Previous</a></li>
+                                    {% else %}
+                                      <li class="disabled page-item"><span class="page-link">Previous</span></li>
+                                    {% endif %}
+                                    {% for i in blog_items_published.paginator.page_range %}
+                                      {% if blog_items_published.number == i %}
+                                        <li class="page-item active"><span class="page-link">{{ i }} <span class="sr-only">(current)</span></span></li>
+                                      {% else %}
+                                        <li class="page-item"><a class="page-link" href="?page={{ i }}">{{ i }}</a></li>
+                                      {% endif %}
+                                    {% endfor %}
+                                    {% if blog_items_published.has_next %}
+                                      <li class="page-item"><a class="page-link" href="?page={{ blog_items_published.next_page_number }}">Next</a></li>
+                                    {% else %}
+                                      <li class="disabled page-item"><span class="page-link">Next</span></li>
+                                    {% endif %}
+                                  </ul>
+                                </nav>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}
