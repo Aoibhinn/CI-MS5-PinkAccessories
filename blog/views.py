@@ -1,10 +1,17 @@
+
+# Imports
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# 3rd party:
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, get_object_or_404
 from django.urls import reverse
 
+# Internal:
+from util.util import setup_pagination
 from .forms import BlogForm
 from .models import Blog
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 def blog_items(request):
@@ -12,16 +19,23 @@ def blog_items(request):
     A view to show all blog items
     The context contains the blog_items_published
     and blog_items_drafts
+    Args:
+        request (object): HTTP request object.
+    Returns:
+        Renders the blog page.
     """
-
     blog_items_published = \
         Blog.objects.filter(status=1).order_by('-create_date')
     blog_items_drafts = \
         Blog.objects.filter(status=0).order_by('-create_date')
 
+    blog_items_published = setup_pagination(blog_items_published, request, 4)
+    blog_items_count = Blog.objects.filter(status=1).count()
+
     context = {
         'blog_items_published': blog_items_published,
         'blog_items_drafts': blog_items_drafts,
+        'blog_items_count': blog_items_count
     }
 
     return render(request, 'blog/blog.html', context)
