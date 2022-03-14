@@ -15,4 +15,6 @@ urlpatterns = [
          name='edit_blog_item'),
     path('manage_blog_items/', views.manage_blog_items,
          name='manage_blog_items'),
+    path('delete_blog_item/<int:blog_item_id>/', views.delete_blog_item,
+         name='delete_blog_item'),
 ]

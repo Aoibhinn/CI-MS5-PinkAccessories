@@ -115,3 +115,22 @@ def edit_blog_item(request, blog_item_id):
     }
 
     return render(request, template, context)
+
+@login_required
+def delete_blog_item(request, blog_item_id):
+    """
+    A view to delete blog items
+    Args:
+        request (object): HTTP request object.
+        blog_item_id: Blog item id
+    Returns:
+        Renders the manage blog item after deleting the blog item
+    """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
+    blog_item = get_object_or_404(Blog, pk=blog_item_id)
+    blog_item.delete()
+    messages.success(request, f'{blog_item.title} Successfully Deleted')
+    return redirect(reverse('manage_blog_items'))
