@@ -8,6 +8,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 
 # Internal:
+from util.util import setup_pagination
 from .models import Product, Category
 from .forms import ProductForm
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
