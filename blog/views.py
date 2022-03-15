@@ -29,12 +29,12 @@ def blog_items(request):
     blog_items_drafts = \
         Blog.objects.filter(status=0).order_by('-create_date')
 
-    blog_items_published = setup_pagination(blog_items_published, request, 4)
+    # blog_items_published = setup_pagination(blog_items_published, request, 4)
     blog_items_count = Blog.objects.filter(status=1).count()
 
     context = {
-        # 'blog_items_published': blog_items_published,
-        # 'blog_items_drafts': blog_items_drafts,
+        'blog_items_published': blog_items_published,
+        'blog_items_drafts': blog_items_drafts,
         'blog_items_count': blog_items_count
     }
 
