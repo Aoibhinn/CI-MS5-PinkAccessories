@@ -2,6 +2,8 @@
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # 3rd party:
 from django.db import models
+from django.utils.translation import gettext_lazy as _
+
 
 # Internal:
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -74,6 +76,7 @@ class Product(models.Model):
         decimal_places=2
     )
     pre_sale_price = models.DecimalField(
+        verbose_name=_('Pre sale price'),
         max_digits=6,
         decimal_places=2,
         null=True,

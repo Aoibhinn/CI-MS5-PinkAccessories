@@ -1,6 +1,7 @@
 # Imports
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # 3rd party:
+from django.http import Http404
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
@@ -185,7 +186,6 @@ def sale_items(request):
     sale_items = None
     sale_items = Product.objects.exclude(pre_sale_price__isnull=True)
     sale_items_count = sale_items.count()
-    sale_items = setup_pagination(sale_items, request, 4)
 
     context = {
         'sale_items': sale_items,
