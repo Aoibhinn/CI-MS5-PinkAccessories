@@ -29,7 +29,7 @@ def blog_items(request):
     blog_items_drafts = \
         Blog.objects.filter(status=0).order_by('-create_date')
 
-    # blog_items_published = setup_pagination(blog_items_published, request, 4)
+    blog_items_published = setup_pagination(blog_items_published, request, 10)
     blog_items_count = Blog.objects.filter(status=1).count()
 
     context = {
@@ -40,7 +40,7 @@ def blog_items(request):
 
     return render(request, 'blog/blog.html', context)
 
-
+@login_required
 def manage_blog_items(request):
     """
     A view to manage all blog items
