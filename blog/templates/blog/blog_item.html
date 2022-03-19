@@ -38,29 +38,7 @@
                                     <p class="text-muted">Posted By: {{ blog_item.user }} on the {{ blog_item.create_date }}</p>
                                     {% if blog_item.user == request.user or request.user.is_superuser %}
                                         <a class="btn pink-btn" href="{% url 'edit_blog_item' blog_item.id %}" role="button">Edit</a>
-                                        <button type="button" class="btn black-btn" data-bs-toggle="modal"
-                                        data-bs-target="#deleteBlogItem">
-                                        Delete</button>
-                                        <!-- Delete Button Modal -->
-                                        <div class="modal fade" id="deleteBlogItem" tabindex="-1" role="dialog" aria-labelledby="deleteBlogItem" aria-hidden="true">
-                                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h4>Delete Blog Item {{ blog_item.title }} </h4>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        You are about to delete Title ({{ blog_item.title }}) and all
-                                                        ({{ comments|length }}) user comments, can you confirm?
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <!-- Close and delete product buttons-->
-                                                        <button type="button" class="btn black-btn" data-bs-dismiss="modal">Close</button>
-                                                        <a href="{% url 'delete_blog_item' blog_item.id %}" class="btn red-btn">Delete</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <a class="btn btn-danger" href="{% url 'delete_blog_item' blog_item.id %}">Delete</a>
                                     {% endif %}
                                 </div>
                             </div>

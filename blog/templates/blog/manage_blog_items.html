@@ -46,9 +46,10 @@
                                             {% else %}
                                                 <td>Draft</td>
                                             {% endif %}
-                                         <td>
-                                            <a class="btn pink-btn" href="{% url 'edit_blog_item' blog_item.id %}">Edit</a>
-                                            <a class="btn btn-danger" href="{% url 'delete_blog_item' blog_item.id %}">Delete</a>
+                                            <td>
+                                                <a class="btn pink-btn" href="{% url 'edit_blog_item' blog_item.id %}">Edit</a>
+                                                <a class="btn btn-danger" href="{% url 'delete_blog_item' blog_item.id %}">Delete</a>
+                                            </td>
                                     </tr>
                                 </tbody>
                                 {% endfor %}
