@@ -34,9 +34,10 @@
                                             </a>
                                         {% endif %}
                                     </div>
+                                    <p class="text-muted mb-0">Title: {{ blog_item.title }}</p>
                                     <p class="text-muted mb-0">Posted By: {{ blog_item.user }}</p>
                                     <p class="text-muted">Posted On: {{ blog_item.create_date }}</p>
-                                    <p class="text-muted">{{blog_item.blog_item_text|slice:":150" }} ..........</p>
+                                    <p class="text-muted">{{blog_item.content|slice:":150" }} ..........</p>
                                     <a href="{% url 'blog_item' blog_item.id %}" class="btn pink-btn">Read More</a>
                                 </div>
                             </div>

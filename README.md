@@ -479,8 +479,8 @@ The navigation bar is displayed on all pages with a search box, My account, and 
 - Blog
 <br>![Blog](readme/testing/blog_admin.png)
 
-### Feature 8 Blog Page
-#### Description feature 8
+### Feature 10 Blog Page
+#### Description feature 10
 - The app "blog" contains the admin, forms, views, models and templates for this functionality
 - A regular user can view blog items, and add a comment to a blog item.
 - A user must have an account and be logged in to comment on a blog item, otherwise they will see a link to login or create an account
@@ -507,12 +507,11 @@ The navigation bar is displayed on all pages with a search box, My account, and 
 - To add a blog item the user can enter a title, text and image
 <br>![Add Blog Item](readme/testing/add_blog_item_desktop.PNG)
 - The blog item is displayed in the Manage Blog Item page, this is a table with 5 columns, 2 containing Edit and Delete buttons
-<br>![Manage blog items](readme/testing/manage_blog_items_desktop.PNG)
+<br>![Manage blog items](readme/testing/manage_blog_item_desktop.png)
 - To edit a blog item the user can enter a title, text and image after clicking on the Edit button in the Manage Blog Item page 
-<br>![Edit Blog Item desktop](readme/testing/edit_blog_item_desktop.PNG)
-<br>![Edit Blog Item tablet](readme/testing/edit_blog_item_tablet.PNG)
+<br>![Edit Blog Item desktop](readme/testing/edit_blog_item_desktop.png)
 - To delete a blog item, click on the delete button
-<br>![Delete Blog Item](readme/testing/delete_blog_item_desktop.PNG)
+<br>![Delete Blog Item](readme/testing/delete_blog_item_desktop.png)
 
 
 # Technologies Used
