@@ -325,6 +325,22 @@ Step| Result | Result  | Status
 ------------ | ------------ | ------------- | ------------- 
 Step 1 | The categories are displayed | [Result](readme/testing/admin_categories.png)   | Passed |
 
+### Feature 10 Blog Page
+#### User Stories feature 10
+- User Story 8.1: As a regular user I can view 4 blog items on a page with a blog image, and 150 characters of the blog item text and a read more button
+- User Story 8.2: As a regular user I can click on the read more button on the Blog page, I will be navigated to the blog item with a blog item image, content and any comments will be displayed
+
+#### User Stories Steps 10
+1. As a regular user click on the Blog page 
+2. Click on the read more button on a "blog item"   
+
+#### User Story Testing Results 10
+Step| Result | Desktop | Tablet | Mobile | Status
+------------ | ------------ | ------------- | ------------- | ------------- | -------------
+Step 1 | The blog page is displayed | [Desktop](readme/testing/blog_items_desktop.png)  | [Tablet](readme/testing/blog_items_tablet.png)  | [Mobile](readme/testing/blog_items_mobile.png)  | Passed |
+Step 2 | The blog item is displayed | [Desktop](readme/testing/blog_item_desktop.png)  | [Tablet](readme/testing/blog_item_tablet.png)  | [Mobile](readme/testing/blog_item_mobile.png)  | Passed |
+
+
 
 ### Feature 11 Blog Item Management
 #### User Stories feature 11
