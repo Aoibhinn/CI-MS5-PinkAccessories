@@ -50,6 +50,15 @@
       - [User Story 9-4](#user-story-9-4)
       - [User Story Steps 9-4](#user-story-steps-9-4)
       - [User Story Testing Results 9-4](#user-story-testing-results-9-4)
+    + [Feature 10 Admin](#feature-10-blog-page)
+      - [User Stories Steps 10](#user-stories-steps-10)
+      - [User Story Testing Results 10](#user-story-testing-results-10)
+    + [Feature 11 Admin](#feature-11-blog-item-management)
+      - [User Stories Steps 11](#user-stories-steps-11)
+      - [User Story Testing Results 11](#user-story-testing-results-11)
+    + [Feature 12 Admin](#feature-12-sale-items-page)
+      - [User Stories Steps 12](#user-stories-steps-12)
+      - [User Story Testing Results 12](#user-story-testing-results-12)
 - [Code Validators and Website Analysis](#code-validators-and-website-analysis)
   * [HTML Markup Validation Service](#html-markup-validation-service)
   * [CSS Validation Service](#css-validation-service)
@@ -339,7 +348,6 @@ Step| Result | Desktop | Tablet | Mobile | Status
 ------------ | ------------ | ------------- | ------------- | ------------- | -------------
 Step 1 | The blog page is displayed | [Desktop](readme/testing/blog_items_desktop.png)  | [Tablet](readme/testing/blog_items_tablet.png)  | [Mobile](readme/testing/blog_items_mobile.png)  | Passed |
 Step 2 | The blog item is displayed | [Desktop](readme/testing/blog_item_desktop.png)  | [Tablet](readme/testing/blog_item_tablet.png)  | [Mobile](readme/testing/blog_item_mobile.png)  | Passed |
-
 
 
 ### Feature 11 Blog Item Management
