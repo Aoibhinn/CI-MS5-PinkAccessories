@@ -325,6 +325,34 @@ Step| Result | Result  | Status
 ------------ | ------------ | ------------- | ------------- 
 Step 1 | The categories are displayed | [Result](readme/testing/admin_categories.png)   | Passed |
 
+
+### Feature 11 Blog Item Management
+#### User Stories feature 11
+- User Story 11.1: As an admin user I can view Blog items by clicking on the Blog Item Management link under My account. The blog item count and title, create date, status(Published or Draft), and Edit and Delete buttons is displayed
+- User Story 11.2: As an admin user if there are more than four blog items added, the page is paginated
+- User Story 11.3: As an admin user I can add a blog item, by clicking on the Add button. I can enter a Title and content, add an image and set the item to Published or Draft
+- User Story 11.4: As an admin user I can edit a blog item, by clicking on the Edit button for the blog item. I can update a Title and blog item text, update an image and update the item to Published or Draft
+- User Story 11.5: As an admin user if a blog item is set to Draft, admin and regular users will NOT see this item on the Blog Page.
+- User Story 11.6: As an admin user if a blog item is set to Published, admin regular users will see this item on the Blog Page.
+- User Story 11.7: As an admin user I can delete a blog item, and I will be asked to confirm the deletion
+
+#### User Stories Steps 11
+1. As an admin user click on the Blog Item Management under My account
+2. Click on the Add blog item button to add a blog item with text and image
+3. Click on the Edit blog item button to update a "blog item"
+4. Click on the Blog page to see Published items and click on the edited blog item, Draft items are not displayed
+5. Delete a "blog item"
+
+#### User Story Testing Results 11
+Step| Result | Desktop | Tablet | Mobile | Status
+------------ | ------------ | ------------- | ------------- | ------------- | -------------
+Step 1 | The manage blog items page is displayed | [Desktop](readme/testing/manage_blog_items_desktop.PNG)  | [Tablet](readme/testing/manage_blog_items_tablet.PNG)  | [Mobile](readme/testing/manage_blog_items_mobile.PNG)  | Passed |
+Step 2 | The add blog item page is displayed and the blog item is added| [Desktop](readme/testing/add_blog_item_desktop.PNG)  | [Tablet](readme/testing/add_blog_item_tablet.png)  | [Mobile](readme/testing/add_blog_item_mobile.png)  | Passed |
+Step 3 | The edit blog item page is displayed and the blog item is updated| [Desktop](readme/testing/edited_blog_item_desktop.png)  | [Tablet](readme/testing/edited_blog_item_tablet.png)  | [Mobile](readme/testing/edited_blog_item_mobile.png)  | Passed |
+Step 4 | The published blog item is displayed | [Desktop](readme/testing/blog_items_desktop.png)  | [Tablet](readme/testing/blog_items_tablet.png)  | [Mobile](readme/testing/blog_items_mobile.png)  | Passed |
+Step 5 | The blog item is deleted | [Desktop](readme/testing/delete_blog_item_desktop.png)  | [Tablet](readme/testing/delete_blog_item_tablet.png)  | [Mobile](readme/testing/delete_blog_item_mobile.png)  | Passed |
+
+
 # Code Validators and Website Analysis
 The website's pages was tested against the following validators:
 
