@@ -368,6 +368,21 @@ Step 3 | The edit blog item page is displayed and the blog item is updated| [Des
 Step 4 | The published blog item is displayed | [Desktop](readme/testing/blog_items_desktop.png)  | [Tablet](readme/testing/blog_items_tablet.png)  | [Mobile](readme/testing/blog_items_mobile.png)  | Passed |
 Step 5 | The blog item is deleted | [Desktop](readme/testing/delete_blog_item_desktop.png)  | [Tablet](readme/testing/delete_blog_item_tablet.png)  | [Mobile](readme/testing/delete_blog_item_mobile.png)  | Passed |
 
+### Feature 12 Sale items page
+#### User Stories feature 12
+- User Story 6.1: As a regular user I can view the products with sale prices, the product image, category, presale price and price is displayed
+- User Story 6.2: As a regular user if I click on a product in the sale items, I am navigated to the product detail page for that product
+
+#### User Stories Steps 12
+1. Click on the sale items in the header
+2. Click on a product in the sale items 
+
+#### User Story Testing Results 12
+Step| Result | Desktop | Tablet | Mobile | Status
+------------ | ------------ | ------------- | ------------- | ------------- | -------------
+Step 1 | The sale items and count are displayed | [Desktop](readme/testing/sale_items_desktop.PNG)  | [Tablet](readme/testing/sale_items_desktop.PNG)  | [Mobile](readme/testing/sale_items_desktop.PNG)  | Passed |
+Step 2 | The product detail is displayed | [Desktop](readme/testing/sale_item_desktop.png)  | [Tablet](readme/testing/sale_item_tablet.png)  | [Mobile](readme/testing/sale_item_mobile.png)  | Passed |
+
 
 # Code Validators and Website Analysis
 The website's pages was tested against the following validators:

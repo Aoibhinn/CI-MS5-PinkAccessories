@@ -513,6 +513,18 @@ The navigation bar is displayed on all pages with a search box, My account, and 
 - To delete a blog item, click on the delete button
 <br>![Delete Blog Item](readme/testing/delete_blog_item_desktop.png)
 
+### Feature 6 Sale items page
+#### Description feature 6
+- The app "products" contains the admin, forms, views, models and templates(sale_items) for this functionality
+- A regular user can view products with sale prices
+- A product that is categories as a sale item is a product that has a price and a presale price
+- The sale items page is paginated if there are more than four sale items
+- If a user clicks on a sale item, they are brought to its relevant product detail page
+<br>![Sale items Desktop](readme/testing/sale_items_desktop.PNG)
+- All users see the same sale items and any product can be a sale item
+<br>![Sale items Tablet](readme/testing/sale_items_tablet.PNG)
+
+
 
 # Technologies Used
 ## Languages 
