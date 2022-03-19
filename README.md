@@ -477,7 +477,7 @@ The navigation bar is displayed on all pages with a search box, My account, and 
 - Categories
 <br>![Categories](readme/testing/admin_categories.png)
 - Blog
-<br>![Blog](readme/testing/blog.PNG)
+<br>![Blog](readme/testing/blog_admin.png)
 
 ### Feature 8 Blog Page
 #### Description feature 8
