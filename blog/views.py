@@ -135,7 +135,7 @@ def delete_blog_item(request, blog_item_id):
     return redirect(reverse('manage_blog_items'))
 
 
-def blog_item(request, bloe_item_id):
+def blog_item(request, blog_item_id):
     """
     A view to show an individual bloe item
     Args:
@@ -145,7 +145,7 @@ def blog_item(request, bloe_item_id):
         Renders the blog item page
     """
     blog_item = get_object_or_404(Blog, pk=blog_item_id)
-    comments = blog_item.comments.filter(new_story=blog_item_id).\
+    comments = blog_item.comments.filter(blog=blog_item_id).\
         order_by('-create_date')
     number_of_comments = comments.count()
     comments = setup_pagination(comments, request, 2)
