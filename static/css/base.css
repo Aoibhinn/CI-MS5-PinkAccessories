@@ -39,6 +39,11 @@ a {
     color: white;
 }
 
+.grey-btn {
+    background-color: grey;
+    color: white;
+}
+
  .grey-btn {
     background-color: #555;
     color: white;

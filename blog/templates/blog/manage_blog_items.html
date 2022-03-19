@@ -18,7 +18,7 @@
                 <div class="bg-overlay"></div>
                 <div class="row">
                     <div class="col mt-3">
-                        <h1 class="header-font mb-2 pt-1 text-center text-black">Blog Items ({{ blog_items|length }}) <a
+                        <h1 class=" mb-2 pt-1 text-center logo-font">Blog Items ({{ blog_items|length }}) <a
                                 class="btn pink-btn" href="{% url 'add_blog_item' %}">Add</a></h1>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
                                                 <td>Draft</td>
                                             {% endif %}
                                          <td>
-                                            <a class="btn black-btn" href="{% url 'edit_blog_item' blog_item.id %}">Edit</a>
+                                            <a class="btn pink-btn" href="{% url 'edit_blog_item' blog_item.id %}">Edit</a>
                                             <a class="btn btn-danger" href="{% url 'delete_blog_item' blog_item.id %}">Delete</a>
                                     </tr>
                                 </tbody>

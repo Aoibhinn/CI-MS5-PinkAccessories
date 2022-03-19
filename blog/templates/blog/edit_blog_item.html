@@ -14,10 +14,9 @@
     <div class="section-holder">
         <div class="form-holder-lg">
             <div class="container">
-                <div class="bg-overlay"></div>
                 <div class="row">
                     <div class="col-12">
-                        <h1 class="header-font mb-4 pt-2 text-center">Blog Item Management</h1>
+                        <h1 class=" mb-4 pt-2 text-center logo-font">Blog Item Management</h1>
                         <h2 class="text-muted text-center">Edit Blog Item</h2>
                         <hr>
                     </div>
@@ -34,7 +33,7 @@
                             {% endif %}
                             {% endfor %}
                             <div class="text-center pb-3">
-                                <a class="btn black-btn" href="{% url 'manage_blog_items' %}">Cancel</a>
+                                <a class="btn grey-btn" href="{% url 'manage_blog_items' %}">Cancel</a>
                                 <button class="btn pink-btn" type="submit">Save Changes</button>
                             </div>
                         </form>
