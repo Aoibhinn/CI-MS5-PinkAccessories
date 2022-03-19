@@ -1,4 +1,3 @@
-
 # Imports
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # 3rd party:
@@ -9,10 +8,10 @@ from django.urls import reverse
 
 # Internal:
 from util.util import setup_pagination
-from .forms import BlogForm
-from .models import Blog
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+from .forms import BlogForm, CommentForm
+from .models import Blog, Comment
 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 def blog_items(request):
     """
@@ -29,7 +28,7 @@ def blog_items(request):
     blog_items_drafts = \
         Blog.objects.filter(status=0).order_by('-create_date')
 
-    blog_items_published = setup_pagination(blog_items_published, request, 10)
+    blog_items_published = setup_pagination(blog_items_published, request, 4)
     blog_items_count = Blog.objects.filter(status=1).count()
 
     context = {
@@ -134,3 +133,48 @@ def delete_blog_item(request, blog_item_id):
     blog_item.delete()
     messages.success(request, f'{blog_item.title} Successfully Deleted')
     return redirect(reverse('manage_blog_items'))
+
+
+def blog_item(request, bloe_item_id):
+    """
+    A view to show an individual bloe item
+    Args:
+        request (object): HTTP request object.
+        blog_item_id: Blog item id
+    Returns:
+        Renders the blog item page
+    """
+    blog_item = get_object_or_404(Blog, pk=blog_item_id)
+    comments = blog_item.comments.filter(new_story=blog_item_id).\
+        order_by('-create_date')
+    number_of_comments = comments.count()
+    comments = setup_pagination(comments, request, 2)
+
+    comment = None
+
+    """ Adds comment to new item"""
+    if request.method == "POST":
+        comment_form = CommentForm(data=request.POST)
+        if comment_form.is_valid():
+            comment = comment_form.save(commit=False)
+            comment.new_story = blog_item
+            comment.user = request.user
+            comment.save()
+            messages.success(request, 'Comment successfully posted')
+            return redirect(reverse('blog_item', args=[blog_item.id]))
+        else:
+            messages.error(
+                request, 'Comment failed to add, Please retry')
+            return redirect(reverse('blog_item', args=[blog_item.id]))
+    else:
+        comment_form = CommentForm()
+
+    context = {
+        'blog_item': blog_item,
+        'comment_form': comment_form,
+        'comments': comments,
+        'comment': comment,
+        'number_of_comments': number_of_comments,
+    }
+
+    return render(request, 'blog/blog_item.html', context)

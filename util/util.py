@@ -20,4 +20,4 @@ def setup_pagination(item_list, request, items_per_page):
         item_list = paginator.page(1)
     except EmptyPage:
         item_list = paginator.page(paginator.num_pages)
-    return
+    return item_list
