@@ -409,6 +409,12 @@ templates/allauth/account/password_change.html | 0 errors and 0 contrast errors|
 templates/allauth/account/password_reset.html | 0 errors and 0 contrast errors| [Results](readme/testing/reset_password_w3validation.png)
 templates/allauth/account/password_reset_done.html | 0 errors and 0 contrast errors| [Results](readme/testing/password_reset_done_w3validation.png)
 templates/allauth/account/verification_sent.html | 0 errors and 0 contrast errors| [Results](readme/testing/password_reset_sent_w3validation.pngg)
+products/templates/products/sale_items.html | 0 errors and 0 contrast errors| [Results](readme/testing/w3_sale_items.png) 
+blog/templates/blog/blog_item.html | 0 errors and 0 contrast errors| [Results](readme/testing/w3_add_blog_item.png)   
+blog/templates/blog/edit_blog_item.html | 0 errors and 0 contrast errors| [Results](readme/testing/w3_edit_blog_item.png)  
+blog/templates/blog/manage_blog_items.html | 0 errors and 0 contrast errors| [Results](readme/testing/w3_manage_blog_item.png) 
+blog/templates/blog/blog.html| 0 errors and 0 contrast errors| [Results](readme/testing/w3_blog_items.png)  
+blog/templates/blog/blog_item.html | 0 errors and 0 contrast errors| [Results](readme/testing/w3_blog_item.png)    
 <br>
 
 ## CSS Validation Service
