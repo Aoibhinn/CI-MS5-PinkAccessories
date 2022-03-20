@@ -119,6 +119,7 @@ Step 15 | The homepage is displayed with a header logo(desktop), search box(expa
 1. As an unauthenticated user scroll down to the footer on the homepage 
 2. As an admin user scroll down to the footer on the homepage 
 3. As a non admin authenticated user scroll down to the footer on the homepage
+4. Provide email address to register for newsletter
 
 #### User Story Testing Results 2
 Step| Result | Desktop | Tablet | Mobile | Status
@@ -126,6 +127,7 @@ Step| Result | Desktop | Tablet | Mobile | Status
 Step 1 | The footer items are displayed with website links (Jewellery, Bags, Scarves, login, register, newsletter) | [Desktop](readme/testing/unauthenticated_user_footer_desktop.png) | [Tablet](readme/testing/unauthenticated_user_footer_tablet.png)  | [Mobile](readme/testing/unauthenticated_user_footer_mobile.png)  | Passed |
 Step 2 | The footer items are displayed with website links (Jewellery, Bags, Scarves, product management, blog management, newsletter) | [Desktop](readme/testing/admin_user_footer_desktop.png) | [Tablet](readme/testing/admin_user_footer_tablet.png) | [Mobile](readme/testing/admin_user_footer_mobile.png)  | Passed |
 Step 3 | The footer items are displayed with website links (Jewellery, Bags, Scarves, my profile, blog, sale, newsletter) | [Desktop](readme/testing/authenticated_user_desktop.png) | [Tablet](readme/testing/authenticated_user_tablet.png) | [Mobile](readme/testing/authenticated_user_mobile.png) | Passed |
+Step 5 | The users email address is added to mailchimps contact tab | [Desktop](readme/testing/mailchimp_desktop.png) | [Tablet]| [Mobile]| Passed |
 
 ### Feature 3 Register
 #### User Stories feature 3
@@ -342,8 +344,7 @@ Step 1 | The categories are displayed | [Result](readme/testing/admin_categories
 - User Story 8.2: As a regular user I can click on the read more button on the Blog page, I will be navigated to the blog item with a blog item image, content and any comments will be displayed
 - User Story 8.3: As a regular user I can add a comment to a "blog" item
 - User Story 8.4: As a regular user I can delete a comment that I had originally added on a "blog item"
-- User Story 8.5: As an admin user I can delete a comment on a blog item, even if I did not add the comment
-- User Story 8.6: As a regular user who has not registered or logged into the website, I cannot add a comment to a "blog item"
+- User Story 8.5: As a regular user who has not registered or logged into the website, I cannot add a comment to a "blog item"
 
 #### User Stories Steps 10
 1. As a regular user click on the Blog page 
