@@ -70,7 +70,8 @@ def add_blog_item(request):
             form_data = blog_form.save(commit=False)
             form_data.user = request.user
             form_data.save()
-            messages.success(request, 'Your blog item was posted successfully!')
+            messages.success(request,
+                             'Your blog item was posted successfully!')
             return redirect('manage_blog_items')
         else:
             messages.error(
@@ -97,7 +98,8 @@ def edit_blog_item(request, blog_item_id):
 
     blog_item_to_edit = get_object_or_404(Blog, pk=blog_item_id)
     if request.method == 'POST':
-        blog_form = BlogForm(request.POST, request.FILES, instance=blog_item_to_edit)
+        blog_form = BlogForm(request.POST,
+                             request.FILES, instance=blog_item_to_edit)
         if blog_form.is_valid():
             blog_form.save()
             messages.success(request, 'Successfully updated blog!')
@@ -107,7 +109,8 @@ def edit_blog_item(request, blog_item_id):
                                      Please ensure the form is valid.')
     else:
         blog_form = BlogForm(instance=blog_item_to_edit)
-        messages.info(request, f'You are currently editing {blog_item_to_edit.title}')
+        messages.info(request,
+                      f'You are currently editing {blog_item_to_edit.title}')
 
     template = 'blog/edit_blog_item.html'
     context = {
