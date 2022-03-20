@@ -116,16 +116,16 @@ Step 15 | The homepage is displayed with a header logo(desktop), search box(expa
 
 ### Feature 2 Footer
 #### User Stories Steps 2
-1. As a regular user scroll down to the footer on the homepage 
-2. As an admin user scroll down to the footer on the homepage
-3. As a regular user sign up to the newsletter
+1. As an unauthenticated user scroll down to the footer on the homepage 
+2. As an admin user scroll down to the footer on the homepage 
+3. As a non admin authenticated user scroll down to the footer on the homepage
 
 #### User Story Testing Results 2
 Step| Result | Desktop | Tablet | Mobile | Status
 ------------ | ------------ | ------------- | ------------- | ------------- | -------------
-Step 1 | The footer items are displayed with website link(Profile) | [Desktop]  | [Tablet]  | [Mobile]  |  |
-Step 2 | The footer items are displayed with website links(Product Management | [Desktop]  | [Tablet] | [Mobile]  |  |
-Step 3 | The user receives an email | [Desktop] | [Tablet]  | [Mobile]  |  |
+Step 1 | The footer items are displayed with website links (Jewellery, Bags, Scarves, login, register, newsletter) | [Desktop](readme/testing/unauthenticated_user_footer_desktop.png) | [Tablet](readme/testing/unauthenticated_user_footer_tablet.png)  | [Mobile](readme/testing/unauthenticated_user_footer_mobile.png)  | Passed |
+Step 2 | The footer items are displayed with website links (Jewellery, Bags, Scarves, product management, blog management, newsletter) | [Desktop](readme/testing/admin_user_footer_desktop.png) | [Tablet](readme/testing/admin_user_footer_tablet.png) | [Mobile](readme/testing/admin_user_footer_mobile.png)  | Passed |
+Step 3 | The footer items are displayed with website links (Jewellery, Bags, Scarves, my profile, blog, sale, newsletter) | [Desktop](readme/testing/authenticated_user_desktop.png) | [Tablet](readme/testing/authenticated_user_tablet.png) | [Mobile](readme/testing/authenticated_user_mobile.png) | Passed |
 
 ### Feature 3 Register
 #### User Stories feature 3

@@ -439,3 +439,32 @@ input[name='q']::placeholder {
         height: calc(100vh - 116px);
     }
 }
+
+/* SMALL SCREEN */
+@media screen and (max-width: 481px) {
+    /* --- Generic --- */
+    h1{
+        font-size: 1.6rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    h4 {
+        font-size: 1.1rem;
+    }
+    .product-name {
+        font-size: 1.6rem;
+    }
+    .pricing {
+        font-size: 1.3rem;
+    }
+    .dropdown-menu {
+        font-size: 0.8rem;
+    }
+    .message-container {
+        top: 60px;
+        right: 15px;
+    }
