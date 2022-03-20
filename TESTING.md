@@ -220,8 +220,7 @@ Step 3 | The users order details is displayed | [Desktop](readme/testing/order_h
 
 ### Feature 07 Product Management
 #### User Story 07-1
-- User Story 10.1: As an admin user I can add a product by clicking on the Product Management link in My Account. I must enter a name, category, price, colour, code, description and can optionally add a feature (1-4), has Sizes(Unknown, Yes, No), Rating, Pre-sale price, Image url, upload an image and click the 
-Add Product button. Clicking cancel navigates the user to the product page.
+- User Story 10.1: As an admin user I can add a product by clicking on the Product Management link in My Account. I must enter a name, category, price, colour, code, description and can optionally has Sizes(Unknown, Yes, No), Rating, Pre-sale price, Image url, upload an image and click the Add Product button. Clicking cancel navigates the user to the product page.
 
 #### User Story Steps 07-1
 - Step 1: As an admin user login navigate to Product Management under MyAccount, and add details to a product and click the Add Product button
@@ -234,10 +233,11 @@ Step 1 | The add product page is displayed | [Desktop](readme/testing/addproduct
 Step 2 | The product detail is displayed | [Desktop](readme/testing/addedproduct_desktop.png)  | [Tablet](readme/testing/addedproduct_ipad.png)  | [Mobile](readme/testing/addedproduct_iphone.png)  | Passed |
 
 #### User Story 07-2
-- User Story 10.2: As an admin user I can edit a product by clicking on the Edit button on the Products page for the product. I can update thea name, category, price, colour, code, description, has Sizes(Unknown, Yes, No), Rating, Pre-sale price, Image url, update an image and click the 
+- User Story 10.2: As an admin user I can edit a product by clicking on the Edit button on the Products page for the product. I can update the name, category, price, colour, code, description, has Sizes(Unknown, Yes, No), Rating, Pre-sale price, Image url, update an image and click the 
 Edit Product button. Clicking cancel navigates the user to the product page
+
 #### User Story Steps 07-2
-- Step 1: As an admin user login navigate to a product in the products page and click on a product, and click the Edit button
+- Step 1: As an admin user login and navigate to a product in the products page and click on a product, and click the Edit button
 - Step 2: Update the product, for example the price
 #### User Story Testing Results 07-2
 Step| Result | Desktop | Tablet | Mobile | Status
@@ -246,22 +246,22 @@ Step 1 | The edit product page is displayed | [Desktop](readme/testing/edit_prod
 Step 2 | The product detail is updated with the news price| [Desktop](readme/testing/edited_product_desktop.png)  | [Tablet](readme/testing/edited_product_ipad.png)  | [Mobile](readme/testing/edited_product_iphone.png)  | Passed |
 
 #### User Story 07-3
-- User Story 10.3: As an admin user I can delete a product by clicking on the Delete button on the product. A modal will appearing asking to confirm, and a message displayed once I confirm.
+- User Story 10.3: As an admin user I can delete a product by clicking on the Delete button on the product. A success message will appear to confirm the product has been successfully deleted.
 #### User Story Steps 07-3
 - Step 1: As an admin user login navigate to a product in the products page and click the Delete button
 - Step 2: Delete the product
 #### User Story Testing Results 07-3
 Step| Result | Desktop | Tablet | Mobile | Status
 ------------ | ------------ | ------------- | ------------- | ------------- | -------------
-Step 2 | The product is deleted and the count is reduced| [Desktop](readme/testing/delete_product_desktop.png)  | [Tablet](readme/testing/delete_product_ipad.png)  | [Mobile](readme/testing/delete_product_iphone.png)  | Passed |
+Step 2 | The product is deleted, the count is reduced, success message appears| [Desktop](readme/testing/delete_product_desktop.png)  | [Tablet](readme/testing/delete_product_ipad.png)  | [Mobile](readme/testing/delete_product_iphone.png)  | Passed |
 
 
 #### User Stories feature 08 shopping bag
-- User Story 08.1: As a regular user I can click on a product, set the size(if applicable) and quantity, click Add to Bag and the product will be added to my bag, a message displayed, and a toast will be displayed with the bag contents
+- User Story 08.1: As a regular user I can click on a product, set the size(if applicable) and quantity, click Add to Bag and the product will be added to my bag, a message displayed 
 - User Story 08.2: As a regular user I can click on the bag icon, I will be brought to my bag. If there are no items in the bag, a message will be displayed
 - User Story 08.3: As a regular user I can click on the bag icon, I will be brought to my bag. If there are items, the product image, detail, price, quantity, subtotal will be displayed for the item. The bag total, delivery(if applicable), grand total would be displayed
 - User Story 08.4: As a regular user I can update the quantity or remove an item from my shopping bag
-- User Story 08.5: As a regular user I can click on the Secure Checkout button on the bag page or toast message, and I will be brought to the Checkout page
+- User Story 08.5: As a regular user I can click on the Secure Checkout button on the bag page, and I will be brought to the Checkout page
 - User Story 08.6: As a regular user on the checkout page I can set my details(Full Name, email address, both mandatory) and Delivery Information(Phone Number(mandatory), Street Address 1(mandatory), Street Address 2, Town or City(mandatory, County, State or Locality, Postal Code and Country(mandatory), which is populated from my profile if filled in
 - User Story 08.7: As a regular user on the checkout page I can view the order summary(item image, title, size, quantity, subtotal, order total, delivery, grand total)
 - User Story 08.8: As a regular user on the checkout page if I click "Save this delivery information to my profile", the details entered will be saved on the users profile
@@ -306,7 +306,7 @@ Step| Result | Result  | Status
 ------------ | ------------ | ------------- | ------------- 
 Step 1 | The orders are displayed | [Result](/workspace/CI-MS5-PinkAccessories/readme/testing/admin_order_desktop.png)  | Passed |
 
-#### User Story Expected Result 9-2
+#### User Story  9-2
 - User Story 9.2: As an admin user I can view products in the django admin page and can view a products code, name, category, has sizes, price, presale price, rating, image, image url
 #### User Story Steps 9-2
 - Step 1: As an admin user navigate to https://ci-ms5-pinkaccessories.herokuapp.com/admin/products/product/
@@ -315,11 +315,11 @@ Step| Result | Result  | Status
 ------------ | ------------ | ------------- | ------------- 
 Step 1 | The products are displayed | [Result](readme/testing/admin_products.png)   | Passed |
 
-#### User Story 9-3
+#### User Story 9.3
 - User Story 13.10: As an admin user I can view users in the django admin page and can search by username and email address and  filter by staff status, superuser status and active status
-#### User Story Steps 9-3
+#### User Story Steps 9.3
 - Step 1: As an admin user navigate to  and filter on non superuser status
-#### User Story Testing Results 9-3
+#### User Story Testing Results 9.3
 Step| Result | Result  | Status
 ------------ | ------------ | ------------- | ------------- 
 Step 1 | The non superuser users are displayed | [Result](readme/testing/admin_users.png)   | Passed |
@@ -338,16 +338,26 @@ Step 1 | The categories are displayed | [Result](readme/testing/admin_categories
 #### User Stories feature 10
 - User Story 8.1: As a regular user I can view 4 blog items on a page with a blog image, and 150 characters of the blog item text and a read more button
 - User Story 8.2: As a regular user I can click on the read more button on the Blog page, I will be navigated to the blog item with a blog item image, content and any comments will be displayed
+- User Story 8.3: As a regular user I can add a comment to a "blog" item
+- User Story 8.4: As a regular user I can delete a comment that I had originally added on a "blog item"
+- User Story 8.5: As an admin user I can delete a comment on a blog item, even if I did not add the comment
+- User Story 8.6: As a regular user who has not registered or logged into the website, I cannot add a comment to a "blog item"
 
 #### User Stories Steps 10
 1. As a regular user click on the Blog page 
 2. Click on the read more button on a "blog item"   
+3. Add a comment to a "blog item" 
+4. Delete a comment from a "blog item"
+5. As a regular user not logged in, select a news item and try to add a comment
 
 #### User Story Testing Results 10
 Step| Result | Desktop | Tablet | Mobile | Status
 ------------ | ------------ | ------------- | ------------- | ------------- | -------------
 Step 1 | The blog page is displayed | [Desktop](readme/testing/blog_items_desktop.png)  | [Tablet](readme/testing/blog_items_tablet.png)  | [Mobile](readme/testing/blog_items_mobile.png)  | Passed |
 Step 2 | The blog item is displayed | [Desktop](readme/testing/blog_item_desktop.png)  | [Tablet](readme/testing/blog_item_tablet.png)  | [Mobile](readme/testing/blog_item_mobile.png)  | Passed |
+Step 3 | The comment is added  | [Desktop](readme/testing/comment_added_desktop.png)  | [Tablet](readme/testing/comment_added_tablet.png)  | [Mobile](readme/testing/comment_added_mobile.png)  | Passed |
+Step 4 | The comment is deleted | [Desktop](readme/testing/coment_deleted_desktop.png)  | [Tablet](readme/testing/coment_deleted_tablet.png)  | [Mobile](readme/testing/coment_deleted_desktop.png)  | Passed |
+Step 5 | A comment cannot be added | [Desktop](readme/testing/unauthenticated_user_comment_desktop.png)  | [Tablet](readme/testing/unauthenticated_user_comment_tablet.png)  | [Mobile](readme/testing/unauthenticated_user_comment_mobile.png)  | Passed |
 
 
 ### Feature 11 Blog Item Management
