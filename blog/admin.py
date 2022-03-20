@@ -10,7 +10,7 @@ from .models import Blog, Comment
 
 class BlogAdmin(admin.ModelAdmin):
     """
-    Admin class for the News model.
+    Admin class for the blog model.
     """
     class Meta:
         verbose_name = 'Blog'
