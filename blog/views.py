@@ -13,6 +13,7 @@ from .models import Blog, Comment
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+
 def blog_items(request):
     """
     A view to show all blog items
@@ -38,6 +39,7 @@ def blog_items(request):
     }
 
     return render(request, 'blog/blog.html', context)
+
 
 @login_required
 def manage_blog_items(request):
@@ -115,6 +117,7 @@ def edit_blog_item(request, blog_item_id):
 
     return render(request, template, context)
 
+
 @login_required
 def delete_blog_item(request, blog_item_id):
     """
@@ -178,6 +181,7 @@ def blog_item(request, blog_item_id):
     }
 
     return render(request, 'blog/blog_item.html', context)
+
 
 @login_required
 def delete_comment(request, comment_id):
