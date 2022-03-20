@@ -40,6 +40,6 @@ class CommentForm(forms.ModelForm):
             placeholder = placeholders[field]
             self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'border-black rounded-1'
-            self.fields[field].label = "Comment "
+            self.fields[field].label = "Comment"
 
 

@@ -157,7 +157,7 @@ def blog_item(request, blog_item_id):
         comment_form = CommentForm(data=request.POST)
         if comment_form.is_valid():
             comment = comment_form.save(commit=False)
-            comment.new_story = blog_item
+            comment.blog = blog_item
             comment.user = request.user
             comment.save()
             messages.success(request, 'Comment successfully posted')
@@ -178,3 +178,18 @@ def blog_item(request, blog_item_id):
     }
 
     return render(request, 'blog/blog_item.html', context)
+
+@login_required
+def delete_comment(request, comment_id):
+    """
+    A view to delete news item comments
+    Args:
+        request (object): HTTP request object.
+        comment_id: Comment id
+    Returns:
+        Renders the edit news item page
+    """
+    comment = get_object_or_404(Comment, pk=comment_id)
+    comment.delete()
+    messages.success(request, 'The comment was deleted')
+    return redirect(reverse('blog_item', args=[comment.blog_id]))
