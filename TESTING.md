@@ -182,10 +182,11 @@ Step 3 | The user can successfully log in | [Desktop](readme/testing/password_up
 1. As a regular user login to the website and navigate to the products page
 2. Sort the products from Price(High to Low)
 3. Click on a product
-4. Add a product(bags) to the bag, with a quantity of 2
-5. As an admin user login and click on the add product(Product Management)
-6. Click on the edit button on the products page or in the product detail page and edit the product
-7. As an admin user delete a product
+4. Click on product with size e.g Camel Pom Pom Hat
+5. Add a product(bags) to the bag, with a quantity of 2
+6. As an admin user login and click on the add product(Product Management)
+7. Click on the edit button on the products page or in the product detail page and edit the product
+8. As an admin user delete a product
 
 
 #### User Story Testing Results 5
@@ -194,10 +195,11 @@ Step| Result | Desktop | Tablet | Mobile | Status
 Step 1 | The products page is displayed | [Desktop](readme/testing/products_desktop.png)  | [Tablet](readme/testing/products_ipad.png)  | [Mobile](readme/testing/products_iphone.png)  | Passed |
 Step 2 | The products are sorted High to Low | [Desktop](readme/testing/product_price_desktop.png)  | [Tablet](readme/testing/product_price_ipad.png)  | [Mobile](readme/testing/product_price_iphone.png)  | Passed |
 Step 3 | The product detail is displayed | [Desktop](readme/testing/product_detail_desktop.png)  | [Tablet](readme/testing/product_detail_ipad.png)  | [Mobile](readme/testing/product_detail_iphone.png)  | Passed |
-Step 4 | The 2 products are added | [Desktop](readme/testing/add_bad_to_cart_desktop.png)  | [Tablet](readme/testing/add_bad_to_cart_ipad.png)  | [Mobile](readme/testing/add_bad_to_cart_iphone.png)  | Passed |
-Step 5 | The add product page is displayed | [Desktop](readme/testing/add_product_desktop.png)  | [Tablet](readme/testing/add_product_ipad.png)  | [Mobile](readme/testing/add_product_iphone.png)  | Passed |
-Step 6 | The edit product page is displayed | [Desktop](readme/testing/edit_product_desktop.png)  | [Tablet](readme/testing/edit_product_ipad.png)  | [Mobile](readme/testing/edit_product_iphone.png)  | Passed |
-Step 7 | Delete a product notification displayed | [Desktop](readme/testing/delete_product_desktop.png)  | [Tablet](readme/testing/delete_product_ipad.png)  | [Mobile](readme/testing/delete_product_iphone.png)  | Passed |
+Step 4 | Size drop down is displayed for user to select size | [Desktop](readme/testing/product_size_desktop.png)  | [Tablet](readme/testing/product_size_tablet.png)  | [Mobile](readme/testing/product_size_mobile.png)  | Passed |
+Step 5 | The 2 products are added | [Desktop](readme/testing/add_bad_to_cart_desktop.png)  | [Tablet](readme/testing/add_bad_to_cart_ipad.png)  | [Mobile](readme/testing/add_bad_to_cart_iphone.png)  | Passed |
+Step 6 | The add product page is displayed | [Desktop](readme/testing/add_product_desktop.png)  | [Tablet](readme/testing/add_product_ipad.png)  | [Mobile](readme/testing/add_product_iphone.png)  | Passed |
+Step 7 | The edit product page is displayed | [Desktop](readme/testing/edit_product_desktop.png)  | [Tablet](readme/testing/edit_product_ipad.png)  | [Mobile](readme/testing/edit_product_iphone.png)  | Passed |
+Step 8 | Delete a product notification displayed | [Desktop](readme/testing/delete_product_desktop.png)  | [Tablet](readme/testing/delete_product_ipad.png)  | [Mobile](readme/testing/delete_product_iphone.png)  | Passed |
 
 ### Feature 6 Profile Page
 #### User Stories feature 6
@@ -219,21 +221,21 @@ Step 2 | The users default delivery information is updated and displayed (Street
 Step 3 | The users order details is displayed | [Desktop](readme/testing/order_history_desktop.png)  | [Tablet](readme/testing/order_history_ipad.png)  | [Mobile](readme/testing/order_history_iphone.png)  | Passed |
 
 ### Feature 07 Product Management
-#### User Story 07-1
-- User Story 10.1: As an admin user I can add a product by clicking on the Product Management link in My Account. I must enter a name, category, price, colour, code, description and can optionally has Sizes(Unknown, Yes, No), Rating, Pre-sale price, Image url, upload an image and click the Add Product button. Clicking cancel navigates the user to the product page.
+#### User Story 07. 1
+- User Story 07.1 : As an admin user I can add a product by clicking on the Product Management link in My Account. I must enter a name, category, price, colour, code, description and can optionally has Sizes(Unknown, Yes, No), Rating, Pre-sale price, Image url, upload an image and click the Add Product button. Clicking cancel navigates the user to the product page.
 
 #### User Story Steps 07-1
 - Step 1: As an admin user login navigate to Product Management under MyAccount, and add details to a product and click the Add Product button
 - Step 2: Click on the product detail for the product
 
-#### User Story Testing Results 07-1
+#### User Story Testing Results 07.1
 Step| Result | Desktop | Tablet | Mobile | Status
 ------------ | ------------ | ------------- | ------------- | ------------- | -------------
 Step 1 | The add product page is displayed | [Desktop](readme/testing/addproduct_desktop.png)  | [Tablet](readme/testing/addproduct_ipad.png)  | [Mobile](readme/testing/addproduct_iphone.png)  | Passed |
 Step 2 | The product detail is displayed | [Desktop](readme/testing/addedproduct_desktop.png)  | [Tablet](readme/testing/addedproduct_ipad.png)  | [Mobile](readme/testing/addedproduct_iphone.png)  | Passed |
 
 #### User Story 07-2
-- User Story 10.2: As an admin user I can edit a product by clicking on the Edit button on the Products page for the product. I can update the name, category, price, colour, code, description, has Sizes(Unknown, Yes, No), Rating, Pre-sale price, Image url, update an image and click the 
+- User Story 07.2: As an admin user I can edit a product by clicking on the Edit button on the Products page for the product. I can update the name, category, price, colour, code, description, has Sizes(Unknown, Yes, No), Rating, Pre-sale price, Image url, update an image and click the 
 Edit Product button. Clicking cancel navigates the user to the product page
 
 #### User Story Steps 07-2
@@ -246,7 +248,7 @@ Step 1 | The edit product page is displayed | [Desktop](readme/testing/edit_prod
 Step 2 | The product detail is updated with the new price| [Desktop](readme/testing/edited_product_desktop.png)  | [Tablet](readme/testing/edited_product_ipad.png)  | [Mobile](readme/testing/edited_product_iphone.png)  | Passed |
 
 #### User Story 07-3
-- User Story 10.3: As an admin user I can delete a product by clicking on the Delete button on the product. A success message will appear to confirm the product has been successfully deleted.
+- User Story 07.3: As an admin user I can delete a product by clicking on the Delete button on the product. A success message will appear to confirm the product has been successfully deleted.
 #### User Story Steps 07-3
 - Step 1: As an admin user login navigate to a product in the products page and click the Delete button
 - Step 2: Delete the product
