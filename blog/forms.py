@@ -14,6 +14,7 @@ class BlogForm(forms.ModelForm):
         required=False,
         widget=CustomClearableFileInput)
 
+
 class CommentForm(forms.ModelForm):
     """
     A class for the comment form
@@ -41,5 +42,3 @@ class CommentForm(forms.ModelForm):
             self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'border-black rounded-1'
             self.fields[field].label = "Comment"
-
-
