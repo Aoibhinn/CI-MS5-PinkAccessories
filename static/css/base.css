@@ -390,6 +390,12 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
+#mc_embed_signup form {
+    display: block;
+    position: relative;
+    text-align: left;
+    padding: 0;
+}
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
