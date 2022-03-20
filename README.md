@@ -143,7 +143,7 @@ Checkout | A user can enter their delivery details and credit card information t
 Checkout success | Once an order is successful, the user can view the checkout success
 Blog                | Blog items can be viewed by all users
 Blog Item             | A new item contains an image and text and can be added by an admin user      
-Blog Item (comment) | A user can comment on a blog item. They can delete comments(an admin can also delete a users comment)    
+Blog Item (comment) | A user can comment on a blog item. They can delete comments
 
 
 ## Code Structure
@@ -157,6 +157,7 @@ The apps are described as follows:
 * Products (part of the original Boutique Ado project): This app contains functionality regarding a product. 
 * Profiles (part of the original Boutique Ado project): This app contains functionality regarding a users profile and order history 
 * Blog: A newly written app, that allows admin users to publish blog items, and allows regular users to view and comment on the blog items
+* Sale (addition to part of the original Boutique Ado project): This is additional functionality to display products on a page with pre_self is True
 
 
 To complement the apps there are:
@@ -218,33 +219,32 @@ default_town_or_city, default_county, default_postcode and default_country
 
 The user stories for the regular user eg: "shopper user" (a potential or existing customer) are described as follows: 
 
-- User Story 1.1: As an admin/regular user the navigation bar is displayed with a logo on all pages with a search box, My account, and shopping bag icons on a desktop device
-- User Story 1.2: As an admin/regular user the navigation bar is displayed on all pages with a search box, My account, and shopping bag icons on a mobile/tablet device
+- User Story 1.1: As a regular user the navigation bar is displayed with a logo on all pages with a search box, My account, and shopping bag icons on a desktop device
+- User Story 1.2: As an regular user the navigation bar is displayed on all pages with a search box, My account, and shopping bag icons on a mobile/tablet device
 - User Story 1.3: As a regular user not logged in, I see a Register/Login link under the My Account dropdown
 - User Story 1.6: As a regular user logged in/not logged in, I am brought to my shopping bag if I click on the Bag icon
-- User Story 1.7: As a regular/admin user logged in, I see a "My Profile"/Logout under the My Account dropdown
-- User Story 1.9: As a regular/admin user logged in, if I click on the My Profile under My Account I am brought to the My Profile page
-- User Story 1.10: As a regular/admin user logged in, if I click on the My Profile under My Account I am brought to the Logout page. If I click Logout I am Logged out. If I click cancel I am brought back to the homepage
-- User Story 1.13: As a regular/admin user I can view the Home link in the header, and clicking it will bring the user to the homepage
-- User Story 1.15: As a regular/admin user I can click on the "All Products" filter, click By Price, and will be brought to the Products page, with products price low to high displayed
-- User Story 1.16: As a regular/admin user I can click on the "All Products" filter, click By Rating, and will be brought to the Products page, with products rating high to low displayed
-- User Story 1.17: As a regular/admin user I can click on the "All Products" filter, click By Category, and will be brought to the Products page, with products category a-z displayed
-- User Story 1.18: As a regular/admin user I can click on the "Jewellery" filter, and filter by Necklaces, Bracelets, Earrings or All Jewellery
-- User Story 1.19: As a regular/admin user I can click on the "Bags" filter, and filter by Clutchs, Totes, or All Bags
-- User Story 1.20: As a regular/admin user I can click on the "Hats & Scarves" filter, and filter by Scarves, Hats, Fascinators All Hats & Scarves
-- User Story 2.2: As a regular user the footer is displayed with logo text , product links(Jewellery, Bags, Hats & Sarves), website links(Profile/Blog/Sale)
-- User Story 2.4: As a regular user I can sign up for a newsletter by entering my email address and clicking Signup. I will receive an email after signing up
-- User Story 3.1: As a regular user I can register on the website by providing an email address, email address(confirmation), username, password, password confirmation
-- User Story 3.1: As a regular user I will receive an email to verify my account after registering
+- User Story 1.7: As a regular user logged in, I see a "My Profile"/Logout under the My Account dropdown
+- User Story 1.9: As a regular user logged in, if I click on the My Profile under My Account I am brought to the My Profile page
+- User Story 1.10: As a regular user logged in, if I click on the Logout under My Account I am brought to the Logout page. If I click Logout I am Logged out. If I click cancel I am brought back to the homepage
+- User Story 1.13: As a regular user I can view the Home link in the header, and clicking it will bring the user to the homepage
+- User Story 1.15: As a regular user I can click on the "All Products" filter, click By Price, and will be brought to the Products page, with products price low to high displayed
+- User Story 1.16: As a regular user I can click on the "All Products" filter, click By Rating, and will be brought to the Products page, with products rating high to low displayed
+- User Story 1.17: As a regular user I can click on the "All Products" filter, click By Category, and will be brought to the Products page, with products category a-z displayed
+- User Story 1.18: As a regular user I can click on the "Jewellery" filter, and filter by Necklaces, Bracelets, Earrings or All Jewellery
+- User Story 1.19: As a regular user I can click on the "Bags" filter, and filter by Clutchs, Totes, or All Bags
+- User Story 1.20: As a regular user I can click on the "Hats & Scarves" filter, and filter by Scarves, Hats, Fascinators All Hats & Scarves
+- User Story 2.2: As a regular user logged in the footer is displayed with logo text , product links(Jewellery, Bags, Hats & Sarves), website links(Profile/Blog/Sale)
+- User Story 2.4: As a regular user I can sign up for a newsletter by entering my email address and clicking Signup.
+- User Story 3.1: As a regular user not logged in I can register on the website by providing an email address, email address(confirmation), username, password, password confirmation
+- User Story 3.1: As a regular user not logged in I will receive an email to verify my account after registering
 - User Story 3.1: As a regular user I can log in to my account once I click on the verification link in the email I receive regarding my registration
-- User Story 4.1: As an admin/regular user I can log in to the website using my username or email address and password. Both fields are mandatory. Once correct, I will be navigated to the homepage and a message displayed
-- User Story 4.2: As an admin/regular user I can request a new password if I forget my current password. I will receive an email to reset my password. Once I reset I can log in
+- User Story 4.1: As an regular user I can log in to the website using my username or email address and password. Both fields are mandatory. Once correct, I will be navigated to the homepage and a message displayed
+- User Story 4.2: As an regular user I can request a new password if I forget my current password. I will receive an email to reset my password. Once I reset I can log in
 - User Story 5.1: As a regular user I can view the products page with product count and with each product image, title, category, price and presale price(if applicable)
 - User Story 5.2: As a regular user I can sort the products by Price(high to low, low to high), Rating(high to low, low to high), Name(A-Z, Z-A), Category(A-Z, Z-A)
 - User Story 5.4: As a regular user if I click on a product I will be navigated to the product detail page
 - User Story 5.5: As a regular user I can view the product image, description, colour, code, rating, category and description
 - User Story 5.11: As a regular user I can set the product size(if applicable for the product) and quantity for a product (one plus)
-- User Story 6.1: As a regular user I can view the products with product image, category, and price is displayed
 - User Story 8.1: As a regular user I can view 4 blog items on a page with a blog image, and 150 characters of the blog item text and a read more button
 - User Story 8.2: As a regular user I can click on the read more button on the Blog page, I will be navigated to the blog item with a blog item image, blog item text and any comments will be displayed
 - User Story 8.3: As a regular user I can add a comment to a blog item
@@ -258,7 +258,7 @@ The user stories for the regular user eg: "shopper user" (a potential or existin
 - User Story 12.2: As a regular user I can click on the bag icon, I will be brought to my bag. If there are no items in the bag, a message will be displayed
 - User Story 12.3: As a regular user I can click on the bag icon, I will be brought to my bag. If there are items, the product image, detail, price, quantity, subtotal will be displayed for the item. The bag total, delivery(if applicable), grand total would be displayed
 - User Story 12.4: As a regular user I can update the quantity or remove an item from my shopping bag
-- User Story 12.5: As a regular user I can click on the Secure Checkout button on the bag page or toast message, and I will be brought to the Checkout page
+- User Story 12.5: As a regular user I can click on the Secure Checkout button on the bag page, and I will be brought to the Checkout page
 - User Story 12.6: As a regular user on the checkout page I can set my details(Full Name, email address, both mandatory) and Delivery Information(Phone Number(mandatory), Street Address 1(mandatory), Street Address 2, Town or City(mandatory, County, State or Locality, Postal Code and Country(mandatory), which is populated from my profile if filled in
 - User Story 12.7: As a regular user on the checkout page I can view the order summary(item image, title, size, quantity, subtotal, order total, delivery, grand total)
 - User Story 12.8: As a regular user on the checkout page if the order total is greater than 99 euros, there is no delivery charge
@@ -277,39 +277,35 @@ The user stories for the website owner(admin/administrator user) are described a
 
 There is a lot of overlap between the two user types, the admin user however has more administrative rights throughout but their roles and responsibilities are defined
 
-- User Story 1.1: As an admin/regular user the navigation bar is displayed with a logo on all pages with a search box, My account, and shopping bag icons on a desktop device
-- User Story 1.2: As an admin/regular user the navigation bar is displayed on all pages with a search box, My account, shopping bag icons on a mobile/tablet device
+- User Story 1.1: As an admin user the navigation bar is displayed with a logo on all pages with a search box, My account, and shopping bag icons on a desktop device
+- User Story 1.2: As an admin user the navigation bar is displayed on all pages with a search box, My account, shopping bag icons on a mobile/tablet device
 - User Story 1.8: As an admin user logged in, I see a Product Management/ Blog Item Management/My Profile/Logout under the My Account dropdown
-- User Story 1.9: As a regular/admin user logged in, if I click on the My Profile under My Account I am brought to the My Profile page
-- User Story 1.10: As a regular/admin user logged in, if I click on the My Profile under My Account I am brought to the Logout page. If I click Logout I am Logged out. If I click cancel I am brought back to the homepage
+- User Story 1.9: As a admin user logged in, if I click on the My Profile under My Account I am brought to the My Profile page
+- User Story 1.10: As a admin user logged in, if I click on the Logout under My Account I am brought to the Logout page. If I click Logout I am Logged out. If I click cancel I am brought back to the homepage
 - User Story 1.11: As an admin user logged in, if I click on Product Management under My Account I am brought to the Product Management(Add Product) page
 - User Story 1.12: As an admin user logged in, if I click on Blog Item Management under My Account I am brought to the Blog Item Management page
-- User Story 1.13: As a regular/admin user I can view the Home link in the header, and clicking it will bring the user to the homepage
-- User Story 1.15: As a regular/admin user I can click on the "All Products" filter, click By Price, and will be brought to the Products page, with products price low to high displayed
-- User Story 1.16: As a regular/admin user I can click on the "All Products" filter, click By Rating, and will be brought to the Products page, with products rating high to low displayed
-- User Story 1.17: As a regular/admin user I can click on the "All Products" filter, click By Category, and will be brought to the Products page, with products category a-z displayed
-- User Story 1.18: As a regular/admin user I can click on the "Jewellery" filter, and filter by Neclaces, Bracelets, Earrings or All Jewellery
-- User Story 1.19: As a regular/admin user I can click on the "Bags" filter, and filter by Totes, Clucths or All Bags
-- User Story 1.20: As a regular/admin user I can click on the "Hats & Scarves" filter, and filter by Hats, Scarves, Fascinators All Hats & Scarves
-- User Story 2.1: As an admin/regular user four text messages are displayed with icons regarding delivery, packaging, dispatch and knowledge
-- User Story 2.3: As an admin user logged in the footer is displayed with a logo, product links(Jewellery, Bags, Hats & Scarves), website links(Product Management/Vl Item Management)
-- User Story 4.1: As an admin/regular user I can log in to the website using my username or email address and password. Both fields are mandatory. Once correct, I will be navigated to the homepage and a message displayed
-- User Story 4.2: As an admin/regular user I can request a new password if I forget my current password. I will receive an email to reset my password. Once I reset I can log in
-- User Story 5.10: As an admin user I can view the Add product page by clicking on the Product Management link.
-- User Story 5.11: As an admin user I can view the Edit product page by clicking on the Edit button on the product. 
+- User Story 1.13: As a admin user I can view the Home link in the header, and clicking it will bring the user to the homepage
+- User Story 1.15: As a admin user I can click on the "All Products" filter, click By Price, and will be brought to the Products page, with products price low to high displayed
+- User Story 1.16: As a admin user I can click on the "All Products" filter, click By Rating, and will be brought to the Products page, with products rating high to low displayed
+- User Story 1.17: As a admin user I can click on the "All Products" filter, click By Category, and will be brought to the Products page, with products category a-z displayed
+- User Story 1.18: As a admin user I can click on the "Jewellery" filter, and filter by Neclaces, Bracelets, Earrings or All Jewellery
+- User Story 1.19: As a admin user I can click on the "Bags" filter, and filter by Totes, Clucths or All Bags
+- User Story 1.20: As a admin user I can click on the "Hats & Scarves" filter, and filter by Hats, Scarves, Fascinators All Hats & Scarves
+- User Story 2.1: As an regular user four text messages are displayed with icons regarding delivery, packaging, dispatch and knowledge
+- User Story 2.3: As an admin user logged in the footer is displayed with a logo, product links(Jewellery, Bags, Hats & Scarves), website links(Product Management/Blog Item Management/Profile)
+- User Story 4.1: As an admin user I can log into the website using my username or email address and password. Both fields are mandatory. Once correct, I will be navigated to the homepage and a message displayed
+- User Story 4.2: As an admin user I can request a new password if I forget my current password. I will receive an email to reset my password. Once I reset I can log in
 - User Story 5.12: As an admin user I can click on a product, and I am navigated to the product detail page. I can edit or delete the product by clicking on the Edit or Delete links on the page
-- User Story 6.4: As an admin user I can delete a comment on a blog item, even if I did not add the comment
 - User Story 10.1: As an admin user I can add a product by clicking on the Product Management link in My Account. I must enter a name, category, price, colour, code, description, has Sizes(Unknown, Yes, No), Rating, Pre-sale price, Image url, upload an image and click the 
-- User Story 10.2: As an admin user I can edit a product by clicking on the Edit button on the Products page for the product. I can update thea name, category, price, colour, code, description, feature (1-4), has Sizes(Unknown, Yes, No), Rating, Pre-sale price, Image url, update an image and click the 
-Edit Product button. Clicking cancel navigates the user to the product page
-- User Story 10.3: As an admin user I can delete a product by clicking on the Delete button on the product. A modal will appearing asking to confirm, and a message displayed once I confirm.
-- User Story 11.1: As an admin user I can view Blog items by clicking on the bLOG Item Management link under My account. The blog item count and title, create date, status(Published or Draft), and Edit and Delete buttons is displayed
+- User Story 10.2: As an admin user I can edit a product by clicking on the Edit button on the Products page for the product. I can update thea name, category, price, colour, code, description, has Sizes(Unknown, Yes, No), Rating, Pre-sale price, Image url, update an image and click the Edit Product button. Clicking cancel navigates the user to the product page
+- User Story 10.3: As an admin user I can delete a product by clicking on the Delete button on the product.
+- User Story 11.1: As an admin user I can view Blog items by clicking on the Blog Item Management link under My account. The blog item count and title, create date, status(Published or Draft), and Edit and Delete buttons is displayed
 - User Story 11.2: As an admin user if there are more than four blog items added, the page is paginated
 - User Story 11.3: As an admin user I can add a blog item, by clicking on the Add button. I can enter a Title and blog item text, add an image and set the item to Published or Draft
 - User Story 11.4: As an admin user I can edit a blog item, by clicking on the Edit button for the blog item. I can update a Title and blog item text, update an image and update the item to Published or Draft
 - User Story 11.5: As an admin user if a blog item is set to Draft, admin and regular users will NOT see this item on the blog Page.
 - User Story 11.6: As an admin user if a blog item is set to Published, admin regular users will see this item on the blog Page.
-- User Story 11.7: As an admin user I can delete a blog item, and I will be asked to confirm the deletion
+- User Story 11.7: As an admin user I can delete a blog item and a success message will be displayed.
 - User Story 13.1: As an admin user I can view users orders in the django admin page and can view order number, date, full name, order total, delivery cost, grand total
 - User Story 13.2: As an admin user I can view users orders in the django admin page and can search by order number, full name and filter by order number, full name and order date
 - User Story 13.7: As an admin user I can view products in the django admin page and can view a products code, name, category, has sizes, price, presale price, rating, image, image url
@@ -435,7 +431,7 @@ The navigation bar is displayed on all pages with a search box, My account, and 
 - A user can view and update their Default delivery information
 <br>![Default delivery information](readme/testing/profile_update_desktop.png)
 - The user can also view their past orders and click on an order to view the order details
-<br>![Order History]()
+<br>![Order History](readme/testing/order_history_past_purchase_desktop.png)
 - This data is consistent with the information they supplied when they made the order
 
 ### Feature 7 Product Management
@@ -484,6 +480,8 @@ The navigation bar is displayed on all pages with a search box, My account, and 
 <br>![Categories](readme/testing/admin_categories.png)
 - Blog
 <br>![Blog](readme/testing/blog_admin.png)
+- Comments
+<br>![Comments]](readme/testing/django_admin_comments.png)
 
 ### Feature 10 Blog Page
 #### Description feature 10
