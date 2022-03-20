@@ -368,7 +368,7 @@ Step 5 | A comment cannot be added | [Desktop](readme/testing/unauthenticated_us
 - User Story 11.4: As an admin user I can edit a blog item, by clicking on the Edit button for the blog item. I can update a Title and blog item text, update an image and update the item to Published or Draft
 - User Story 11.5: As an admin user if a blog item is set to Draft, admin and regular users will NOT see this item on the Blog Page.
 - User Story 11.6: As an admin user if a blog item is set to Published, admin regular users will see this item on the Blog Page.
-- User Story 11.7: As an admin user I can delete a blog item, and I will be asked to confirm the deletion
+- User Story 11.7: As an admin user I can delete a blog item
 
 #### User Stories Steps 11
 1. As an admin user click on the Blog Item Management under My account
@@ -491,3 +491,10 @@ profiles/urls.py | No errors/warnings
 profiles/views.py | No errors/warnings 
 custom_storages.py | No errors/warnings
 manage.py | No errors/warnings
+blog/admin.py | No errors/warnings 
+blog/apps.py | No errors/warnings 
+blog/models.py | No errors/warnings 
+blog/urls.py | No errors/warnings 
+blog/views.py | No errors/warnings 
+blog/forms.py | No errors/warnings 
+
