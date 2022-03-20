@@ -11,11 +11,9 @@
 
 {% block content %}
 <div class="overlay"></div>
-<div class="hero-image">
     <div class="section-holder">
         <div class="form-holder-lg">
-            <main class="container">
-                <div class="bg-overlay"></div>
+            <div class="container">
                 <div class="row">
                     <div class="col mt-3">
                         <h1 class=" mb-2 pt-1 text-center logo-font">Blog Items ({{ blog_items|length }}) <a
@@ -43,22 +41,52 @@
                                         <td>{{ blog_item.create_date }}</td>
                                             {% if blog_item.status == 1 %}
                                                 <td>Published</td>
-                                            {% else %}
-                                                <td>Draft</td>
-                                            {% endif %}
-                                            <td>
-                                                <a class="btn pink-btn" href="{% url 'edit_blog_item' blog_item.id %}">Edit</a>
-                                                <a class="btn btn-danger" href="{% url 'delete_blog_item' blog_item.id %}">Delete</a>
-                                            </td>
+                                        {% else %}
+                                            <td>Draft</td>
+                                        {% endif %}
+                                        <td>
+                                            <a class="btn pink-btn"
+                                                href="{% url 'edit_blog_item' blog_item.id %}">Edit</a>
+                                            <a class="btn btn-danger"
+                                                href="{% url 'delete_blog_item' blog_item.id %}">Delete</a>
+                                        </td>
                                     </tr>
+                                    {% endfor %}
                                 </tbody>
-                                {% endfor %}
                             </table>
                         </div>
                     </div>
-                    <hr>
+                    {% if blog_items.has_other_pages %}
+                    <!-- Pagination -->
+                    <div class="pagination-holder p-4">
+                        <nav aria-label="Products sorted">
+                            <ul class="pagination">
+                                {% if blog_items.has_previous %}
+                                <li class="page-item"><a class="page-link"
+                                        href="?page={{ blog_items.previous_page_number }}">Previous</a></li>
+                                {% else %}
+                                <li class="disabled page-item"><span class="page-link">Previous</span></li>
+                                {% endif %}
+                                {% for i in blog_items.paginator.page_range %}
+                                {% if blog_items.number == i %}
+                                <li class="page-item active"><span class="page-link">{{ i }} <span
+                                            class="sr-only">(current)</span></span></li>
+                                {% else %}
+                                <li class="page-item"><a class="page-link" href="?page={{ i }}">{{ i }}</a></li>
+                                {% endif %}
+                                {% endfor %}
+                                {% if blog_items.has_next %}
+                                <li class="page-item"><a class="page-link"
+                                        href="?page={{ blog_items.next_page_number }}">Next</a></li>
+                                {% else %}
+                                <li class="disabled page-item"><span class="page-link">Next</span></li>
+                                {% endif %}
+                            </ul>
+                        </nav>
+                    </div>
+                    {% endif %}
                 </div>
-            </main>
+            </div>
         </div>
     </div>
 </div>
