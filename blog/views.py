@@ -45,11 +45,18 @@ def blog_items(request):
 def manage_blog_items(request):
     """
     A view to manage all blog items
+    Args:
+        request (object): HTTP request object.
+    Returns:
+        Renders the manage blog item page.
     """
     all_blog_items = Blog.objects.order_by('-create_date')
+    blog_items_count = Blog.objects.filter().count()
+    all_blog_items = setup_pagination(all_blog_items, request, 4)
 
     context = {
         'blog_items': all_blog_items,
+        'blog_items_count': blog_items_count
     }
 
     return render(request, 'blog/manage_blog_items.html', context)
@@ -189,12 +196,12 @@ def blog_item(request, blog_item_id):
 @login_required
 def delete_comment(request, comment_id):
     """
-    A view to delete news item comments
+    A view to delete blog item comments
     Args:
         request (object): HTTP request object.
         comment_id: Comment id
     Returns:
-        Renders the edit news item page
+        Renders the edit blog item page
     """
     comment = get_object_or_404(Comment, pk=comment_id)
     comment.delete()
