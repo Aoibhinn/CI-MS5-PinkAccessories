@@ -163,6 +163,27 @@ a {
     margin-top: -4px;
 }
 
+/* Carousel */
+.carousel-text-area {
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 25px;
+}
+.carousel-image {
+   filter: brightness(50%);
+}
+.text-white {
+    color: white;
+}
+.font-weight-bold {
+    font-weight: bold;
+}
+.background-white {
+    background: white;
+}
+.landing-image {
+    max-height: 1000px;
+}
 
 /* --- Sign Up Page --- */
 
