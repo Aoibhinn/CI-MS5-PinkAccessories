@@ -4,6 +4,6 @@
  */
  var myCarousel = document.querySelector('#home-carousel');
  var carousel = new bootstrap.Carousel(myCarousel, {
-     interval: 5000,
+     interval: 2000,
      wrap: true
  });
