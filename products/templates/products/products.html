@@ -30,7 +30,7 @@
                 <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
                     <div class="sort-select-wrapper w-50">
                         <select id="sort-selector"
-                            class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                            class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}pink{% endif %}">
                             <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...
                             </option>
                             <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price
@@ -106,7 +106,7 @@
                                     {% if request.user.is_superuser %}
                                         <small class="ml-3">
                                             <a class="text-grey" href="{% url 'edit_product' product.id %}">Edit</a>
-                                            <a class="text-red" href="{% url 'delete_product' product.id %}">Delete</a>
+                                            <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
                                         </small>
                                     {% endif %}
                                 </div>
@@ -139,7 +139,7 @@
         </div>
     </div>
 </div>
-<div class="btn-button shadow-sm rounded-0 border border-black">
+<div class="btn-button shadow-sm rounded-0 border border-pink">
     <a class="btt-link d-flex h-100">
         <i class="fas fa-arrow-up text-grey mx-auto my-auto"></i>
     </a>
