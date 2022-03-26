@@ -44,6 +44,14 @@ body {
 }
 
 
+.card {
+    width: 300px;
+    border: 0;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+
 
 /* --- Blog page --- */
 .card-img-top {
@@ -109,6 +117,19 @@ body {
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
+.btn-outline-pink {
+    background: white;
+    color: #cd8689 !important; /* use important to override link colors for <a> elements */
+    border: 1px solid #cd8689;
+}
+
+.btn-outline-pink:hover,
+.btn-outline-pink:active,
+.btn-outline-pink:focus {
+    background: #cd8689;
+    color: white !important;
+}
+
 
 
 
@@ -126,6 +147,10 @@ body {
     color: #555;
     text-decoration: none;
     background-color: transparent;
+}
+
+.text-pink {
+    color: #f0b2af;
 }
 
 .container {
