@@ -151,6 +151,8 @@ body {
 
 .text-pink {
     color: #f0b2af;
+    text-decoration: none;
+    background-color: transparent;
 }
 
 .container {
