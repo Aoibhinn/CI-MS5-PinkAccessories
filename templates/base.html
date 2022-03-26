@@ -85,7 +85,7 @@
                         <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
-                                <div><i class="fas fa-user fa-lg"></i></div>
+                                <div><i class="fas fa-user fa-lg bg-grey"></i></div>
                                 <p class="my-0">My Account</p>
                             </div>
                         </a>
@@ -107,7 +107,7 @@
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
                             href="{% url 'view_bag' %}">
                             <div class="text-center">
-                                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                                <div><i class="fas fa-shopping-bag fa-lg bg-grey"></i></div>
                                 <p class="my-0">
                                     {% if grand_total %}
                                     ${{ grand_total|floatformat:2 }}
@@ -206,7 +206,7 @@
                     <ul class="list-inline mt-4">
                         <li class="list-inline-item"><a href="https://www.facebook.com/pinknavan" target="_blank"
                                 rel="noreferrer" aria-label="Go to our facebook page (opens in new tab)"
-                                title="facebook"><i class="dark-green fa fa-facebook"></i></a></li>
+                                title="facebook"><i class="bg-grey fa fa-facebook"></i></a></li>
                         <li class="list-inline-item"><a href="https://www.instagram.com/pinkaccessoriesnavan/"
                                 target="_blank" rel="noreferrer"
                                 aria-label="Go to our instagram page (opens in new tab)" title="instagram"><i
@@ -217,11 +217,11 @@
                     <h2 class="text-uppercase font-weight-bold mb-4 footer-text">Products</h2>
                     <ul class="list-unstyled mb-0">
                         <li class="mb-2"><a href="{% url 'products' %}?category=necklaces,earrings,bracelets"
-                                class="font-black">Jewellery</a></li>
+                                class="text-grey">Jewellery</a></li>
                         <li class="mb-2"><a href="{% url 'products' %}?category=clutchs,totes"
-                                class="font-black">Bags</a></li>
+                                class="text-grey">Bags</a></li>
                         <li class="mb-2"><a href="{% url 'products' %}?category=scarves,hats,fascinators"
-                                class="font-black">Scarves & Hats</a></li>
+                                class="text-grey">Scarves & Hats</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-6 col-xs-6 mb-4 mb-lg-0">
@@ -229,18 +229,18 @@
                     <ul class="list-unstyled mb-0">
                         {% if request.user.is_authenticated %}
                         {% if request.user.is_superuser %}
-                        <li class="mb-2"><a href="{% url 'add_product' %}" class="font-black">Product Management</a>
+                        <li class="mb-2"><a href="{% url 'add_product' %}" class="text-grey">Product Management</a>
                         </li>
-                        <li class="mb-2"><a href="{% url 'manage_blog_items' %}" class="font-black">Blog Item
+                        <li class="mb-2"><a href="{% url 'manage_blog_items' %}" class="text-grey">Blog Item
                                 Management</a></li>
                         {% else %}
-                        <li class="mb-2"><a href="{% url 'profile' %}" class="font-black">My Profile</a></li>
-                        <li class="mb-2"><a href="{% url 'blog_items' %}" class="font-black">Blog</a></li>
-                        <li class="mb-2"><a href="{% url 'sale_items' %}" class="font-black">Sale</a></li>
+                        <li class="mb-2"><a href="{% url 'profile' %}" class="text-grey">My Profile</a></li>
+                        <li class="mb-2"><a href="{% url 'blog_items' %}" class="text-grey">Blog</a></li>
+                        <li class="mb-2"><a href="{% url 'sale_items' %}" class="text-grey">Sale</a></li>
                         {% endif %}
                         {% else %}
-                        <li class="mb-2"><a href="{% url 'account_signup' %}" class="font-black">Register</a></li>
-                        <li class="mb-2"><a href="{% url 'account_login' %}" class="font-black">Login</a></li>
+                        <li class="mb-2"><a href="{% url 'account_signup' %}" class="text-grey">Register</a></li>
+                        <li class="mb-2"><a href="{% url 'account_login' %}" class="text-grey">Login</a></li>
                         {% endif %}
                     </ul>
                 </div>

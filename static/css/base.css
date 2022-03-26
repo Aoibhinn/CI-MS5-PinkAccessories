@@ -17,12 +17,6 @@ body {
     font-family: 'Nunito Sans';
 }
 
-a {
-    color: #555;
-    text-decoration: none;
-    background-color: transparent;
-}
-
 /* --- Footer --- */
 
 
@@ -34,25 +28,6 @@ a {
     font-size: 1rem;
 }
 
-.pink-btn {
-    background-color: #cd8689;
-    color: white;
-}
-
-.grey-btn {
-    background-color: grey;
-    color: white;
-}
-
- .grey-btn {
-    background-color: #555;
-    color: white;
-}
-.pink-btn:hover {
-    background-color: #cd8689;
-    color: white;
-}
-
 .red-strikethrough{
     text-decoration: line-through;
     color: #DB4437;
@@ -61,6 +36,14 @@ a {
 .font-weight-bold {
     font-weight: bold;
 }
+
+.text-red{
+    color: #DB4437;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
 
 /* --- Blog page --- */
 .card-img-top {
@@ -111,33 +94,7 @@ a {
     min-width: 260px;
 }
 
-.btn-black {
-    background: #cd8689;
-    color: white;
-}
 
-.btn-outline-black {
-    background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
-    border: 1px solid black;
-}
-
-.btn-outline-black:hover,
-.btn-outline-black:active,
-.btn-outline-black:focus {
-    background: #cd8689;
-    color: white !important;
-}
-
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-    background: #cd8689;
-    color: white;
-}
 
 
 /* --- Home styling --- */
@@ -152,6 +109,8 @@ a {
 
 .text-grey {
     color: #555;
+    text-decoration: none;
+    background-color: transparent;
 }
 
 .container {
@@ -218,22 +177,21 @@ a {
     border: 1px solid #cd8689 !important;
 }
 
-.btn-outline-pink {
-    background: white;
-    color: #cd8689 !important; /* use important to override link colors for <a> elements */
-    border: 1px solid black;
-}
 
 .bg-black {
     background: #000 !important;
 }
 
 .bg-pink {
-    background: #f0b2af;
+    color: #f0b2af;
 }
 
 .bg-pink-dark {
-    background: #cd8689;
+    color: #cd8689;
+}
+
+.bg-grey {
+    color: #555;
 }
 
 
