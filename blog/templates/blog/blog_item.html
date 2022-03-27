@@ -37,7 +37,7 @@
                                     <p class="card-text">{{ blog_item.content }}</p>
                                     <p class="text-muted">Posted By: {{ blog_item.user }} on the {{ blog_item.create_date }}</p>
                                     {% if blog_item.user == request.user or request.user.is_superuser %}
-                                        <a class="btn pink-btn" href="{% url 'edit_blog_item' blog_item.id %}" role="button">Edit</a>
+                                        <a class="btn" style="background-color: #cd8689; color: white;" href="{% url 'edit_blog_item' blog_item.id %}" role="button">Edit</a>
                                         <a class="btn btn-danger" href="{% url 'delete_blog_item' blog_item.id %}">Delete</a>
                                     {% endif %}
                                 </div>
@@ -98,7 +98,7 @@
                                             <fieldset>
                                                 {{ comment_form|crispy }}
                                             </fieldset>
-                                            <button class="btn pink-btn" type="submit"> Post Comment</button>
+                                            <button class="btn" style="background-color: #cd8689; color: white;" type="submit"> Post Comment</button>
                                         </form>
                                 {% else %}
                                     <div>
